@@ -12,7 +12,9 @@ My name is Haoyang (pronounced as "How Yeung"). I am currently a PhD student at 
 
 My research lies at the intersection of machine learning, dynamical systems, and computational physics. I harness the analytical capabilities of differential equations — including ODEs, PDEs, and SDEs — to address complex challenges in machine learning.
 
-My research interests includes but not limited to Reinforcement Learning (Thompson Sampling), Markov Chain Monte Carlo, Data-driven Modeling, Uncertainty Quantification, and Applied Mathematics.
+Research Interests
+======
+Reinforcement Learning (Thompson Sampling), Markov Chain Monte Carlo, Data-driven Modeling, Uncertainty Quantification, Applied Mathematics, etc.
 
 Contact
 ======
