@@ -18,7 +18,7 @@ Research Interests
 * Markov Chain Monte Carlo
 * Data-driven Modeling
 * Uncertainty Quantification
-* Physics-informed Neural Networks
+* Physics-Informed Neural Networks
 * Applied Mathematics
 
 Contact
