@@ -1,3 +1,10 @@
+GIT
+  remote: https://github.com/eventmachine/eventmachine.git
+  revision: 9cb13a8a62363df5ebcc414169a3deb2c1608528
+  tag: v1.2.7
+  specs:
+    eventmachine (1.2.7-x64-mingw32)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -32,7 +39,6 @@ GEM
       http_parser.rb (~> 0)
     ethon (0.16.0)
       ffi (>= 1.15.0)
-    eventmachine (1.2.7-x64-mingw32)
     execjs (2.9.1)
     faraday (2.7.11)
       base64
@@ -258,6 +264,8 @@ GEM
       ethon (>= 0.9.0)
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
+    tzinfo-data (1.2023.3)
+      tzinfo (>= 1.0.0)
     unf (0.1.4)
       unf_ext
     unf_ext (0.0.8.2-x64-mingw32)
@@ -268,10 +276,12 @@ PLATFORMS
   x64-mingw32
 
 DEPENDENCIES
+  eventmachine (= 1.2.7)!
   github-pages
   hawkins
   jekyll-feed
   jekyll-sitemap
+  tzinfo-data
   wdm (~> 0.1.0)
 
 BUNDLED WITH
