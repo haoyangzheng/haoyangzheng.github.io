@@ -17,19 +17,23 @@ Education
 
 Work experience
 ======
-* Summer 2023: Givens Associate
+* 2023 Summer: Givens Associate
   * Argonne National Laboratory
   * Mathematics and Computer Science Division
-
-
-Skills
+* 2021 Fall - Now: Research Assistant
+  * Purdue University
+  * School of Mechanical Engineering
+* 2019 Fall - 2021 Spring: Teaching Assistant
+  * Purdue University
+  * School of Mechanical Engineering
+<!-- Skills
 ======
 * Skill 1
 * Skill 2
   * Sub-skill 2.1
   * Sub-skill 2.2
   * Sub-skill 2.3
-* Skill 3
+* Skill 3 -->
 
 Publications
 ======
@@ -37,13 +41,13 @@ Publications
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
 
-Talks
+<!-- Talks
 ======
   <ul>{% for post in site.talks %}
     {% include archive-single-talk-cv.html %}
-  {% endfor %}</ul>
+  {% endfor %}</ul> -->
 
-Teaching
+<!-- Teaching
 ======
   <ul>{% for post in site.teaching %}
     {% include archive-single-cv.html %}
@@ -51,4 +55,4 @@ Teaching
 
 Service and leadership
 ======
-* Currently signed in to 43 different slack teams
+* Currently signed in to 43 different slack teams -->
