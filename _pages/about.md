@@ -14,7 +14,12 @@ My research lies at the intersection of machine learning, dynamical systems, and
 
 Research Interests
 ======
-Reinforcement Learning (Thompson Sampling), Markov Chain Monte Carlo, Data-driven Modeling, Uncertainty Quantification, Applied Mathematics, etc.
+* Reinforcement Learning (Thompson Sampling)
+* Markov Chain Monte Carlo
+* Data-driven Modeling
+* Uncertainty Quantification
+* Physics-informed Neural Networks
+* Applied Mathematics
 
 Contact
 ======

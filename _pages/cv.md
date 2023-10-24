@@ -8,6 +8,7 @@ redirect_from:
 ---
 
 {% include base_path %}
+Check [the document]({{ site.url }}/files/Resume.pdf) for details
 
 Education
 ======
@@ -15,25 +16,17 @@ Education
 * M.S. in Mechanical Engineering, Purdue University, 2021
 * B.S. in Automation, Southwest University, 2018
 
-Work experience
+Experience
 ======
-* 2023 Summer: Givens Associate
-  * Argonne National Laboratory
-  * Mathematics and Computer Science Division
 * 2021 Fall - Now: Research Assistant
   * Purdue University
   * School of Mechanical Engineering
+* 2023 Summer: Givens Associate
+  * Argonne National Laboratory
+  * Mathematics and Computer Science Division
 * 2019 Fall - 2021 Spring: Teaching Assistant
   * Purdue University
   * School of Mechanical Engineering
-<!-- Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3 -->
 
 Publications
 ======
