@@ -4,11 +4,6 @@ title: "Publications"
 permalink: /publications/
 author_profile: true
 ---
----
-title: "Conference"
-permalink: /publications/
-author_profile: true
----
 
 
 {% if author.googlescholar %}
