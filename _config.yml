@@ -80,7 +80,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "Haoyang Zheng <br> (郑昊阳)"
+  name             : "<p style="color:gray; font-size:80%; text-align:center;">Haoyang Zheng <br> (郑昊阳)</p>"
   avatar           : "profile.png"
   bio              : "Ph.D. student <br>Purdue University"
   location         : "West Lafayette, IN"
