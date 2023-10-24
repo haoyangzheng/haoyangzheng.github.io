@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Haoyang Zheng - Homepage"
+title                    : "Haoyang Zheng"
 title_separator          : "-"
 name                     : &name "Your Name"
 description              : &description "personal description"
@@ -88,7 +88,7 @@ author:
   pubmed           : # "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   googlescholar    : "https://scholar.google.com/citations?user=cq_f7MUAAAAJ&hl=en&oi=ao"
   email            : # "zheng528@purdue.edu"
-  researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
+  researchgate     :  "https://www.researchgate.net/profile/Haoyang-Zheng-3"
   uri              :
   bitbucket        :
   codepen          :
