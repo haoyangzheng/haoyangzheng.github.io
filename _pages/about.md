@@ -20,6 +20,7 @@ Research Interests
 * Uncertainty Quantification
 * Physics-Informed Neural Networks
 * Applied Mathematics
+* AI for Science
 
 Contact
 ======
