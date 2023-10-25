@@ -55,6 +55,9 @@ layout: default
       <section class="page__content" itemprop="text">
         {{ content }}
         {% if page.link %}<div><a href="{{ page.link }}" class="btn">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
+        {% if page.links %}
+          <p>{{page.links | markdownify | remove: '<p>' | remove: '</p>' }} </p>
+        {% endif %}
       </section>
 
       <footer class="page__meta">
@@ -87,4 +90,5 @@ layout: default
       </div>
     </div>
   {% endif %}
+
 </div>

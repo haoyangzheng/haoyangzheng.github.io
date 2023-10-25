@@ -18,15 +18,12 @@ Education
 
 Experience
 ======
-* 2021 Fall - Now: Research Assistant
-  * Purdue University
-  * School of Mechanical Engineering
-* 2023 Summer: Givens Associate
-  * Argonne National Laboratory
-  * Mathematics and Computer Science Division
-* 2019 Fall - 2021 Spring: Teaching Assistant
-  * Purdue University
-  * School of Mechanical Engineering
+* <strong>Research Assistant</strong> (2021 Fall - Now)
+  * Purdue University, School of Mechanical Engineering
+* <strong>Givens Associate</strong> (2023 Summer)
+  * Argonne National Laboratory, Mathematics and Computer Science Division
+* <strong>Teaching Assistant</strong> (2019 Fall - 2021 Spring)
+  * Purdue University, School of Mechanical Engineering
 
 <!-- Publications
 ======
