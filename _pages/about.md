@@ -16,7 +16,7 @@ Research Interests
 ======
 * Reinforcement Learning (Thompson Sampling)
 * Markov Chain Monte Carlo
-* Data-driven Modeling
+* Data Driven Modeling
 * Uncertainty Quantification
 * Physics-Informed Neural Networks
 * Applied Mathematics
