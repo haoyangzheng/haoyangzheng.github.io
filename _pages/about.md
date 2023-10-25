@@ -24,4 +24,5 @@ Research Interests
 
 Contact
 ======
-lastname+528 at purdue dot edu
+Email: lastname+528 at purdue dot edu
+<br>Address: 516 Northwestern Ave, West Lafayette, IN 47906
