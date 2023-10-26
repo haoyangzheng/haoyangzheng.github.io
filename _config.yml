@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "&emsp;Homepage&emsp;"
+title                    : "Homepage"
 titles                   : "Homepage"
 title_separator          : "-"
 name                     : &name "Haoyang Zheng"
