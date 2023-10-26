@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Haoyang Zheng"
+title                    : "<font size="+2">Haoyang Zheng (郑昊阳)</font>"
 title_separator          : "-"
 name                     : &name "Your Name"
 description              : &description "personal description"
@@ -80,7 +80,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "Haoyang Zheng"
+  name             : ""
   avatar           : "profile.png"
   bio              : "Ph.D. student <br>Purdue University"
   location         : "West Lafayette, IN"
