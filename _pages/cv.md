@@ -8,7 +8,8 @@ redirect_from:
 ---
 
 {% include base_path %}
-* Check [the document]({{ site.url }}/files/Resume.pdf) for details
+
+Check [this document]({{ site.url }}/files/Resume.pdf) for details
 
 Education
 ======
