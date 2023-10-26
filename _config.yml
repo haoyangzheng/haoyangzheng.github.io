@@ -7,9 +7,10 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "<font size="+2">Haoyang Zheng (郑昊阳)</font>"
+title                    : "Homepage"
+titles                   : "Homepage"
 title_separator          : "-"
-name                     : &name "Your Name"
+name                     : &name "Haoyang Zheng"
 description              : &description "personal description"
 url                      : https://haoyangzheng.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -80,7 +81,7 @@ analytics:
 
 # Site Author
 author:
-  name             : ""
+  name             : "Haoyang Zheng"
   avatar           : "profile.png"
   bio              : "Ph.D. student <br>Purdue University"
   location         : "West Lafayette, IN"
