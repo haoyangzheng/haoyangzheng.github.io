@@ -1,6 +1,6 @@
 # main links links
 main:
-  - title: " &emsp;  Publications &emsp;"
+  - title: " &ensp;  Publications &ensp;"
     url: /publications/
 
   # - title: "Talks"
@@ -12,10 +12,10 @@ main:
   # - title: "Portfolio"
   #   url: /portfolio/
 
-  - title: " &emsp; &emsp; CV &emsp; &emsp; "
+  - title: " &ensp; &ensp; CV &ensp; &ensp; "
     url: /cv/
 
-  - title: "  &emsp; Blog Posts &emsp;  "
+  - title: "  &ensp; Blog Posts &ensp;  "
     url: /year-archive/
 
 
