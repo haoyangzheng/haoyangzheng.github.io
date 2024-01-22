@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-My name is Haoyang (pronounced as "Hau Yeung"). I am currently a PhD student at the [School of Mechanical Engineering](https://engineering.purdue.edu/ME), [Purdue University](https://www.purdue.edu/), advised by Prof. [Guang Lin](https://www.math.purdue.edu/~lin491/).
+My name is Haoyang (pronounced as "Hau Yeung"). I am currently a PhD student at the [School of Mechanical Engineering](https://engineering.purdue.edu/ME), [Purdue University](https://www.purdue.edu/), advised by Prof. [Guang Lin](https://scholar.google.com/citations?user=7lWVV2IAAAAJ&hl=en).
 
 My research lies at the intersection of machine learning, dynamical systems, and computational physics. I harness the analytical capabilities of differential equations — including ODEs, PDEs, and SDEs — to address complex challenges in machine learning.
 
