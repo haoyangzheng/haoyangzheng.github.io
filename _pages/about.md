@@ -25,6 +25,7 @@ Research Interests
 News
 ======
 
+* [May/2024] 1 paper was accepted by ICML 2024
 * [Apr/2024] Passed the preliminary exam and became a Ph.D. candidate
 * [Apr/2024] Student Travel Award at [Nonlocality: Challenges in Modeling and Simulation](https://icerm.brown.edu/programs/sp-s24/w3/)
 * [Jan/2024] 1 paper was accepted by AISTATS 2024
