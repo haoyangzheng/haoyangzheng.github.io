@@ -10,7 +10,7 @@ redirect_from:
 
 My name is Haoyang (pronounced as "Hau Yeung"). I am currently a PhD candidate at the [School of Mechanical Engineering](https://engineering.purdue.edu/ME), [Purdue University](https://www.purdue.edu/), advised by Prof. [Guang Lin](https://scholar.google.com/citations?user=7lWVV2IAAAAJ&hl=en).
 
-My research lies at the intersection of machine learning, dynamical systems, and computational physics. I harness the analytical capabilities of differential equations — including ODEs, PDEs, and SDEs — to address complex challenges in machine learning.
+My research topics lie at the intersection of machine learning, dynamical systems, and computational physics. My research focuses on the use of computational and analytical tools from differential equations — including ODEs, PDEs, and SDEs — to address complex challenges in machine learning.
 
 Research Interests
 ======
@@ -25,6 +25,7 @@ Research Interests
 News
 ======
 
+<!-- * [Jul/2024] Gave a talk at Brown University -->
 * [May/2024] 1 paper was accepted by ICML 2024
 * [Apr/2024] Passed the preliminary exam and became a Ph.D. candidate
 * [Apr/2024] Student Travel Award at [Nonlocality: Challenges in Modeling and Simulation](https://icerm.brown.edu/programs/sp-s24/w3/)
@@ -33,6 +34,10 @@ News
 * [Sep/2023] Student Travel Award at [2023 Mathematical and Scientific Foundations of Deep Learning Annual Meeting](https://www.simonsfoundation.org/event/mathematical-and-scientific-foundations-of-deep-learning-annual-meeting-2023/)
 * [May-Jul/2023] [Givens Associates](https://www.anl.gov/education/givens-associates) at Argonne National Laboratory
 * [Sep/2022] 1 paper was accepted by NPJ Digital Medicine
+
+Services
+======
+Reviewers: ICML, NeurIPS
 
 Contact
 ======

@@ -83,13 +83,13 @@ analytics:
 author:
   name             : "Haoyang Zheng"
   avatar           : "profile.png"
-  bio              : "Ph.D. candidate <br>Purdue University"
+  bio              : "Ph.D. Candidate <br>Purdue University"
   location         : "West Lafayette, IN"
   employer         :
   pubmed           : # "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   googlescholar    : "https://scholar.google.com/citations?hl=en&user=cq_f7MUAAAAJ&view_op=list_works&sortby=pubdate"
   email            : # "zheng528@purdue.edu"
-  researchgate     :  "https://www.researchgate.net/profile/Haoyang-Zheng-3"
+  researchgate     : "https://www.researchgate.net/profile/Haoyang-Zheng-3"
   uri              :
   bitbucket        :
   codepen          :
@@ -97,14 +97,14 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : # "haoyangzheng"
+  github           : # "haoyangzheng1996"
   google_plus      :
   keybase          :
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
   linkedin         : "haoyangzheng"
-  orcid            : # "https://orcid.org/my-orcid?orcid=0000-0001-6835-8242"
+  orcid            : "https://orcid.org/my-orcid?orcid=0000-0001-6835-8242"
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
