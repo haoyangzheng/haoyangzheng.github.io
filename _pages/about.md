@@ -10,7 +10,7 @@ redirect_from:
 
 My name is Haoyang (pronounced as "Hau Yeung"). I am currently a PhD candidate at the [School of Mechanical Engineering](https://engineering.purdue.edu/ME), [Purdue University](https://www.purdue.edu/), advised by Prof. [Guang Lin](https://scholar.google.com/citations?user=7lWVV2IAAAAJ&hl=en).
 
-My research topics lie at the intersection of machine learning, dynamical systems, and computational physics. My research focuses on the use of computational and analytical tools from differential equations — including ODEs, PDEs, and SDEs — to address complex challenges in machine learning.
+My research topics lie at the intersection of machine learning, dynamical systems, and computational physics. I focus on the use of computational and analytical tools from differential equations — including ODEs, PDEs, and SDEs — to address complex challenges in machine learning.
 
 Research Interests
 ======
@@ -25,7 +25,7 @@ Research Interests
 News
 ======
 
-<!-- * [Jul/2024] Gave a talk at Brown University -->
+* [Jul/2024] Gave a talk at [the Crunch Seminar](https://www.youtube.com/watch?v=taEnrJIpl1g&t=4676s), Brown University
 * [May/2024] 1 paper was accepted by ICML 2024
 * [Apr/2024] Passed the preliminary exam and became a Ph.D. candidate
 * [Apr/2024] Student Travel Award at [Nonlocality: Challenges in Modeling and Simulation](https://icerm.brown.edu/programs/sp-s24/w3/)
