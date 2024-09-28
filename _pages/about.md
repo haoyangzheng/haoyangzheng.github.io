@@ -38,7 +38,7 @@ News
 
 Services
 ======
-Reviewers: ICLR, ICML, NeurIPS
+Reviewers: ICLR, ICML, NeurIPS, AISTATS
 
 Contact
 ======
