@@ -24,7 +24,7 @@ Research Interests
 
 News
 ======
-* [Sep/2024] Student Travel Award at [2024 Mathematical and Scientific Foundations of Deep Learning Annual Meeting](https://www.simonsfoundation.org/event/mathematical-and-scientific-foundations-of-deep-learning-annual-meeting-2024/)
+* [Oct/2024] Student Travel Award at [2024 Mathematical and Scientific Foundations of Deep Learning Annual Meeting](https://www.simonsfoundation.org/event/mathematical-and-scientific-foundations-of-deep-learning-annual-meeting-2024/)
 * [Aug/2024] Student Travel Award at [2024 SIAM Conference on Mathematics of Data Science (MDS24)](https://www.siam.org/conferences-events/siam-conferences/mds24/)
 * [Jul/2024] Gave a talk at [the Crunch Seminar](https://www.youtube.com/watch?v=taEnrJIpl1g&t=4676s), Brown University
 * [May/2024] 1 paper was accepted by ICML 2024
