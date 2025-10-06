@@ -10,7 +10,7 @@ redirect_from:
 
 My name is Haoyang (pronounced as "Hau Yeung"). I am currently a PhD candidate at the [School of Mechanical Engineering](https://engineering.purdue.edu/ME), [Purdue University](https://www.purdue.edu/), advised by Prof. [Guang Lin](https://scholar.google.com/citations?user=7lWVV2IAAAAJ&hl=en).
 
-My research topics lie at the intersection of machine learning, dynamical systems, and computational physics. I focus on the use of computational and analytical tools from differential equations — including ODEs, PDEs, and SDEs — to address complex challenges in machine learning.
+I study **Generative Modeling** and **Reinforcement Learning** (RL) from a probabilistic modeling perspective. My interests include **Large Language Models** (LLMs), continuous and discrete diffusion, RL, and sampling/optimization methods that improve latency and robustness. My goal is to build fast and reliable LLMs.
 
 Research Interests
 ======
@@ -21,6 +21,7 @@ Research Interests
 
 News
 ======
+* [Sep/2025] 🔥 Feel the Ultra-Fast Language Generation in our latest work (**60×** faster than ARMs): [Discrete Diffusion Divergence Instruct](https://haoyangzheng.github.io/research/didi-instruct/)
 * [Oct/2024] Student Travel Award at [2024 Mathematical and Scientific Foundations of Deep Learning Annual Meeting](https://www.simonsfoundation.org/event/mathematical-and-scientific-foundations-of-deep-learning-annual-meeting-2024/)
 * [Aug/2024] Student Travel Award at [2024 SIAM Conference on Mathematics of Data Science (MDS24)](https://www.siam.org/conferences-events/siam-conferences/mds24/)
 * [Jul/2024] Gave a talk at [the Crunch Seminar](https://www.youtube.com/watch?v=taEnrJIpl1g&t=4676s), Brown University
@@ -35,7 +36,7 @@ News
 
 Services
 ======
-Reviewers: ICLR, ICML, NeurIPS, AISTATS
+Reviewers: ICLR, ICML, NeurIPS, AISTATS, AAAI
 
 Contact
 ======

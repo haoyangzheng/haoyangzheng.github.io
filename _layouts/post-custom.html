@@ -167,7 +167,11 @@ section p {
     margin-bottom: 12px;
 }
 .bibtex {
-    background: transparent;
+    width: 70%; /* Set the width. Adjust this percentage as you like (e.g., 80%, 90%). */
+    margin-left: auto; /* These two lines center the block horizontally. */
+    margin-right: auto;
+    background: transparent; /* A very light background to make the box distinct. */
+
     padding: 12px;
     border-radius: 4px;
     font-family: Consolas, monospace;
@@ -199,6 +203,12 @@ footer a {
 }
 .method-tabs .tab { padding:.5rem .75rem; border:1px solid #d0d7de; border-radius:8px; background:#fff; cursor:pointer; }
 .method-tabs .tab.active { background:#ffebee; border-color:#ffcdd2; } /* Reddish active tab */
+.method-tabs {
+  display: flex; /* Turn this container into a flexbox. */
+  align-items: center; /* Vertically align the buttons. */
+  flex-wrap: nowrap; /* Explicitly prevent the buttons from wrapping. */
+  gap: 0.5rem; /* Add a small gap between the buttons, you can adjust this value. */
+}
 .playback button { margin-right:.5rem; padding: 0.4rem 0.6rem; border-radius: 6px; border: 1px solid #d0d7de; background: #fff; cursor: pointer;}
 /* .speed { margin-left:1rem; } */
 .speed {
@@ -224,8 +234,9 @@ footer a {
 }
 .info-bar {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    gap: 15rem;
     font-size: .9rem; /* Sets a uniform font size for both elements */
     color: #555;
     margin-top: 1.5rem;
@@ -235,6 +246,20 @@ footer a {
 .legend .dot { display:inline-block; width:.75rem; height:.75rem; border-radius:50%; margin:0 .25rem -.1rem .25rem; }
 .legend .dot.new { background:#d32f2f; } /* Red color for new dots */
 .legend .dot.known { background:#b0bec5; }
+.legend-unmask {
+  color: #b82828; /* This is the same red color used for the highlighted tokens */
+  font-weight: 500; /* Make the font slightly bolder */
+}
+.page__title {
+  line-height: 1.4; /* Adjust this value to increase or decrease the space. e.g., 1.5, 1.6 */
+}
+.page__inner-wrap header .page__date {
+  margin-top: 2.0rem; 
+  margin-bottom: -4.0rem; /* Reduce the space below the date line. Default is larger. */
+}
+.page__inner-wrap .authors {
+  margin-top: 1.0rem; /* Reduce the space above the author line. */
+}
 .viewer { 
     margin-top: 1rem; 
     padding: 1rem; 
@@ -249,7 +274,11 @@ footer a {
 .token.mask { color:#b0bec5; background:#f5f5f5; } /* Lighter mask token */
 .token.known { color:#b71c1c; background:#eceff1; } /* Unmasked token with red font */
 .token.new { color:#fff; background:#d32f2f; } /* Red highlight for new tokens */
-.status { display:flex; gap:1rem; margin-top:.5rem; color:#555; }
+.status { display:flex; gap:1rem; margin-top:.0rem; color:#555; }
+#sampler-demo h2 {
+  font-size: 2.1rem; /* Make the font size larger. You can adjust this value. */
+  line-height: 1.4;  /* Increase the space between the two lines. You can adjust this value. */
+}
 #main {
   max-width: none !important;   /* Remove theme's outer max-width cap */
   width: 100% !important;       /* Use full available width */
@@ -290,6 +319,7 @@ footer a {
 <div id="main" role="main">
 
   <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <!-- {% if page.title %}<h1 class="page__title" itemprop="headline">{{ page.title | replace: 'via', '<br>via' }}</h1>{% endif %} -->
     {% if page.title %}<meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
     {% if page.excerpt %}<meta itemprop="description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
     {% if page.date %}<meta itemprop="datePublished" content="{{ page.date | date: "%B %d, %Y" }}">{% endif %}
@@ -298,7 +328,8 @@ footer a {
     <div class="page__inner-wrap">
       {% unless page.header.overlay_color or page.header.overlay_image %}
         <header>
-          {% if page.title %}<h1 class="page__title" itemprop="headline">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</h1>{% endif %}
+          {% if page.title %}<h1 class="page__title" itemprop="headline">{{ page.title | replace: 'via', '<br>via' }}</h1>{% endif %}
+          <!-- {% if page.title %}<h1 class="page__title" itemprop="headline">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</h1>{% endif %} -->
           {% if page.read_time %}
             <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
           {% endif %}

@@ -54,17 +54,17 @@ tags: [discrete diffusion, large language models, distillation]
     </span>
   </div>
   <p style="text-align: center; margin-top: 20px; font-size: 30px;">
-      <span> We unlock <b style="color: #910b0b;">high-quality</b> language generation <b style="color: #910b0b;">in the blink of an eye</b> with <b style="color: #910b0b;">DiDi-Instruct</b>.</span>
+      <span> We unlock <b style="color: #910b0b;">high-quality</b> language generation <b style="color: #910b0b;">in the blink of an eye</b> with <b style="color: #000000;">DiDi-Instruct</b>.</span>
   </p>
 </header>
 
 <section id="sampler-demo">
-  <h2>Inference Speed Comparison: DiDi-Instruct (64x) vs. MDLM (2x) vs. ARM</h2>
+  <h2 style="text-align: center;">🚀 Feel the Ultra-Fast Generation Speed:<br>DiDi-Instruct (64x) vs. MDMs (2x) vs. ARMs</h2>
   <div class="controls">
     <div class="method-tabs" role="tablist" aria-label="Sampling methods">
       <button class="tab active" data-method="didi" role="tab" aria-selected="true">DiDi-Instruct</button>
-      <button class="tab" data-method="mdlm" role="tab" aria-selected="false">MDLM</button>
-      <button class="tab" data-method="arm" role="tab" aria-selected="false">ARM</button>
+      <button class="tab" data-method="mdlm" role="tab" aria-selected="false">MDMs</button>
+      <button class="tab" data-method="arm" role="tab" aria-selected="false">ARMs</button>
     </div>
     <div class="playback">
       <button id="btn-prev" aria-label="Previous step">⟨ Prev</button>
@@ -83,12 +83,11 @@ tags: [discrete diffusion, large language models, distillation]
   </div>
   <div class="info-bar">
       <div class="legend">
-          <span class="dot new"></span> Unmasked Tokens &nbsp;&nbsp;
+          <span class="dot new"></span> <span class="legend-unmask">Unmasked Tokens</span> &nbsp;&nbsp;
           <span class="dot known"></span> Masked Tokens
       </div>
       <div class="status">
-          <span id="step-readout">Step 0/0</span>,
-          <span id="nfe-readout">NFEs: <span id="nfe-val">0</span></span>
+        <span id="step-readout">NFEs: 0/0</span>
       </div>
   </div>
   <div class="viewer">
@@ -133,16 +132,16 @@ tags: [discrete diffusion, large language models, distillation]
       </span>
     </button>
   </div>
-  <div id="bibtex-content" class="bibtex">
-    {% raw %}
+  <p class="cite-preamble">If you find this useful, please cite:</p>
+  <pre id="bibtex-content" class="bibtex">{% raw %}
     @article{zheng2025ultra,
-        title={{Ultra-Fast Language Generation via Discrete Diffusion Divergence Instruct}},
-        author={Zheng, Haoyang and Liu, Xinyang and Kong, Cindy Xiangrui and Jiang, Nan and Hu, Zheyuan and Luo, Weijian and Deng, Wei and Lin, Guang},
-        journal={arXiv preprint arXiv:2509.25035},
-        year={2025}
+      title={{Ultra-Fast Language Generation via Discrete Diffusion Divergence Instruct}},
+      author={Zheng, Haoyang and Liu, Xinyang and Kong, Cindy Xiangrui and Jiang, Nan and Hu, Zheyuan and Luo, Weijian and Deng, Wei and Lin, Guang},
+      journal={arXiv preprint arXiv:2509.25035},
+      year={2025}
     }
     {% endraw %}
-  </div>
+  </pre>
 </section>
 
 <footer>

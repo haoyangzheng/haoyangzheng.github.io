@@ -34,7 +34,7 @@ const $speed = document.getElementById('speed');
 const $speedVal = document.getElementById('speed-val');
 const $line = document.getElementById('token-line');
 const $step = document.getElementById('step-readout');
-const $nfeVal = document.getElementById('nfe-val');
+// const $nfeVal = document.getElementById('nfe-val');
 
 // ---------- helpers ----------
 // Asynchronously loads and processes the trace data for the animation.
@@ -93,9 +93,7 @@ function applyStep(k) {
 }
 function updateReadout() {
   const total = trace ? trace.steps.length : 0;
-  $step.textContent = `Step ${Math.min(step, total)}/${total}`;
-  const nfe = trace ? NFEs_MAP[method](step) : 0;
-  $nfeVal.textContent = nfe;
+  $step.textContent = `NFEs: ${Math.min(step, total)}/${total}`;
 }
 // Resets the animation to its initial state.
 function resetAnimation() {
