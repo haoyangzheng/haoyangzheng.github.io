@@ -1,0 +1,366 @@
+---
+layout: default
+---
+
+<style>
+/* Basic reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #fafafa;
+}
+header {
+    background: #ffeded;
+    color: #000000;
+    padding: 40px 20px;
+    text-align: center;
+}
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+header p.authors {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+}
+header p.affiliations {
+    font-size: 1.0em;
+    color: #810000;
+}
+.bibtex-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: -0.25rem; /* Adjust space to look good with the preformatted text block */
+}
+.bibtex-header h2 {
+    margin-bottom: 0; /* Remove default margin from h2 inside this container */
+}
+.copy-btn {
+    /* Reset button styles for a clean icon look */
+    background: transparent;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 6px;
+    cursor: pointer;
+    color: #666; /* Default icon color */
+    transition: background-color 0.2s, color 0.2s;
+}
+.copy-btn:hover {
+    background-color: #e7e7e7; /* A light gray background on hover */
+    color: #111; /* Darken icon on hover */
+}
+.copy-btn .check-icon {
+    color: #28a745; /* Green color for the success checkmark */
+}
+.playback {
+    display: flex; /* Turn this container into a flexbox */
+    align-items: center; /* Vertically align all items in the middle */
+    flex-wrap: wrap; /* Allow wrapping on very small screens if necessary */
+    gap: 0.5rem; /* Add a small gap between buttons */
+}
+.links {
+    margin-top: 15px;
+    display: flex; /* Added for horizontal alignment */
+    justify-content: center; /* Center the links */
+    flex-wrap: wrap; /* Allow links to wrap on smaller screens */
+    gap: 10px; /* Space between links */
+}
+.links .link-block {
+    display: inline-block;
+}
+.links a {
+    display: flex; /* Use flex for icon and text alignment */
+    align-items: center; /* Vertically align icon and text */
+    gap: 5px; /* Space between icon and text */
+    padding: 8px 14px;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #910b0b;
+    background: #fce6e6;
+    transition: background 0.2s;
+    border: 1px solid #910b0b; /* Added border for button look */
+}
+.links a:hover {
+    background: #f7cdcd;
+}
+.links a .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 18px; /* Standardize icon size */
+    height: 18px;
+}
+.links a .icon i {
+    font-size: 18px; /* Icon font size */
+}
+.links a .icon p {
+    margin: 0; /* Remove default paragraph margin */
+    line-height: 1; /* Ensure emoji aligns well */
+}
+
+/* main {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+} */
+.tagline {
+    font-size: 1.4rem !important;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.highlights {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 30px;
+}
+.highlight-item {
+    background: #fff5f5;
+    border-left: 5px solid #d15656;
+    padding: 12px 16px;
+    border-radius: 4px;
+}
+.highlight-item span {
+    font-weight: bold;
+    margin-right: 8px;
+    color: #cf5a5a;
+}
+.image-container {
+    text-align: center;
+    margin: 30px 0;
+}
+.image-container img {
+    width: 60%; /* Set the image width to 80% of its container. You can change this value. */
+    display: block; /* Required to enable auto margins for centering. */
+    margin-left: auto; /* Center the image horizontally. */
+    margin-right: auto; /* Center the image horizontally. */
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+.page__inner-wrap {
+  max-width: 2000px; /* You can adjust this value. The default is likely around 760px. */
+  margin: 0 auto; 
+  padding: 0px;
+}
+.page__content {
+  max-width: 100%;   /* Allow content to expand full width of parent */
+  width: 100%;       /* Ensure it stretches */
+}
+section {
+    margin-bottom: 40px;
+}
+section h2 {
+    font-size: 1.8em;
+    margin-bottom: 12px;
+    color: #910b0b;
+}
+section p {
+    margin-bottom: 12px;
+}
+.bibtex {
+    background: transparent;
+    padding: 12px;
+    border-radius: 4px;
+    font-family: Consolas, monospace;
+    white-space: pre-wrap; /* This allows the text to wrap while preserving whitespace. */
+    word-break: break-all;   /* This ensures that long, unbreakable strings (like URLs) will also wrap. */
+}
+footer {
+    font-size: 0.8em;
+    color: #666;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+footer a {
+    color: #910b0b;
+    text-decoration: none;
+}
+
+/* --- Styles for Sampler Demo (MODIFIED) --- */
+#sampler-demo { margin: 2rem auto; max-width: 1200px; padding: 0 20px; }
+#speed {
+  width: 400px; /* You can adjust this value (e.g., 100px, 150px) */
+  vertical-align: middle; /* This helps to better align the slider with the text */
+}
+.controls { 
+    display:flex; 
+    gap:1rem; 
+    align-items:center; 
+}
+.method-tabs .tab { padding:.5rem .75rem; border:1px solid #d0d7de; border-radius:8px; background:#fff; cursor:pointer; }
+.method-tabs .tab.active { background:#ffebee; border-color:#ffcdd2; } /* Reddish active tab */
+.playback button { margin-right:.5rem; padding: 0.4rem 0.6rem; border-radius: 6px; border: 1px solid #d0d7de; background: #fff; cursor: pointer;}
+/* .speed { margin-left:1rem; } */
+.speed {
+  flex-grow: 1; /* Allow the speed control block to take up available space */
+  min-width: 100px; /* Give it a reasonable minimum width */
+}
+.speed-labels {
+  display: flex;
+  justify-content: space-between; /* Puts "Speed" on the left and "1x" on the right */
+  padding: 0 50px; /* Add slight padding to align with the slider ends */
+}
+.highlighted-section {
+    background: #ffeded; /* This is the same light-red color as the header */
+    padding: 1.5rem 2rem;   /* Add some space around the content */
+    border-radius: 12px;  /* Match the rounded corners of other elements */
+}
+.image-container figcaption {
+    margin-top: 0.75rem;
+    font-size: 1.1rem;
+    color: #666;
+    text-align: center;
+    line-height: 1.5;
+}
+.info-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: .9rem; /* Sets a uniform font size for both elements */
+    color: #555;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    padding: 0 0.25rem; /* Adds a bit of horizontal padding */
+}
+.legend .dot { display:inline-block; width:.75rem; height:.75rem; border-radius:50%; margin:0 .25rem -.1rem .25rem; }
+.legend .dot.new { background:#d32f2f; } /* Red color for new dots */
+.legend .dot.known { background:#b0bec5; }
+.viewer { 
+    margin-top: 1rem; 
+    padding: 1rem; 
+    border: 1px solid #eee; 
+    border-radius: 12px; 
+    background: #fafbfc;
+    box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height. */
+    transition: min-height 0.3s ease-in-out; /* Smoothly transition height changes. */
+}
+#token-line { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; line-height:1.75; word-wrap:break-word; }
+.token { display:inline-block; padding:.15rem .25rem; border-radius:6px; margin:.05rem; transition: background-color .15s ease, color .15s ease; }
+.token.mask { color:#b0bec5; background:#f5f5f5; } /* Lighter mask token */
+.token.known { color:#b71c1c; background:#eceff1; } /* Unmasked token with red font */
+.token.new { color:#fff; background:#d32f2f; } /* Red highlight for new tokens */
+.status { display:flex; gap:1rem; margin-top:.5rem; color:#555; }
+#main {
+  max-width: none !important;   /* Remove theme's outer max-width cap */
+  width: 100% !important;       /* Use full available width */
+}
+#main > article.page {
+  max-width: none !important;   /* Allow article to expand wider */
+  width: 100% !important;       /* Fill container */
+  margin: 0 auto !important;    /* Keep centered */
+}
+#main > article.page .page__inner-wrap {
+  max-width: 2000px;            /* Set the actual readable line length */
+  margin: 0 auto;               /* Center horizontally */
+  padding: 0 24px;              /* Add padding to avoid touching edges */
+  box-sizing: border-box;       /* Include padding in width calculation */
+}
+#main > article.page .page__content {
+  width: 100%;           /* Set the width to 90% of the parent container. */
+  margin-left: auto;    /* Automatically calculate the left margin. */
+  margin-right: auto;   /* Automatically calculate the right margin. */
+  max-width: none;      /* This was in your original code. */
+}
+
+</style>
+
+
+{% include base_path %}
+
+{% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
+  {% include page__hero.html %}
+{% endif %}
+
+{% if page.url != "/" and site.breadcrumbs %}
+  {% unless paginator %}
+    {% include breadcrumbs.html %}
+  {% endunless %}
+{% endif %}
+
+<div id="main" role="main">
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    {% if page.title %}<meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
+    {% if page.excerpt %}<meta itemprop="description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
+    {% if page.date %}<meta itemprop="datePublished" content="{{ page.date | date: "%B %d, %Y" }}">{% endif %}
+    {% if page.modified %}<meta itemprop="dateModified" content="{{ page.modified | date: "%B %d, %Y" }}">{% endif %}
+
+    <div class="page__inner-wrap">
+      {% unless page.header.overlay_color or page.header.overlay_image %}
+        <header>
+          {% if page.title %}<h1 class="page__title" itemprop="headline">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</h1>{% endif %}
+          {% if page.read_time %}
+            <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
+          {% endif %}
+        {% if page.modified %}
+          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ page.modified | date: "%Y-%m-%d" }}">{{ page.modified | date: "%B %d, %Y" }}</time></p>
+        {% endif %}
+
+        {% if page.collection == 'teaching' %}
+          <p> {{ page.type }}, in <i><u>{{ page.venue }}</u></i>, {{ page.date | default: "1900-01-01" | date: "%Y" }}. </p>
+        {% elsif page.venue and page.date %}
+          <p>{{ page.author }}, in <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }}. </p>
+        {% elsif page.date %}
+          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
+        {% endif %}
+
+
+        {% if page.citation and page.paperurl %}
+          <p>Recommended citation: {{ page.citation }} <a href="{{ page.paperurl }}"><u>{{ page.paperurl }}</u></a></p>
+        {% elsif page.citation %}
+          <p>Recommended citation: {{ page.citation }} </p>
+        {% endif %}
+
+        </header>
+      {% endunless %}
+
+      <section class="page__content" itemprop="text">
+        {{ content }}
+        {% if page.link %}<div><a href="{{ page.link }}" class="btn">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
+        {% if page.links %}
+          <p>{{page.links | markdownify | remove: '<p>' | remove: '</p>' }} </p>
+        {% endif %}
+      </section>
+
+      <footer class="page__meta">
+        {% if site.data.ui-text[site.locale].meta_label %}
+          <h4 class="page__meta-title">{{ site.data.ui-text[site.locale].meta_label }}</h4>
+        {% endif %}
+        {% include page__taxonomy.html %}
+      </footer>
+
+      {% if page.share %}{% include social-share.html %}{% endif %}
+
+      {% include post_pagination.html %}
+    </div>
+
+    {% if site.comments.provider and page.comments %}
+      {% include comments.html %}
+    {% endif %}
+  </article>
+
+  {% comment %}<!-- only show related on a post page when not disabled -->{% endcomment %}
+  {% if page.id and page.related and site.related_posts.size > 0 %}
+    <div class="page__related">
+      {% if site.data.ui-text[site.locale].related_label %}
+        <h4 class="page__related-title">{{ site.data.ui-text[site.locale].related_label | default: "You May Also Enjoy" }}</h4>
+      {% endif %}
+      <div class="grid__wrapper">
+        {% for post in site.related_posts limit:4 %}
+          {% include archive-single.html type="grid" %}
+        {% endfor %}
+      </div>
+    </div>
+  {% endif %}
+
+</div>

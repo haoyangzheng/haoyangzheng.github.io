@@ -14,13 +14,10 @@ My research topics lie at the intersection of machine learning, dynamical system
 
 Research Interests
 ======
+* Generative Models
+* Discrete Diffusion Large Language Models
 * Reinforcement Learning (Thompson Sampling)
 * Markov Chain Monte Carlo
-* Data Driven Modeling
-* Uncertainty Quantification
-* Physics-Informed Neural Networks
-* Applied Mathematics
-* AI for Science
 
 News
 ======

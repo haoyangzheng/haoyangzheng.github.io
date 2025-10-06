@@ -1,0 +1,3383 @@
+{
+  "meta": {
+    "name": "ARM",
+    "seq_len": 375
+  },
+  "steps": [
+    {
+      "t": 0,
+      "reveals": [
+        {
+          "i": 0,
+          "tok": "How"
+        }
+      ]
+    },
+    {
+      "t": 1,
+      "reveals": [
+        {
+          "i": 1,
+          "tok": "this"
+        }
+      ]
+    },
+    {
+      "t": 2,
+      "reveals": [
+        {
+          "i": 2,
+          "tok": "could"
+        }
+      ]
+    },
+    {
+      "t": 3,
+      "reveals": [
+        {
+          "i": 3,
+          "tok": "be"
+        }
+      ]
+    },
+    {
+      "t": 4,
+      "reveals": [
+        {
+          "i": 4,
+          "tok": "well"
+        }
+      ]
+    },
+    {
+      "t": 5,
+      "reveals": [
+        {
+          "i": 5,
+          "tok": "thought"
+        }
+      ]
+    },
+    {
+      "t": 6,
+      "reveals": [
+        {
+          "i": 6,
+          "tok": "out"
+        }
+      ]
+    },
+    {
+      "t": 7,
+      "reveals": [
+        {
+          "i": 7,
+          "tok": "and"
+        }
+      ]
+    },
+    {
+      "t": 8,
+      "reveals": [
+        {
+          "i": 8,
+          "tok": "implemented"
+        }
+      ]
+    },
+    {
+      "t": 9,
+      "reveals": [
+        {
+          "i": 9,
+          "tok": "is"
+        }
+      ]
+    },
+    {
+      "t": 10,
+      "reveals": [
+        {
+          "i": 10,
+          "tok": "still"
+        }
+      ]
+    },
+    {
+      "t": 11,
+      "reveals": [
+        {
+          "i": 11,
+          "tok": "unclear."
+        }
+      ]
+    },
+    {
+      "t": 12,
+      "reveals": [
+        {
+          "i": 12,
+          "tok": "Without"
+        }
+      ]
+    },
+    {
+      "t": 13,
+      "reveals": [
+        {
+          "i": 13,
+          "tok": "possible"
+        }
+      ]
+    },
+    {
+      "t": 14,
+      "reveals": [
+        {
+          "i": 14,
+          "tok": "reform,"
+        }
+      ]
+    },
+    {
+      "t": 15,
+      "reveals": [
+        {
+          "i": 15,
+          "tok": "the"
+        }
+      ]
+    },
+    {
+      "t": 16,
+      "reveals": [
+        {
+          "i": 16,
+          "tok": "concentration"
+        }
+      ]
+    },
+    {
+      "t": 17,
+      "reveals": [
+        {
+          "i": 17,
+          "tok": "of"
+        }
+      ]
+    },
+    {
+      "t": 18,
+      "reveals": [
+        {
+          "i": 18,
+          "tok": "speculative"
+        }
+      ]
+    },
+    {
+      "t": 19,
+      "reveals": [
+        {
+          "i": 19,
+          "tok": "wealth"
+        }
+      ]
+    },
+    {
+      "t": 20,
+      "reveals": [
+        {
+          "i": 20,
+          "tok": "in"
+        }
+      ]
+    },
+    {
+      "t": 21,
+      "reveals": [
+        {
+          "i": 21,
+          "tok": "a"
+        }
+      ]
+    },
+    {
+      "t": 22,
+      "reveals": [
+        {
+          "i": 22,
+          "tok": "handful"
+        }
+      ]
+    },
+    {
+      "t": 23,
+      "reveals": [
+        {
+          "i": 23,
+          "tok": "of"
+        }
+      ]
+    },
+    {
+      "t": 24,
+      "reveals": [
+        {
+          "i": 24,
+          "tok": "great"
+        }
+      ]
+    },
+    {
+      "t": 25,
+      "reveals": [
+        {
+          "i": 25,
+          "tok": "banks"
+        }
+      ]
+    },
+    {
+      "t": 26,
+      "reveals": [
+        {
+          "i": 26,
+          "tok": "would"
+        }
+      ]
+    },
+    {
+      "t": 27,
+      "reveals": [
+        {
+          "i": 27,
+          "tok": "lead"
+        }
+      ]
+    },
+    {
+      "t": 28,
+      "reveals": [
+        {
+          "i": 28,
+          "tok": "to"
+        }
+      ]
+    },
+    {
+      "t": 29,
+      "reveals": [
+        {
+          "i": 29,
+          "tok": "a"
+        }
+      ]
+    },
+    {
+      "t": 30,
+      "reveals": [
+        {
+          "i": 30,
+          "tok": "more"
+        }
+      ]
+    },
+    {
+      "t": 31,
+      "reveals": [
+        {
+          "i": 31,
+          "tok": "profligate"
+        }
+      ]
+    },
+    {
+      "t": 32,
+      "reveals": [
+        {
+          "i": 32,
+          "tok": "financial"
+        }
+      ]
+    },
+    {
+      "t": 33,
+      "reveals": [
+        {
+          "i": 33,
+          "tok": "world"
+        }
+      ]
+    },
+    {
+      "t": 34,
+      "reveals": [
+        {
+          "i": 34,
+          "tok": "and"
+        }
+      ]
+    },
+    {
+      "t": 35,
+      "reveals": [
+        {
+          "i": 35,
+          "tok": "to"
+        }
+      ]
+    },
+    {
+      "t": 36,
+      "reveals": [
+        {
+          "i": 36,
+          "tok": "an"
+        }
+      ]
+    },
+    {
+      "t": 37,
+      "reveals": [
+        {
+          "i": 37,
+          "tok": "even"
+        }
+      ]
+    },
+    {
+      "t": 38,
+      "reveals": [
+        {
+          "i": 38,
+          "tok": "more"
+        }
+      ]
+    },
+    {
+      "t": 39,
+      "reveals": [
+        {
+          "i": 39,
+          "tok": "panmericous"
+        }
+      ]
+    },
+    {
+      "t": 40,
+      "reveals": [
+        {
+          "i": 40,
+          "tok": "industrialised"
+        }
+      ]
+    },
+    {
+      "t": 41,
+      "reveals": [
+        {
+          "i": 41,
+          "tok": "world"
+        }
+      ]
+    },
+    {
+      "t": 42,
+      "reveals": [
+        {
+          "i": 42,
+          "tok": "with"
+        }
+      ]
+    },
+    {
+      "t": 43,
+      "reveals": [
+        {
+          "i": 43,
+          "tok": "fewer"
+        }
+      ]
+    },
+    {
+      "t": 44,
+      "reveals": [
+        {
+          "i": 44,
+          "tok": "workers,"
+        }
+      ]
+    },
+    {
+      "t": 45,
+      "reveals": [
+        {
+          "i": 45,
+          "tok": "a"
+        }
+      ]
+    },
+    {
+      "t": 46,
+      "reveals": [
+        {
+          "i": 46,
+          "tok": "situation"
+        }
+      ]
+    },
+    {
+      "t": 47,
+      "reveals": [
+        {
+          "i": 47,
+          "tok": "of"
+        }
+      ]
+    },
+    {
+      "t": 48,
+      "reveals": [
+        {
+          "i": 48,
+          "tok": "bubbles"
+        }
+      ]
+    },
+    {
+      "t": 49,
+      "reveals": [
+        {
+          "i": 49,
+          "tok": "and"
+        }
+      ]
+    },
+    {
+      "t": 50,
+      "reveals": [
+        {
+          "i": 50,
+          "tok": "unemploy."
+        }
+      ]
+    },
+    {
+      "t": 51,
+      "reveals": [
+        {
+          "i": 51,
+          "tok": "Nothing"
+        }
+      ]
+    },
+    {
+      "t": 52,
+      "reveals": [
+        {
+          "i": 52,
+          "tok": "has"
+        }
+      ]
+    },
+    {
+      "t": 53,
+      "reveals": [
+        {
+          "i": 53,
+          "tok": "healed"
+        }
+      ]
+    },
+    {
+      "t": 54,
+      "reveals": [
+        {
+          "i": 54,
+          "tok": "the"
+        }
+      ]
+    },
+    {
+      "t": 55,
+      "reveals": [
+        {
+          "i": 55,
+          "tok": "economic"
+        }
+      ]
+    },
+    {
+      "t": 56,
+      "reveals": [
+        {
+          "i": 56,
+          "tok": "wounds"
+        }
+      ]
+    },
+    {
+      "t": 57,
+      "reveals": [
+        {
+          "i": 57,
+          "tok": "of"
+        }
+      ]
+    },
+    {
+      "t": 58,
+      "reveals": [
+        {
+          "i": 58,
+          "tok": "the"
+        }
+      ]
+    },
+    {
+      "t": 59,
+      "reveals": [
+        {
+          "i": 59,
+          "tok": "last"
+        }
+      ]
+    },
+    {
+      "t": 60,
+      "reveals": [
+        {
+          "i": 60,
+          "tok": "three"
+        }
+      ]
+    },
+    {
+      "t": 61,
+      "reveals": [
+        {
+          "i": 61,
+          "tok": "decades,"
+        }
+      ]
+    },
+    {
+      "t": 62,
+      "reveals": [
+        {
+          "i": 62,
+          "tok": "despite"
+        }
+      ]
+    },
+    {
+      "t": 63,
+      "reveals": [
+        {
+          "i": 63,
+          "tok": "the"
+        }
+      ]
+    },
+    {
+      "t": 64,
+      "reveals": [
+        {
+          "i": 64,
+          "tok": "efforts"
+        }
+      ]
+    },
+    {
+      "t": 65,
+      "reveals": [
+        {
+          "i": 65,
+          "tok": "of"
+        }
+      ]
+    },
+    {
+      "t": 66,
+      "reveals": [
+        {
+          "i": 66,
+          "tok": "many"
+        }
+      ]
+    },
+    {
+      "t": 67,
+      "reveals": [
+        {
+          "i": 67,
+          "tok": "on"
+        }
+      ]
+    },
+    {
+      "t": 68,
+      "reveals": [
+        {
+          "i": 68,
+          "tok": "the"
+        }
+      ]
+    },
+    {
+      "t": 69,
+      "reveals": [
+        {
+          "i": 69,
+          "tok": "left"
+        }
+      ]
+    },
+    {
+      "t": 70,
+      "reveals": [
+        {
+          "i": 70,
+          "tok": "and"
+        }
+      ]
+    },
+    {
+      "t": 71,
+      "reveals": [
+        {
+          "i": 71,
+          "tok": "the"
+        }
+      ]
+    },
+    {
+      "t": 72,
+      "reveals": [
+        {
+          "i": 72,
+          "tok": "right."
+        }
+      ]
+    },
+    {
+      "t": 73,
+      "reveals": [
+        {
+          "i": 73,
+          "tok": "They"
+        }
+      ]
+    },
+    {
+      "t": 74,
+      "reveals": [
+        {
+          "i": 74,
+          "tok": "made"
+        }
+      ]
+    },
+    {
+      "t": 75,
+      "reveals": [
+        {
+          "i": 75,
+          "tok": "common"
+        }
+      ]
+    },
+    {
+      "t": 76,
+      "reveals": [
+        {
+          "i": 76,
+          "tok": "cause"
+        }
+      ]
+    },
+    {
+      "t": 77,
+      "reveals": [
+        {
+          "i": 77,
+          "tok": "with"
+        }
+      ]
+    },
+    {
+      "t": 78,
+      "reveals": [
+        {
+          "i": 78,
+          "tok": "the"
+        }
+      ]
+    },
+    {
+      "t": 79,
+      "reveals": [
+        {
+          "i": 79,
+          "tok": "extreme"
+        }
+      ]
+    },
+    {
+      "t": 80,
+      "reveals": [
+        {
+          "i": 80,
+          "tok": "politicians"
+        }
+      ]
+    },
+    {
+      "t": 81,
+      "reveals": [
+        {
+          "i": 81,
+          "tok": "who"
+        }
+      ]
+    },
+    {
+      "t": 82,
+      "reveals": [
+        {
+          "i": 82,
+          "tok": "seized"
+        }
+      ]
+    },
+    {
+      "t": 83,
+      "reveals": [
+        {
+          "i": 83,
+          "tok": "control"
+        }
+      ]
+    },
+    {
+      "t": 84,
+      "reveals": [
+        {
+          "i": 84,
+          "tok": "of"
+        }
+      ]
+    },
+    {
+      "t": 85,
+      "reveals": [
+        {
+          "i": 85,
+          "tok": "the"
+        }
+      ]
+    },
+    {
+      "t": 86,
+      "reveals": [
+        {
+          "i": 86,
+          "tok": "2008"
+        }
+      ]
+    },
+    {
+      "t": 87,
+      "reveals": [
+        {
+          "i": 87,
+          "tok": "global"
+        }
+      ]
+    },
+    {
+      "t": 88,
+      "reveals": [
+        {
+          "i": 88,
+          "tok": "Financial"
+        }
+      ]
+    },
+    {
+      "t": 89,
+      "reveals": [
+        {
+          "i": 89,
+          "tok": "Crisis."
+        }
+      ]
+    },
+    {
+      "t": 90,
+      "reveals": [
+        {
+          "i": 90,
+          "tok": "Once"
+        }
+      ]
+    },
+    {
+      "t": 91,
+      "reveals": [
+        {
+          "i": 91,
+          "tok": "again,"
+        }
+      ]
+    },
+    {
+      "t": 92,
+      "reveals": [
+        {
+          "i": 92,
+          "tok": "these"
+        }
+      ]
+    },
+    {
+      "t": 93,
+      "reveals": [
+        {
+          "i": 93,
+          "tok": "reprehensible"
+        }
+      ]
+    },
+    {
+      "t": 94,
+      "reveals": [
+        {
+          "i": 94,
+          "tok": "crimes"
+        }
+      ]
+    },
+    {
+      "t": 95,
+      "reveals": [
+        {
+          "i": 95,
+          "tok": "serve"
+        }
+      ]
+    },
+    {
+      "t": 96,
+      "reveals": [
+        {
+          "i": 96,
+          "tok": "as"
+        }
+      ]
+    },
+    {
+      "t": 97,
+      "reveals": [
+        {
+          "i": 97,
+          "tok": "the"
+        }
+      ]
+    },
+    {
+      "t": 98,
+      "reveals": [
+        {
+          "i": 98,
+          "tok": "gloss"
+        }
+      ]
+    },
+    {
+      "t": 99,
+      "reveals": [
+        {
+          "i": 99,
+          "tok": "on"
+        }
+      ]
+    },
+    {
+      "t": 100,
+      "reveals": [
+        {
+          "i": 100,
+          "tok": "the"
+        }
+      ]
+    },
+    {
+      "t": 101,
+      "reveals": [
+        {
+          "i": 101,
+          "tok": "political"
+        }
+      ]
+    },
+    {
+      "t": 102,
+      "reveals": [
+        {
+          "i": 102,
+          "tok": "death"
+        }
+      ]
+    },
+    {
+      "t": 103,
+      "reveals": [
+        {
+          "i": 103,
+          "tok": "knell"
+        }
+      ]
+    },
+    {
+      "t": 104,
+      "reveals": [
+        {
+          "i": 104,
+          "tok": "of"
+        }
+      ]
+    },
+    {
+      "t": 105,
+      "reveals": [
+        {
+          "i": 105,
+          "tok": "finetuning."
+        }
+      ]
+    },
+    {
+      "t": 106,
+      "reveals": [
+        {
+          "i": 106,
+          "tok": "Climate"
+        }
+      ]
+    },
+    {
+      "t": 107,
+      "reveals": [
+        {
+          "i": 107,
+          "tok": "change"
+        }
+      ]
+    },
+    {
+      "t": 108,
+      "reveals": [
+        {
+          "i": 108,
+          "tok": "is"
+        }
+      ]
+    },
+    {
+      "t": 109,
+      "reveals": [
+        {
+          "i": 109,
+          "tok": "engulfing"
+        }
+      ]
+    },
+    {
+      "t": 110,
+      "reveals": [
+        {
+          "i": 110,
+          "tok": "the"
+        }
+      ]
+    },
+    {
+      "t": 111,
+      "reveals": [
+        {
+          "i": 111,
+          "tok": "globe"
+        }
+      ]
+    },
+    {
+      "t": 112,
+      "reveals": [
+        {
+          "i": 112,
+          "tok": "in"
+        }
+      ]
+    },
+    {
+      "t": 113,
+      "reveals": [
+        {
+          "i": 113,
+          "tok": "increasing"
+        }
+      ]
+    },
+    {
+      "t": 114,
+      "reveals": [
+        {
+          "i": 114,
+          "tok": "disputes"
+        }
+      ]
+    },
+    {
+      "t": 115,
+      "reveals": [
+        {
+          "i": 115,
+          "tok": "and"
+        }
+      ]
+    },
+    {
+      "t": 116,
+      "reveals": [
+        {
+          "i": 116,
+          "tok": "spills."
+        }
+      ]
+    },
+    {
+      "t": 117,
+      "reveals": [
+        {
+          "i": 117,
+          "tok": "Mr."
+        }
+      ]
+    },
+    {
+      "t": 118,
+      "reveals": [
+        {
+          "i": 118,
+          "tok": "De"
+        }
+      ]
+    },
+    {
+      "t": 119,
+      "reveals": [
+        {
+          "i": 119,
+          "tok": "Luca"
+        }
+      ]
+    },
+    {
+      "t": 120,
+      "reveals": [
+        {
+          "i": 120,
+          "tok": "noted"
+        }
+      ]
+    },
+    {
+      "t": 121,
+      "reveals": [
+        {
+          "i": 121,
+          "tok": "that"
+        }
+      ]
+    },
+    {
+      "t": 122,
+      "reveals": [
+        {
+          "i": 122,
+          "tok": "the"
+        }
+      ]
+    },
+    {
+      "t": 123,
+      "reveals": [
+        {
+          "i": 123,
+          "tok": "crisis"
+        }
+      ]
+    },
+    {
+      "t": 124,
+      "reveals": [
+        {
+          "i": 124,
+          "tok": "is"
+        }
+      ]
+    },
+    {
+      "t": 125,
+      "reveals": [
+        {
+          "i": 125,
+          "tok": "emerging."
+        }
+      ]
+    },
+    {
+      "t": 126,
+      "reveals": [
+        {
+          "i": 126,
+          "tok": "The"
+        }
+      ]
+    },
+    {
+      "t": 127,
+      "reveals": [
+        {
+          "i": 127,
+          "tok": "public"
+        }
+      ]
+    },
+    {
+      "t": 128,
+      "reveals": [
+        {
+          "i": 128,
+          "tok": "schools"
+        }
+      ]
+    },
+    {
+      "t": 129,
+      "reveals": [
+        {
+          "i": 129,
+          "tok": "in"
+        }
+      ]
+    },
+    {
+      "t": 130,
+      "reveals": [
+        {
+          "i": 130,
+          "tok": "its"
+        }
+      ]
+    },
+    {
+      "t": 131,
+      "reveals": [
+        {
+          "i": 131,
+          "tok": "cities"
+        }
+      ]
+    },
+    {
+      "t": 132,
+      "reveals": [
+        {
+          "i": 132,
+          "tok": "in"
+        }
+      ]
+    },
+    {
+      "t": 133,
+      "reveals": [
+        {
+          "i": 133,
+          "tok": "Brussels,"
+        }
+      ]
+    },
+    {
+      "t": 134,
+      "reveals": [
+        {
+          "i": 134,
+          "tok": "Berlin,"
+        }
+      ]
+    },
+    {
+      "t": 135,
+      "reveals": [
+        {
+          "i": 135,
+          "tok": "Paris,"
+        }
+      ]
+    },
+    {
+      "t": 136,
+      "reveals": [
+        {
+          "i": 136,
+          "tok": "Dussel,"
+        }
+      ]
+    },
+    {
+      "t": 137,
+      "reveals": [
+        {
+          "i": 137,
+          "tok": "Dortmund,"
+        }
+      ]
+    },
+    {
+      "t": 138,
+      "reveals": [
+        {
+          "i": 138,
+          "tok": "Milliken,"
+        }
+      ]
+    },
+    {
+      "t": 139,
+      "reveals": [
+        {
+          "i": 139,
+          "tok": "Pettergesch,"
+        }
+      ]
+    },
+    {
+      "t": 140,
+      "reveals": [
+        {
+          "i": 140,
+          "tok": "Hamburg,"
+        }
+      ]
+    },
+    {
+      "t": 141,
+      "reveals": [
+        {
+          "i": 141,
+          "tok": "Salzburg"
+        }
+      ]
+    },
+    {
+      "t": 142,
+      "reveals": [
+        {
+          "i": 142,
+          "tok": "and"
+        }
+      ]
+    },
+    {
+      "t": 143,
+      "reveals": [
+        {
+          "i": 143,
+          "tok": "Bielefeld"
+        }
+      ]
+    },
+    {
+      "t": 144,
+      "reveals": [
+        {
+          "i": 144,
+          "tok": "are"
+        }
+      ]
+    },
+    {
+      "t": 145,
+      "reveals": [
+        {
+          "i": 145,
+          "tok": "preparing"
+        }
+      ]
+    },
+    {
+      "t": 146,
+      "reveals": [
+        {
+          "i": 146,
+          "tok": "for"
+        }
+      ]
+    },
+    {
+      "t": 147,
+      "reveals": [
+        {
+          "i": 147,
+          "tok": "the"
+        }
+      ]
+    },
+    {
+      "t": 148,
+      "reveals": [
+        {
+          "i": 148,
+          "tok": "next"
+        }
+      ]
+    },
+    {
+      "t": 149,
+      "reveals": [
+        {
+          "i": 149,
+          "tok": "stage"
+        }
+      ]
+    },
+    {
+      "t": 150,
+      "reveals": [
+        {
+          "i": 150,
+          "tok": "of"
+        }
+      ]
+    },
+    {
+      "t": 151,
+      "reveals": [
+        {
+          "i": 151,
+          "tok": "the"
+        }
+      ]
+    },
+    {
+      "t": 152,
+      "reveals": [
+        {
+          "i": 152,
+          "tok": "high-speed"
+        }
+      ]
+    },
+    {
+      "t": 153,
+      "reveals": [
+        {
+          "i": 153,
+          "tok": "rail"
+        }
+      ]
+    },
+    {
+      "t": 154,
+      "reveals": [
+        {
+          "i": 154,
+          "tok": "link"
+        }
+      ]
+    },
+    {
+      "t": 155,
+      "reveals": [
+        {
+          "i": 155,
+          "tok": "to"
+        }
+      ]
+    },
+    {
+      "t": 156,
+      "reveals": [
+        {
+          "i": 156,
+          "tok": "Germany’s"
+        }
+      ]
+    },
+    {
+      "t": 157,
+      "reveals": [
+        {
+          "i": 157,
+          "tok": "second"
+        }
+      ]
+    },
+    {
+      "t": 158,
+      "reveals": [
+        {
+          "i": 158,
+          "tok": "city"
+        }
+      ]
+    },
+    {
+      "t": 159,
+      "reveals": [
+        {
+          "i": 159,
+          "tok": "Berlin,"
+        }
+      ]
+    },
+    {
+      "t": 160,
+      "reveals": [
+        {
+          "i": 160,
+          "tok": "it"
+        }
+      ]
+    },
+    {
+      "t": 161,
+      "reveals": [
+        {
+          "i": 161,
+          "tok": "will"
+        }
+      ]
+    },
+    {
+      "t": 162,
+      "reveals": [
+        {
+          "i": 162,
+          "tok": "be"
+        }
+      ]
+    },
+    {
+      "t": 163,
+      "reveals": [
+        {
+          "i": 163,
+          "tok": "announced."
+        }
+      ]
+    },
+    {
+      "t": 164,
+      "reveals": [
+        {
+          "i": 164,
+          "tok": "Speak"
+        }
+      ]
+    },
+    {
+      "t": 165,
+      "reveals": [
+        {
+          "i": 165,
+          "tok": "exclusively"
+        }
+      ]
+    },
+    {
+      "t": 166,
+      "reveals": [
+        {
+          "i": 166,
+          "tok": "to"
+        }
+      ]
+    },
+    {
+      "t": 167,
+      "reveals": [
+        {
+          "i": 167,
+          "tok": "SPIEGEL"
+        }
+      ]
+    },
+    {
+      "t": 168,
+      "reveals": [
+        {
+          "i": 168,
+          "tok": "ONLINE,"
+        }
+      ]
+    },
+    {
+      "t": 169,
+      "reveals": [
+        {
+          "i": 169,
+          "tok": "Brussels"
+        }
+      ]
+    },
+    {
+      "t": 170,
+      "reveals": [
+        {
+          "i": 170,
+          "tok": "chief"
+        }
+      ]
+    },
+    {
+      "t": 171,
+      "reveals": [
+        {
+          "i": 171,
+          "tok": "administrator"
+        }
+      ]
+    },
+    {
+      "t": 172,
+      "reveals": [
+        {
+          "i": 172,
+          "tok": "of"
+        }
+      ]
+    },
+    {
+      "t": 173,
+      "reveals": [
+        {
+          "i": 173,
+          "tok": "the"
+        }
+      ]
+    },
+    {
+      "t": 174,
+      "reveals": [
+        {
+          "i": 174,
+          "tok": "public"
+        }
+      ]
+    },
+    {
+      "t": 175,
+      "reveals": [
+        {
+          "i": 175,
+          "tok": "sector"
+        }
+      ]
+    },
+    {
+      "t": 176,
+      "reveals": [
+        {
+          "i": 176,
+          "tok": "franchise,"
+        }
+      ]
+    },
+    {
+      "t": 177,
+      "reveals": [
+        {
+          "i": 177,
+          "tok": "Michael"
+        }
+      ]
+    },
+    {
+      "t": 178,
+      "reveals": [
+        {
+          "i": 178,
+          "tok": "Neri,"
+        }
+      ]
+    },
+    {
+      "t": 179,
+      "reveals": [
+        {
+          "i": 179,
+          "tok": "said"
+        }
+      ]
+    },
+    {
+      "t": 180,
+      "reveals": [
+        {
+          "i": 180,
+          "tok": "that"
+        }
+      ]
+    },
+    {
+      "t": 181,
+      "reveals": [
+        {
+          "i": 181,
+          "tok": "the"
+        }
+      ]
+    },
+    {
+      "t": 182,
+      "reveals": [
+        {
+          "i": 182,
+          "tok": "N900"
+        }
+      ]
+    },
+    {
+      "t": 183,
+      "reveals": [
+        {
+          "i": 183,
+          "tok": "project"
+        }
+      ]
+    },
+    {
+      "t": 184,
+      "reveals": [
+        {
+          "i": 184,
+          "tok": "was"
+        }
+      ]
+    },
+    {
+      "t": 185,
+      "reveals": [
+        {
+          "i": 185,
+          "tok": "the"
+        }
+      ]
+    },
+    {
+      "t": 186,
+      "reveals": [
+        {
+          "i": 186,
+          "tok": "first"
+        }
+      ]
+    },
+    {
+      "t": 187,
+      "reveals": [
+        {
+          "i": 187,
+          "tok": "in"
+        }
+      ]
+    },
+    {
+      "t": 188,
+      "reveals": [
+        {
+          "i": 188,
+          "tok": "the"
+        }
+      ]
+    },
+    {
+      "t": 189,
+      "reveals": [
+        {
+          "i": 189,
+          "tok": "world"
+        }
+      ]
+    },
+    {
+      "t": 190,
+      "reveals": [
+        {
+          "i": 190,
+          "tok": "to"
+        }
+      ]
+    },
+    {
+      "t": 191,
+      "reveals": [
+        {
+          "i": 191,
+          "tok": "be"
+        }
+      ]
+    },
+    {
+      "t": 192,
+      "reveals": [
+        {
+          "i": 192,
+          "tok": "managed"
+        }
+      ]
+    },
+    {
+      "t": 193,
+      "reveals": [
+        {
+          "i": 193,
+          "tok": "under"
+        }
+      ]
+    },
+    {
+      "t": 194,
+      "reveals": [
+        {
+          "i": 194,
+          "tok": "a"
+        }
+      ]
+    },
+    {
+      "t": 195,
+      "reveals": [
+        {
+          "i": 195,
+          "tok": "reliable,"
+        }
+      ]
+    },
+    {
+      "t": 196,
+      "reveals": [
+        {
+          "i": 196,
+          "tok": "reliable"
+        }
+      ]
+    },
+    {
+      "t": 197,
+      "reveals": [
+        {
+          "i": 197,
+          "tok": "district/city"
+        }
+      ]
+    },
+    {
+      "t": 198,
+      "reveals": [
+        {
+          "i": 198,
+          "tok": "contract."
+        }
+      ]
+    },
+    {
+      "t": 199,
+      "reveals": [
+        {
+          "i": 199,
+          "tok": "According"
+        }
+      ]
+    },
+    {
+      "t": 200,
+      "reveals": [
+        {
+          "i": 200,
+          "tok": "to"
+        }
+      ]
+    },
+    {
+      "t": 201,
+      "reveals": [
+        {
+          "i": 201,
+          "tok": "Neri,"
+        }
+      ]
+    },
+    {
+      "t": 202,
+      "reveals": [
+        {
+          "i": 202,
+          "tok": "family"
+        }
+      ]
+    },
+    {
+      "t": 203,
+      "reveals": [
+        {
+          "i": 203,
+          "tok": "or"
+        }
+      ]
+    },
+    {
+      "t": 204,
+      "reveals": [
+        {
+          "i": 204,
+          "tok": "sickcare"
+        }
+      ]
+    },
+    {
+      "t": 205,
+      "reveals": [
+        {
+          "i": 205,
+          "tok": "will"
+        }
+      ]
+    },
+    {
+      "t": 206,
+      "reveals": [
+        {
+          "i": 206,
+          "tok": "be"
+        }
+      ]
+    },
+    {
+      "t": 207,
+      "reveals": [
+        {
+          "i": 207,
+          "tok": "covered"
+        }
+      ]
+    },
+    {
+      "t": 208,
+      "reveals": [
+        {
+          "i": 208,
+          "tok": "by"
+        }
+      ]
+    },
+    {
+      "t": 209,
+      "reveals": [
+        {
+          "i": 209,
+          "tok": "the"
+        }
+      ]
+    },
+    {
+      "t": 210,
+      "reveals": [
+        {
+          "i": 210,
+          "tok": "public"
+        }
+      ]
+    },
+    {
+      "t": 211,
+      "reveals": [
+        {
+          "i": 211,
+          "tok": "sector"
+        }
+      ]
+    },
+    {
+      "t": 212,
+      "reveals": [
+        {
+          "i": 212,
+          "tok": "pension"
+        }
+      ]
+    },
+    {
+      "t": 213,
+      "reveals": [
+        {
+          "i": 213,
+          "tok": "fund"
+        }
+      ]
+    },
+    {
+      "t": 214,
+      "reveals": [
+        {
+          "i": 214,
+          "tok": "or"
+        }
+      ]
+    },
+    {
+      "t": 215,
+      "reveals": [
+        {
+          "i": 215,
+          "tok": "the"
+        }
+      ]
+    },
+    {
+      "t": 216,
+      "reveals": [
+        {
+          "i": 216,
+          "tok": "social"
+        }
+      ]
+    },
+    {
+      "t": 217,
+      "reveals": [
+        {
+          "i": 217,
+          "tok": "security"
+        }
+      ]
+    },
+    {
+      "t": 218,
+      "reveals": [
+        {
+          "i": 218,
+          "tok": "fund."
+        }
+      ]
+    },
+    {
+      "t": 219,
+      "reveals": [
+        {
+          "i": 219,
+          "tok": "The"
+        }
+      ]
+    },
+    {
+      "t": 220,
+      "reveals": [
+        {
+          "i": 220,
+          "tok": "N900"
+        }
+      ]
+    },
+    {
+      "t": 221,
+      "reveals": [
+        {
+          "i": 221,
+          "tok": "will"
+        }
+      ]
+    },
+    {
+      "t": 222,
+      "reveals": [
+        {
+          "i": 222,
+          "tok": "extend"
+        }
+      ]
+    },
+    {
+      "t": 223,
+      "reveals": [
+        {
+          "i": 223,
+          "tok": "a"
+        }
+      ]
+    },
+    {
+      "t": 224,
+      "reveals": [
+        {
+          "i": 224,
+          "tok": "line"
+        }
+      ]
+    },
+    {
+      "t": 225,
+      "reveals": [
+        {
+          "i": 225,
+          "tok": "from"
+        }
+      ]
+    },
+    {
+      "t": 226,
+      "reveals": [
+        {
+          "i": 226,
+          "tok": "Lower"
+        }
+      ]
+    },
+    {
+      "t": 227,
+      "reveals": [
+        {
+          "i": 227,
+          "tok": "Saxony"
+        }
+      ]
+    },
+    {
+      "t": 228,
+      "reveals": [
+        {
+          "i": 228,
+          "tok": "to"
+        }
+      ]
+    },
+    {
+      "t": 229,
+      "reveals": [
+        {
+          "i": 229,
+          "tok": "Schleswig"
+        }
+      ]
+    },
+    {
+      "t": 230,
+      "reveals": [
+        {
+          "i": 230,
+          "tok": "Holstein,"
+        }
+      ]
+    },
+    {
+      "t": 231,
+      "reveals": [
+        {
+          "i": 231,
+          "tok": "potentially"
+        }
+      ]
+    },
+    {
+      "t": 232,
+      "reveals": [
+        {
+          "i": 232,
+          "tok": "up"
+        }
+      ]
+    },
+    {
+      "t": 233,
+      "reveals": [
+        {
+          "i": 233,
+          "tok": "to"
+        }
+      ]
+    },
+    {
+      "t": 234,
+      "reveals": [
+        {
+          "i": 234,
+          "tok": "65"
+        }
+      ]
+    },
+    {
+      "t": 235,
+      "reveals": [
+        {
+          "i": 235,
+          "tok": "kilometers."
+        }
+      ]
+    },
+    {
+      "t": 236,
+      "reveals": [
+        {
+          "i": 236,
+          "tok": "The"
+        }
+      ]
+    },
+    {
+      "t": 237,
+      "reveals": [
+        {
+          "i": 237,
+          "tok": "existing"
+        }
+      ]
+    },
+    {
+      "t": 238,
+      "reveals": [
+        {
+          "i": 238,
+          "tok": "train"
+        }
+      ]
+    },
+    {
+      "t": 239,
+      "reveals": [
+        {
+          "i": 239,
+          "tok": "line"
+        }
+      ]
+    },
+    {
+      "t": 240,
+      "reveals": [
+        {
+          "i": 240,
+          "tok": "is,"
+        }
+      ]
+    },
+    {
+      "t": 241,
+      "reveals": [
+        {
+          "i": 241,
+          "tok": "however,"
+        }
+      ]
+    },
+    {
+      "t": 242,
+      "reveals": [
+        {
+          "i": 242,
+          "tok": "less"
+        }
+      ]
+    },
+    {
+      "t": 243,
+      "reveals": [
+        {
+          "i": 243,
+          "tok": "than"
+        }
+      ]
+    },
+    {
+      "t": 244,
+      "reveals": [
+        {
+          "i": 244,
+          "tok": "one"
+        }
+      ]
+    },
+    {
+      "t": 245,
+      "reveals": [
+        {
+          "i": 245,
+          "tok": "kilometer."
+        }
+      ]
+    },
+    {
+      "t": 246,
+      "reveals": [
+        {
+          "i": 246,
+          "tok": "This"
+        }
+      ]
+    },
+    {
+      "t": 247,
+      "reveals": [
+        {
+          "i": 247,
+          "tok": "project"
+        }
+      ]
+    },
+    {
+      "t": 248,
+      "reveals": [
+        {
+          "i": 248,
+          "tok": "has"
+        }
+      ]
+    },
+    {
+      "t": 249,
+      "reveals": [
+        {
+          "i": 249,
+          "tok": "immediate"
+        }
+      ]
+    },
+    {
+      "t": 250,
+      "reveals": [
+        {
+          "i": 250,
+          "tok": "and"
+        }
+      ]
+    },
+    {
+      "t": 251,
+      "reveals": [
+        {
+          "i": 251,
+          "tok": "significant"
+        }
+      ]
+    },
+    {
+      "t": 252,
+      "reveals": [
+        {
+          "i": 252,
+          "tok": "social"
+        }
+      ]
+    },
+    {
+      "t": 253,
+      "reveals": [
+        {
+          "i": 253,
+          "tok": "costs,"
+        }
+      ]
+    },
+    {
+      "t": 254,
+      "reveals": [
+        {
+          "i": 254,
+          "tok": "a"
+        }
+      ]
+    },
+    {
+      "t": 255,
+      "reveals": [
+        {
+          "i": 255,
+          "tok": "testament"
+        }
+      ]
+    },
+    {
+      "t": 256,
+      "reveals": [
+        {
+          "i": 256,
+          "tok": "to"
+        }
+      ]
+    },
+    {
+      "t": 257,
+      "reveals": [
+        {
+          "i": 257,
+          "tok": "its"
+        }
+      ]
+    },
+    {
+      "t": 258,
+      "reveals": [
+        {
+          "i": 258,
+          "tok": "importance."
+        }
+      ]
+    },
+    {
+      "t": 259,
+      "reveals": [
+        {
+          "i": 259,
+          "tok": "The"
+        }
+      ]
+    },
+    {
+      "t": 260,
+      "reveals": [
+        {
+          "i": 260,
+          "tok": "tautoshaft"
+        }
+      ]
+    },
+    {
+      "t": 261,
+      "reveals": [
+        {
+          "i": 261,
+          "tok": "walk"
+        }
+      ]
+    },
+    {
+      "t": 262,
+      "reveals": [
+        {
+          "i": 262,
+          "tok": "is"
+        }
+      ]
+    },
+    {
+      "t": 263,
+      "reveals": [
+        {
+          "i": 263,
+          "tok": "an"
+        }
+      ]
+    },
+    {
+      "t": 264,
+      "reveals": [
+        {
+          "i": 264,
+          "tok": "event"
+        }
+      ]
+    },
+    {
+      "t": 265,
+      "reveals": [
+        {
+          "i": 265,
+          "tok": "conducted"
+        }
+      ]
+    },
+    {
+      "t": 266,
+      "reveals": [
+        {
+          "i": 266,
+          "tok": "by"
+        }
+      ]
+    },
+    {
+      "t": 267,
+      "reveals": [
+        {
+          "i": 267,
+          "tok": "clothesmakers"
+        }
+      ]
+    },
+    {
+      "t": 268,
+      "reveals": [
+        {
+          "i": 268,
+          "tok": "in"
+        }
+      ]
+    },
+    {
+      "t": 269,
+      "reveals": [
+        {
+          "i": 269,
+          "tok": "which"
+        }
+      ]
+    },
+    {
+      "t": 270,
+      "reveals": [
+        {
+          "i": 270,
+          "tok": "customers"
+        }
+      ]
+    },
+    {
+      "t": 271,
+      "reveals": [
+        {
+          "i": 271,
+          "tok": "stand"
+        }
+      ]
+    },
+    {
+      "t": 272,
+      "reveals": [
+        {
+          "i": 272,
+          "tok": "in"
+        }
+      ]
+    },
+    {
+      "t": 273,
+      "reveals": [
+        {
+          "i": 273,
+          "tok": "taut"
+        }
+      ]
+    },
+    {
+      "t": 274,
+      "reveals": [
+        {
+          "i": 274,
+          "tok": "silk,"
+        }
+      ]
+    },
+    {
+      "t": 275,
+      "reveals": [
+        {
+          "i": 275,
+          "tok": "art"
+        }
+      ]
+    },
+    {
+      "t": 276,
+      "reveals": [
+        {
+          "i": 276,
+          "tok": "form"
+        }
+      ]
+    },
+    {
+      "t": 277,
+      "reveals": [
+        {
+          "i": 277,
+          "tok": "and"
+        }
+      ]
+    },
+    {
+      "t": 278,
+      "reveals": [
+        {
+          "i": 278,
+          "tok": "traditional"
+        }
+      ]
+    },
+    {
+      "t": 279,
+      "reveals": [
+        {
+          "i": 279,
+          "tok": "costumes"
+        }
+      ]
+    },
+    {
+      "t": 280,
+      "reveals": [
+        {
+          "i": 280,
+          "tok": "dressed"
+        }
+      ]
+    },
+    {
+      "t": 281,
+      "reveals": [
+        {
+          "i": 281,
+          "tok": "in"
+        }
+      ]
+    },
+    {
+      "t": 282,
+      "reveals": [
+        {
+          "i": 282,
+          "tok": "silk,"
+        }
+      ]
+    },
+    {
+      "t": 283,
+      "reveals": [
+        {
+          "i": 283,
+          "tok": "polyester"
+        }
+      ]
+    },
+    {
+      "t": 284,
+      "reveals": [
+        {
+          "i": 284,
+          "tok": "and"
+        }
+      ]
+    },
+    {
+      "t": 285,
+      "reveals": [
+        {
+          "i": 285,
+          "tok": "cotton"
+        }
+      ]
+    },
+    {
+      "t": 286,
+      "reveals": [
+        {
+          "i": 286,
+          "tok": "garments."
+        }
+      ]
+    },
+    {
+      "t": 287,
+      "reveals": [
+        {
+          "i": 287,
+          "tok": "The"
+        }
+      ]
+    },
+    {
+      "t": 288,
+      "reveals": [
+        {
+          "i": 288,
+          "tok": "costumes"
+        }
+      ]
+    },
+    {
+      "t": 289,
+      "reveals": [
+        {
+          "i": 289,
+          "tok": "range"
+        }
+      ]
+    },
+    {
+      "t": 290,
+      "reveals": [
+        {
+          "i": 290,
+          "tok": "from"
+        }
+      ]
+    },
+    {
+      "t": 291,
+      "reveals": [
+        {
+          "i": 291,
+          "tok": "graphic"
+        }
+      ]
+    },
+    {
+      "t": 292,
+      "reveals": [
+        {
+          "i": 292,
+          "tok": "and"
+        }
+      ]
+    },
+    {
+      "t": 293,
+      "reveals": [
+        {
+          "i": 293,
+          "tok": "traditional"
+        }
+      ]
+    },
+    {
+      "t": 294,
+      "reveals": [
+        {
+          "i": 294,
+          "tok": "to"
+        }
+      ]
+    },
+    {
+      "t": 295,
+      "reveals": [
+        {
+          "i": 295,
+          "tok": "modern"
+        }
+      ]
+    },
+    {
+      "t": 296,
+      "reveals": [
+        {
+          "i": 296,
+          "tok": "and"
+        }
+      ]
+    },
+    {
+      "t": 297,
+      "reveals": [
+        {
+          "i": 297,
+          "tok": "even"
+        }
+      ]
+    },
+    {
+      "t": 298,
+      "reveals": [
+        {
+          "i": 298,
+          "tok": "psychedelic."
+        }
+      ]
+    },
+    {
+      "t": 299,
+      "reveals": [
+        {
+          "i": 299,
+          "tok": "Katy"
+        }
+      ]
+    },
+    {
+      "t": 300,
+      "reveals": [
+        {
+          "i": 300,
+          "tok": "Lee,"
+        }
+      ]
+    },
+    {
+      "t": 301,
+      "reveals": [
+        {
+          "i": 301,
+          "tok": "23,"
+        }
+      ]
+    },
+    {
+      "t": 302,
+      "reveals": [
+        {
+          "i": 302,
+          "tok": "is"
+        }
+      ]
+    },
+    {
+      "t": 303,
+      "reveals": [
+        {
+          "i": 303,
+          "tok": "one"
+        }
+      ]
+    },
+    {
+      "t": 304,
+      "reveals": [
+        {
+          "i": 304,
+          "tok": "of"
+        }
+      ]
+    },
+    {
+      "t": 305,
+      "reveals": [
+        {
+          "i": 305,
+          "tok": "thousands"
+        }
+      ]
+    },
+    {
+      "t": 306,
+      "reveals": [
+        {
+          "i": 306,
+          "tok": "of"
+        }
+      ]
+    },
+    {
+      "t": 307,
+      "reveals": [
+        {
+          "i": 307,
+          "tok": "people"
+        }
+      ]
+    },
+    {
+      "t": 308,
+      "reveals": [
+        {
+          "i": 308,
+          "tok": "who"
+        }
+      ]
+    },
+    {
+      "t": 309,
+      "reveals": [
+        {
+          "i": 309,
+          "tok": "participated"
+        }
+      ]
+    },
+    {
+      "t": 310,
+      "reveals": [
+        {
+          "i": 310,
+          "tok": "in"
+        }
+      ]
+    },
+    {
+      "t": 311,
+      "reveals": [
+        {
+          "i": 311,
+          "tok": "the"
+        }
+      ]
+    },
+    {
+      "t": 312,
+      "reveals": [
+        {
+          "i": 312,
+          "tok": "tautoshaft"
+        }
+      ]
+    },
+    {
+      "t": 313,
+      "reveals": [
+        {
+          "i": 313,
+          "tok": "walk"
+        }
+      ]
+    },
+    {
+      "t": 314,
+      "reveals": [
+        {
+          "i": 314,
+          "tok": "in"
+        }
+      ]
+    },
+    {
+      "t": 315,
+      "reveals": [
+        {
+          "i": 315,
+          "tok": "Brooklyn"
+        }
+      ]
+    },
+    {
+      "t": 316,
+      "reveals": [
+        {
+          "i": 316,
+          "tok": "on"
+        }
+      ]
+    },
+    {
+      "t": 317,
+      "reveals": [
+        {
+          "i": 317,
+          "tok": "Friday."
+        }
+      ]
+    },
+    {
+      "t": 318,
+      "reveals": [
+        {
+          "i": 318,
+          "tok": "The"
+        }
+      ]
+    },
+    {
+      "t": 319,
+      "reveals": [
+        {
+          "i": 319,
+          "tok": "walk"
+        }
+      ]
+    },
+    {
+      "t": 320,
+      "reveals": [
+        {
+          "i": 320,
+          "tok": "is"
+        }
+      ]
+    },
+    {
+      "t": 321,
+      "reveals": [
+        {
+          "i": 321,
+          "tok": "titled"
+        }
+      ]
+    },
+    {
+      "t": 322,
+      "reveals": [
+        {
+          "i": 322,
+          "tok": "“Tautoshaft"
+        }
+      ]
+    },
+    {
+      "t": 323,
+      "reveals": [
+        {
+          "i": 323,
+          "tok": "Hike"
+        }
+      ]
+    },
+    {
+      "t": 324,
+      "reveals": [
+        {
+          "i": 324,
+          "tok": "for"
+        }
+      ]
+    },
+    {
+      "t": 325,
+      "reveals": [
+        {
+          "i": 325,
+          "tok": "Independence"
+        }
+      ]
+    },
+    {
+      "t": 326,
+      "reveals": [
+        {
+          "i": 326,
+          "tok": "Day.”"
+        }
+      ]
+    },
+    {
+      "t": 327,
+      "reveals": [
+        {
+          "i": 327,
+          "tok": "Some"
+        }
+      ]
+    },
+    {
+      "t": 328,
+      "reveals": [
+        {
+          "i": 328,
+          "tok": "drew"
+        }
+      ]
+    },
+    {
+      "t": 329,
+      "reveals": [
+        {
+          "i": 329,
+          "tok": "up"
+        }
+      ]
+    },
+    {
+      "t": 330,
+      "reveals": [
+        {
+          "i": 330,
+          "tok": "their"
+        }
+      ]
+    },
+    {
+      "t": 331,
+      "reveals": [
+        {
+          "i": 331,
+          "tok": "costumes"
+        }
+      ]
+    },
+    {
+      "t": 332,
+      "reveals": [
+        {
+          "i": 332,
+          "tok": "to"
+        }
+      ]
+    },
+    {
+      "t": 333,
+      "reveals": [
+        {
+          "i": 333,
+          "tok": "mimic"
+        }
+      ]
+    },
+    {
+      "t": 334,
+      "reveals": [
+        {
+          "i": 334,
+          "tok": "the"
+        }
+      ]
+    },
+    {
+      "t": 335,
+      "reveals": [
+        {
+          "i": 335,
+          "tok": "beach"
+        }
+      ]
+    },
+    {
+      "t": 336,
+      "reveals": [
+        {
+          "i": 336,
+          "tok": "scene."
+        }
+      ]
+    },
+    {
+      "t": 337,
+      "reveals": [
+        {
+          "i": 337,
+          "tok": "After"
+        }
+      ]
+    },
+    {
+      "t": 338,
+      "reveals": [
+        {
+          "i": 338,
+          "tok": "the"
+        }
+      ]
+    },
+    {
+      "t": 339,
+      "reveals": [
+        {
+          "i": 339,
+          "tok": "walk,"
+        }
+      ]
+    },
+    {
+      "t": 340,
+      "reveals": [
+        {
+          "i": 340,
+          "tok": "great"
+        }
+      ]
+    },
+    {
+      "t": 341,
+      "reveals": [
+        {
+          "i": 341,
+          "tok": "wealth"
+        }
+      ]
+    },
+    {
+      "t": 342,
+      "reveals": [
+        {
+          "i": 342,
+          "tok": "emerged"
+        }
+      ]
+    },
+    {
+      "t": 343,
+      "reveals": [
+        {
+          "i": 343,
+          "tok": "as"
+        }
+      ]
+    },
+    {
+      "t": 344,
+      "reveals": [
+        {
+          "i": 344,
+          "tok": "it"
+        }
+      ]
+    },
+    {
+      "t": 345,
+      "reveals": [
+        {
+          "i": 345,
+          "tok": "attracted"
+        }
+      ]
+    },
+    {
+      "t": 346,
+      "reveals": [
+        {
+          "i": 346,
+          "tok": "more"
+        }
+      ]
+    },
+    {
+      "t": 347,
+      "reveals": [
+        {
+          "i": 347,
+          "tok": "than"
+        }
+      ]
+    },
+    {
+      "t": 348,
+      "reveals": [
+        {
+          "i": 348,
+          "tok": "a"
+        }
+      ]
+    },
+    {
+      "t": 349,
+      "reveals": [
+        {
+          "i": 349,
+          "tok": "thousand"
+        }
+      ]
+    },
+    {
+      "t": 350,
+      "reveals": [
+        {
+          "i": 350,
+          "tok": "people"
+        }
+      ]
+    },
+    {
+      "t": 351,
+      "reveals": [
+        {
+          "i": 351,
+          "tok": "to"
+        }
+      ]
+    },
+    {
+      "t": 352,
+      "reveals": [
+        {
+          "i": 352,
+          "tok": "the"
+        }
+      ]
+    },
+    {
+      "t": 353,
+      "reveals": [
+        {
+          "i": 353,
+          "tok": "Capacities"
+        }
+      ]
+    },
+    {
+      "t": 354,
+      "reveals": [
+        {
+          "i": 354,
+          "tok": "Event"
+        }
+      ]
+    },
+    {
+      "t": 355,
+      "reveals": [
+        {
+          "i": 355,
+          "tok": "Zone,"
+        }
+      ]
+    },
+    {
+      "t": 356,
+      "reveals": [
+        {
+          "i": 356,
+          "tok": "which"
+        }
+      ]
+    },
+    {
+      "t": 357,
+      "reveals": [
+        {
+          "i": 357,
+          "tok": "runs"
+        }
+      ]
+    },
+    {
+      "t": 358,
+      "reveals": [
+        {
+          "i": 358,
+          "tok": "from"
+        }
+      ]
+    },
+    {
+      "t": 359,
+      "reveals": [
+        {
+          "i": 359,
+          "tok": "10"
+        }
+      ]
+    },
+    {
+      "t": 360,
+      "reveals": [
+        {
+          "i": 360,
+          "tok": "a.m."
+        }
+      ]
+    },
+    {
+      "t": 361,
+      "reveals": [
+        {
+          "i": 361,
+          "tok": "to"
+        }
+      ]
+    },
+    {
+      "t": 362,
+      "reveals": [
+        {
+          "i": 362,
+          "tok": "3"
+        }
+      ]
+    },
+    {
+      "t": 363,
+      "reveals": [
+        {
+          "i": 363,
+          "tok": "p.m."
+        }
+      ]
+    },
+    {
+      "t": 364,
+      "reveals": [
+        {
+          "i": 364,
+          "tok": "at"
+        }
+      ]
+    },
+    {
+      "t": 365,
+      "reveals": [
+        {
+          "i": 365,
+          "tok": "Crown"
+        }
+      ]
+    },
+    {
+      "t": 366,
+      "reveals": [
+        {
+          "i": 366,
+          "tok": "Tower."
+        }
+      ]
+    },
+    {
+      "t": 367,
+      "reveals": [
+        {
+          "i": 367,
+          "tok": "It"
+        }
+      ]
+    },
+    {
+      "t": 368,
+      "reveals": [
+        {
+          "i": 368,
+          "tok": "was"
+        }
+      ]
+    },
+    {
+      "t": 369,
+      "reveals": [
+        {
+          "i": 369,
+          "tok": "a"
+        }
+      ]
+    },
+    {
+      "t": 370,
+      "reveals": [
+        {
+          "i": 370,
+          "tok": "major"
+        }
+      ]
+    },
+    {
+      "t": 371,
+      "reveals": [
+        {
+          "i": 371,
+          "tok": "success"
+        }
+      ]
+    },
+    {
+      "t": 372,
+      "reveals": [
+        {
+          "i": 372,
+          "tok": "for"
+        }
+      ]
+    },
+    {
+      "t": 373,
+      "reveals": [
+        {
+          "i": 373,
+          "tok": "all"
+        }
+      ]
+    },
+    {
+      "t": 374,
+      "reveals": [
+        {
+          "i": 374,
+          "tok": "involved."
+        }
+      ]
+    }
+  ]
+}

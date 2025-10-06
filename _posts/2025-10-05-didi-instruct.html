@@ -1,0 +1,391 @@
+---
+layout: post-custom
+title: "Ultra-Fast Language Generation via Discrete Diffusion Divergence Instruct"
+author: "HaoYang-Zheng"
+categories: research
+tags: [discrete diffusion, large language models, distillation]
+---
+
+<header>
+  <!-- <h1>Ultra-Fast Language Generation via Discrete Diffusion Divergence Instruct</h1> -->
+  <p class="authors">
+    Haoyang&nbsp;Zheng<sup>1</sup>, Xinyang&nbsp;Liu<sup>2</sup>, Cindy&nbsp;Xiangrui&nbsp;Kong<sup>1</sup>, Nan&nbsp;Jiang<sup>3</sup>,
+    Zheyuan&nbsp;Hu<sup>4</sup>, Weijian&nbsp;Luo<sup>5</sup>, Wei&nbsp;Deng<sup>6</sup>, Guang&nbsp;Lin<sup>1</sup>
+  </p>
+  <p class="affiliations">
+  <sup>1</sup>Purdue University&ensp;<sup>2</sup>University of Texas at Austin&ensp;<sup>3</sup>University of Texas at El Paso&ensp;<sup>4</sup>National University of Singapore<br>
+  <sup>5</sup>hi-Lab, Xiaohongshu Inc&ensp;<sup>6</sup>ML Research, Morgan Stanley
+  </p>
+  <div class="links">
+    <span class="link-block">
+      <a href="https://arxiv.org/abs/2509.25035" target="_blank"
+      class="external-link button is-normal is-rounded is-dark">
+      <span class="icon">
+        <i class="ai ai-arxiv"></i>
+        </span>
+        <span>arXiv</span>
+      </a>
+    </span>
+    <span class="link-block">
+      <a href="https://github.com/haoyangzheng-ai/didi-instruct" target="_blank"
+      class="external-link button is-normal is-rounded is-dark">
+      <span class="icon">
+          <i class="fab fa-github"></i>
+        </span>
+        <span>Code</span>
+        </a>
+    </span>
+    <span class="link-block">
+      <a href="https://huggingface.co/haoyangzheng/didi-instruct-small" target="_blank" class="external-link button is-normal is-rounded is-dark">
+        <span class="icon">
+          <p>&#129303;</p>
+        </span>
+        <span>HuggingFace</span>
+        </a>
+    </span>
+    <span class="link-block">
+      <a href="https://x.com/dwgreyman/status/1974868445884756107" target="_blank"
+      class="external-link button is-normal is-rounded is-dark">
+      <span class="icon">
+          <i class="fab fa-twitter"></i>
+        </span>
+        <span>X (Tweet)</span>
+      </a>
+    </span>
+  </div>
+  <p style="text-align: center; margin-top: 20px; font-size: 30px;">
+      <span> We unlock <b style="color: #910b0b;">high-quality</b> language generation <b style="color: #910b0b;">in the blink of an eye</b> with <b style="color: #910b0b;">DiDi-Instruct</b>.</span>
+  </p>
+</header>
+
+<section id="sampler-demo">
+  <h2>Inference Speed Comparison: DiDi-Instruct (64x) vs. MDLM (2x) vs. ARM</h2>
+  <div class="controls">
+    <div class="method-tabs" role="tablist" aria-label="Sampling methods">
+      <button class="tab active" data-method="didi" role="tab" aria-selected="true">DiDi-Instruct</button>
+      <button class="tab" data-method="mdlm" role="tab" aria-selected="false">MDLM</button>
+      <button class="tab" data-method="arm" role="tab" aria-selected="false">ARM</button>
+    </div>
+    <div class="playback">
+      <button id="btn-prev" aria-label="Previous step">⟨ Prev</button>
+      <button id="btn-play" aria-label="Play">▶ Play</button>
+      <button id="btn-replay" aria-label="Replay">↺ Replay</button>
+      <button id="btn-next" aria-label="Next step">Next ⟩</button>
+      <div class="speed">
+        <div class="speed-labels">
+          <label for="speed">Speed</label> <span id="speed-val">1×</span>
+        </div>
+        <input id="speed" type="range" min="0.25" max="4" step="0.25" value="1" />
+      </div>
+    </div>
+  </div>
+  <div class="controls">
+  </div>
+  <div class="info-bar">
+      <div class="legend">
+          <span class="dot new"></span> Unmasked Tokens &nbsp;&nbsp;
+          <span class="dot known"></span> Masked Tokens
+      </div>
+      <div class="status">
+          <span id="step-readout">Step 0/0</span>,
+          <span id="nfe-readout">NFEs: <span id="nfe-val">0</span></span>
+      </div>
+  </div>
+  <div class="viewer">
+    <div id="token-line" aria-live="polite"></div>
+  </div>
+</section>
+
+<section class="highlighted-section">
+  <h2>Contributions</h2>
+  <p class="tagline"><strong>DiDi-Instruct</strong> distills a few-step generator from a masked discrete diffusion language model, achieving up to <strong>64×</strong> speed-ups with comparable or superior quality to its teacher and GPT-2 baselines.</p>
+  <div class="highlights">
+    <div class="highlight-item"><span>•</span> <strong>Principled Training Method for Fast (Language) Sequence Generation</strong>: We reformulate the distillation objective from a general policy gradient perspective, deriving a simple yet tractable update rule for the few-step student according to some reward function. With an adversarial language discriminator to estimate the log-density ratio (reward) between the teacher dLLM and the student, we introduce a practical <strong>DiDi-Instruct</strong> algorithm that trains the few-step student, accompanied by an assistant discriminator.</div>
+    <div class="highlight-item"><span>•</span> <strong>Simple yet Effective Techniques in Training and Inference</strong>: We introduce <em>grouped reward normalization</em>, <em>intermediate-state matching</em>, and the <em>reward-guided ancestral sampler</em> (RGAS) that significantly improve the training stability, the model coverage, and the inference performances, reducing the generation perplexity by 30%.</div>
+    <div class="highlight-item"><span>•</span> <strong>State-of-the-Art Fast Sequence Generation:</strong> <strong>DiDi-Instruct</strong> achieves new state-of-the-art performance on the OpenWebText benchmark: consistently lower PPL across 8 to 128 NFEs, negligible entropy loss, and over 20&times; faster distillation; detailed ablations, model scaling, and protein sequence generation further confirm its robustness.</div>
+  </div>
+  <figure class="image-container">
+    <img src="/assets/img/PPL_compare.png" alt="Chart comparing Perplexity vs. NFEs for DiDi-Instruct against baselines" />
+    <figcaption>
+      Perplexity vs. NFEs. Baselines for comparison include GPT-2 Small, masked diffusion language models (MDLM; <a href="https://arxiv.org/abs/2406.07524" target="_blank" rel="noopener">Sahoo et al., 2024</a>), diffusion duality (DUO; <a href="https://arxiv.org/abs/2506.10892v1" target="_blank" rel="noopener">Sahoo et al., 2025</a>), and self-distillation through time (SDTT; <a href="https://arxiv.org/abs/2410.21035" target="_blank" rel="noopener">Deschenaux et al., 2025</a>).
+    </figcaption>
+  </figure>
+</section>
+
+<section id="abstract" class="highlighted-section">
+  <h2>Abstract</h2>
+    <p>Fast and high-quality language generation is the holy grail pursued in the age of AI. In this work we introduce <strong>Di</strong>screte <strong>Di</strong>ffusion Divergence <strong>Instruct</strong> (<strong>DiDi-Instruct</strong>), a training-based method that initializes from a pre-trained masked discrete diffusion language model and distills a few-step student for fast generation. The resulting DiDi-Instruct model achieves comparable or superior performance to its dLLM teacher and a GPT-2 baseline while enabling up to 64× acceleration. The theoretical foundation of DiDi-Instruct is a novel framework based on integral KL-divergence minimization, which yields a practical training algorithm. We further introduce grouped reward normalization, intermediate-state matching, and the reward-guided ancestral sampler that significantly improve training stability, model coverage and inference quality. On OpenWebText, DiDi-Instruct achieves perplexities ranging from 62.2 (8 NFEs) to 18.4 (128 NFEs) and reduces additional training wall-clock time by more than 20× compared to competing dLLM distillation methods. We validate the robustness and effectiveness of DiDi-Instruct through extensive ablation studies, model scaling and generation of discrete protein sequences. In conclusion, DiDi-Instruct is an efficient yet effective distillation method, enabling language generation in the blink of an eye.</p>
+</section>
+
+<section id="bibtex" class="highlighted-section">
+  <div class="bibtex-header">
+    <h2>BibTeX</h2>
+    <button id="copy-bibtex-btn" class="copy-btn" aria-label="Copy BibTeX to clipboard">
+      <span class="copy-icon">
+        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" fill="currentColor">
+          <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path>
+          <path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+        </svg>
+      </span>
+      <span class="check-icon" style="display: none;">
+        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" fill="currentColor">
+          <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.75.75 0 0 1 1.06-1.06L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+        </svg>
+      </span>
+    </button>
+  </div>
+  <div id="bibtex-content" class="bibtex">
+    {% raw %}
+    @article{zheng2025ultra,
+        title={{Ultra-Fast Language Generation via Discrete Diffusion Divergence Instruct}},
+        author={Zheng, Haoyang and Liu, Xinyang and Kong, Cindy Xiangrui and Jiang, Nan and Hu, Zheyuan and Luo, Weijian and Deng, Wei and Lin, Guang},
+        journal={arXiv preprint arXiv:2509.25035},
+        year={2025}
+    }
+    {% endraw %}
+  </div>
+</section>
+
+<footer>
+  <p>This page was built using a customized version of the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank" rel="noopener">Academic Project Page Template</a>, with inspiration from other project pages.</p>
+  <p>Cite the paper using the BibTeX entry above. The template is licensed under a <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p>
+</footer>
+
+<script>
+(() => {
+// ---------- config ----------
+const DATA = {
+  arm:  '/assets/data/arm_trace.json',
+  mdlm: '/assets/data/mdlm_trace.json',
+  didi: '/assets/data/didi_trace.json'
+};
+const NFEs_MAP = {
+  arm:  s => s,
+  mdlm: s => s,
+  didi: s => s
+};
+const TOK_MASK = '[MASK]';
+
+// ---------- state ----------
+let method = 'didi'; // Default to DiDi
+let trace = null;
+let seq = [];
+let step = 0;
+let playing = false;
+let isLooping = true; // NEW: Looping state
+let baseMsPerStep = 500;
+let speed = 1.0;
+let rafId = null;
+
+// ---------- dom ----------
+const $tabs = [...document.querySelectorAll('.method-tabs .tab')];
+const $btnPrev = document.getElementById('btn-prev');
+const $btnPlay = document.getElementById('btn-play');
+const $btnReplay = document.getElementById('btn-replay');
+const $btnNext = document.getElementById('btn-next');
+const $speed = document.getElementById('speed');
+const $speedVal = document.getElementById('speed-val');
+const $line = document.getElementById('token-line');
+const $step = document.getElementById('step-readout');
+const $nfeVal = document.getElementById('nfe-val');
+
+// ---------- helpers ----------
+// Asynchronously loads and processes the trace data for the animation.
+async function loadTrace(name, autoplay = false) {
+  try {
+    const res = await fetch(DATA[name], {cache: 'no-store'});
+    if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
+    trace = await res.json();
+    
+    // --- Start: New logic to fix the container height ---
+    const $viewer = document.querySelector('.viewer');
+
+    // 1. Reset the animation to its initial state (all '[MASK]' tokens).
+    // This is the state that has the maximum height.
+    resetAnimation(); 
+    
+    // 2. Measure the height of the container in its initial, widest state.
+    const initialHeight = $viewer.offsetHeight;
+    
+    // 3. Set this measured height as the container's minimum height.
+    // This will prevent the container from shrinking as the animation plays.
+    $viewer.style.minHeight = `${initialHeight}px`;
+    // --- End: Height fixing logic ---
+
+    updateReadout();
+    
+    // If autoplay is requested, start the animation.
+    if (autoplay) {
+        togglePlay();
+    }
+  } catch (e) {
+    console.error("Failed to load trace data:", e);
+    $line.textContent = `Error: Could not load data for ${name}.`;
+  }
+}
+function render(highlightNew=false) {
+  const L = seq.length;
+  const newSet = new Set();
+  if (highlightNew && trace && trace.steps[step]) {
+    for (const r of trace.steps[step].reveals) newSet.add(r.i);
+  }
+  const frag = document.createDocumentFragment();
+  for (let i=0;i<L;i++) {
+    const span = document.createElement('span');
+    span.className = 'token ' + (seq[i]===TOK_MASK ? 'mask' : (newSet.has(i)?'new':'known'));
+    span.textContent = (seq[i]===TOK_MASK? TOK_MASK : seq[i]) + ' ';
+    frag.appendChild(span);
+  }
+  $line.replaceChildren(frag);
+}
+function applyStep(k) {
+  if (!trace || !trace.steps[k]) return;
+  for (const r of trace.steps[k].reveals) {
+    seq[r.i] = r.tok;
+  }
+}
+function updateReadout() {
+  const total = trace ? trace.steps.length : 0;
+  $step.textContent = `Step ${Math.min(step, total)}/${total}`;
+  const nfe = trace ? NFEs_MAP[method](step) : 0;
+  $nfeVal.textContent = nfe;
+}
+// Resets the animation to its initial state.
+function resetAnimation() {
+    // Fix: The 'seq' array must be re-initialized with the correct length 
+    // from the currently loaded trace data. Otherwise, seq.fill() would not work correctly
+    // on an empty or incorrectly sized array.
+    const len = trace ? trace.meta.seq_len : 0;
+    seq = Array(len).fill(TOK_MASK);
+
+    step = 0;
+    render();
+    // The updateReadout() call is not strictly needed for the height calculation,
+    // but it is necessary for correctly resetting the UI text, so we keep it.
+    updateReadout();
+}
+function togglePlay() {
+  if (!trace) return;
+  playing = !playing;
+  $btnPlay.textContent = playing ? '⏸ Pause' : '▶ Play';
+  if (playing) {
+      if (step >= trace.steps.length) { // if at the end, reset
+          resetAnimation();
+      }
+      loop();
+  } else {
+      cancelAnimationFrame(rafId);
+  }
+}
+function loop() {
+  let lastTime = performance.now();
+  const tick = (now) => {
+    const ms = baseMsPerStep / speed;
+    if (now - lastTime >= ms) {
+      lastTime = now;
+      if (step < trace.steps.length) {
+        applyStep(step);
+        render(true);
+        step++;
+        updateReadout();
+      } else { // Animation finished
+        if (isLooping) {
+          resetAnimation();
+        } else {
+          playing = false;
+          $btnPlay.textContent = '▶ Play';
+          cancelAnimationFrame(rafId);
+          return;
+        }
+      }
+    }
+    if (playing) {
+      rafId = requestAnimationFrame(tick);
+    }
+  };
+  rafId = requestAnimationFrame(tick);
+}
+
+// ---------- events ----------
+$tabs.forEach(btn => btn.addEventListener('click', async () => {
+  $tabs.forEach(b => {
+      b.classList.remove('active');
+      b.setAttribute('aria-selected', 'false');
+  });
+  btn.classList.add('active');
+  btn.setAttribute('aria-selected', 'true');
+  method = btn.dataset.method;
+  cancelAnimationFrame(rafId);
+  playing = false; $btnPlay.textContent = '▶ Play';
+  await loadTrace(method, true);
+}));
+$btnPrev.addEventListener('click', () => {
+  if (!trace || step === 0) return;
+  if (playing) togglePlay();
+  step--;
+  seq.fill(TOK_MASK);
+  for (let k=0;k<step;k++) applyStep(k);
+  render();
+  updateReadout();
+});
+$btnNext.addEventListener('click', () => {
+  if (!trace || step >= trace.steps.length) return;
+  if (playing) togglePlay();
+  applyStep(step);
+  render(true);
+  step++;
+  updateReadout();
+});
+
+// MODIFIED Replay Button Logic
+$btnReplay.addEventListener('click', () => {
+    if (!trace) return;
+    isLooping = !isLooping; // Toggle looping state
+    $btnReplay.textContent = isLooping ? '↻ Loop' : '↺ Replay'; //
+    $btnReplay.style.borderColor = isLooping ? '#d32f2f' : '#d0d7de'; // Highlight if looping
+
+    // If animation is not playing, reset it.
+    if (!playing) {
+        cancelAnimationFrame(rafId);
+        resetAnimation();
+    }
+});
+
+$btnPlay.addEventListener('click', togglePlay);
+
+$speed.addEventListener('input', (e) => {
+  speed = parseFloat(e.target.value);
+  $speedVal.textContent = speed.toFixed(2) + '×';
+});
+
+// ---------- init ----------
+$btnReplay.textContent = '↻ Loop';
+$btnReplay.style.borderColor = '#d32f2f';
+loadTrace(method, true);
+})();
+</script>
+<script>
+const copyBtn = document.getElementById('copy-bibtex-btn');
+const bibtexContent = document.getElementById('bibtex-content');
+// Get references to the two icons inside the button
+const copyIcon = copyBtn.querySelector('.copy-icon');
+const checkIcon = copyBtn.querySelector('.check-icon');
+
+copyBtn.addEventListener('click', () => {
+  const textToCopy = bibtexContent.innerText.trim();
+  
+  navigator.clipboard.writeText(textToCopy).then(() => {
+    // This is the new logic: hide the copy icon and show the check icon
+    copyIcon.style.display = 'none';
+    checkIcon.style.display = 'inline-block';
+    
+    // Reset the icon after 2 seconds
+    setTimeout(() => {
+      copyIcon.style.display = 'inline-block';
+      checkIcon.style.display = 'none';
+    }, 2000);
+  }).catch(err => {
+    console.error('Failed to copy BibTeX: ', err);
+  });
+});
+</script>

@@ -1,0 +1,2517 @@
+{
+  "meta": {
+    "name": "MDLM",
+    "seq_len": 386
+  },
+  "steps": [
+    {
+      "t": 0,
+      "reveals": [
+        {
+          "i": 93,
+          "tok": "told"
+        },
+        {
+          "i": 180,
+          "tok": "Greene"
+        }
+      ]
+    },
+    {
+      "t": 1,
+      "reveals": [
+        {
+          "i": 352,
+          "tok": "of"
+        },
+        {
+          "i": 221,
+          "tok": "similar"
+        }
+      ]
+    },
+    {
+      "t": 2,
+      "reveals": [
+        {
+          "i": 336,
+          "tok": "league."
+        },
+        {
+          "i": 218,
+          "tok": "He’s"
+        }
+      ]
+    },
+    {
+      "t": 3,
+      "reveals": [
+        {
+          "i": 227,
+          "tok": "were"
+        },
+        {
+          "i": 152,
+          "tok": "that"
+        }
+      ]
+    },
+    {
+      "t": 4,
+      "reveals": [
+        {
+          "i": 66,
+          "tok": "the"
+        },
+        {
+          "i": 139,
+          "tok": "a"
+        }
+      ]
+    },
+    {
+      "t": 5,
+      "reveals": [
+        {
+          "i": 158,
+          "tok": "telling"
+        },
+        {
+          "i": 53,
+          "tok": "there,"
+        }
+      ]
+    },
+    {
+      "t": 6,
+      "reveals": [
+        {
+          "i": 324,
+          "tok": "The"
+        },
+        {
+          "i": 373,
+          "tok": "appealed,"
+        }
+      ]
+    },
+    {
+      "t": 7,
+      "reveals": [
+        {
+          "i": 88,
+          "tok": "counsel"
+        },
+        {
+          "i": 343,
+          "tok": "sponsorships"
+        }
+      ]
+    },
+    {
+      "t": 8,
+      "reveals": [
+        {
+          "i": 123,
+          "tok": "inquiry"
+        },
+        {
+          "i": 200,
+          "tok": "grenade"
+        }
+      ]
+    },
+    {
+      "t": 9,
+      "reveals": [
+        {
+          "i": 265,
+          "tok": "which"
+        },
+        {
+          "i": 246,
+          "tok": "the"
+        }
+      ]
+    },
+    {
+      "t": 10,
+      "reveals": [
+        {
+          "i": 291,
+          "tok": "trial"
+        },
+        {
+          "i": 306,
+          "tok": "on"
+        }
+      ]
+    },
+    {
+      "t": 11,
+      "reveals": [
+        {
+          "i": 283,
+          "tok": "to"
+        },
+        {
+          "i": 130,
+          "tok": "CAIRCLE"
+        }
+      ]
+    },
+    {
+      "t": 12,
+      "reveals": [
+        {
+          "i": 106,
+          "tok": "regional"
+        },
+        {
+          "i": 34,
+          "tok": "asked"
+        }
+      ]
+    },
+    {
+      "t": 13,
+      "reveals": [
+        {
+          "i": 55,
+          "tok": "with"
+        },
+        {
+          "i": 77,
+          "tok": "conducting"
+        }
+      ]
+    },
+    {
+      "t": 14,
+      "reveals": [
+        {
+          "i": 225,
+          "tok": "week."
+        },
+        {
+          "i": 280,
+          "tok": "Westwood"
+        }
+      ]
+    },
+    {
+      "t": 15,
+      "reveals": [
+        {
+          "i": 89,
+          "tok": "for"
+        },
+        {
+          "i": 254,
+          "tok": "been"
+        }
+      ]
+    },
+    {
+      "t": 16,
+      "reveals": [
+        {
+          "i": 310,
+          "tok": "that"
+        },
+        {
+          "i": 94,
+          "tok": "The"
+        }
+      ]
+    },
+    {
+      "t": 17,
+      "reveals": [
+        {
+          "i": 277,
+          "tok": "to"
+        },
+        {
+          "i": 43,
+          "tok": "was"
+        }
+      ]
+    },
+    {
+      "t": 18,
+      "reveals": [
+        {
+          "i": 29,
+          "tok": "to"
+        },
+        {
+          "i": 85,
+          "tok": "Casey"
+        }
+      ]
+    },
+    {
+      "t": 19,
+      "reveals": [
+        {
+          "i": 72,
+          "tok": "familiarity"
+        },
+        {
+          "i": 179,
+          "tok": "said"
+        }
+      ]
+    },
+    {
+      "t": 20,
+      "reveals": [
+        {
+          "i": 242,
+          "tok": "delivering."
+        },
+        {
+          "i": 175,
+          "tok": "with"
+        }
+      ]
+    },
+    {
+      "t": 21,
+      "reveals": [
+        {
+          "i": 270,
+          "tok": "of"
+        },
+        {
+          "i": 231,
+          "tok": "said"
+        }
+      ]
+    },
+    {
+      "t": 22,
+      "reveals": [
+        {
+          "i": 203,
+          "tok": "window,”"
+        },
+        {
+          "i": 256,
+          "tok": "in"
+        }
+      ]
+    },
+    {
+      "t": 23,
+      "reveals": [
+        {
+          "i": 113,
+          "tok": "who"
+        },
+        {
+          "i": 217,
+          "tok": "father.”"
+        }
+      ]
+    },
+    {
+      "t": 24,
+      "reveals": [
+        {
+          "i": 91,
+          "tok": "Bonden"
+        },
+        {
+          "i": 122,
+          "tok": "the"
+        }
+      ]
+    },
+    {
+      "t": 25,
+      "reveals": [
+        {
+          "i": 299,
+          "tok": "the"
+        },
+        {
+          "i": 26,
+          "tok": "was"
+        }
+      ]
+    },
+    {
+      "t": 26,
+      "reveals": [
+        {
+          "i": 345,
+          "tok": "may"
+        },
+        {
+          "i": 230,
+          "tok": "Police"
+        }
+      ]
+    },
+    {
+      "t": 27,
+      "reveals": [
+        {
+          "i": 2,
+          "tok": "mid-morning"
+        },
+        {
+          "i": 38,
+          "tok": "it."
+        }
+      ]
+    },
+    {
+      "t": 28,
+      "reveals": [
+        {
+          "i": 178,
+          "tok": "peace,"
+        },
+        {
+          "i": 278,
+          "tok": "court"
+        }
+      ]
+    },
+    {
+      "t": 29,
+      "reveals": [
+        {
+          "i": 263,
+          "tok": "The"
+        },
+        {
+          "i": 325,
+          "tok": "current"
+        }
+      ]
+    },
+    {
+      "t": 30,
+      "reveals": [
+        {
+          "i": 156,
+          "tok": "heard"
+        },
+        {
+          "i": 358,
+          "tok": "the"
+        }
+      ]
+    },
+    {
+      "t": 31,
+      "reveals": [
+        {
+          "i": 276,
+          "tok": "head"
+        },
+        {
+          "i": 210,
+          "tok": "the"
+        }
+      ]
+    },
+    {
+      "t": 32,
+      "reveals": [
+        {
+          "i": 68,
+          "tok": "was"
+        },
+        {
+          "i": 237,
+          "tok": "the"
+        }
+      ]
+    },
+    {
+      "t": 33,
+      "reveals": [
+        {
+          "i": 154,
+          "tok": "man"
+        },
+        {
+          "i": 10,
+          "tok": "for"
+        }
+      ]
+    },
+    {
+      "t": 34,
+      "reveals": [
+        {
+          "i": 65,
+          "tok": "that"
+        },
+        {
+          "i": 372,
+          "tok": "not"
+        }
+      ]
+    },
+    {
+      "t": 35,
+      "reveals": [
+        {
+          "i": 209,
+          "tok": "out"
+        },
+        {
+          "i": 228,
+          "tok": "just"
+        }
+      ]
+    },
+    {
+      "t": 36,
+      "reveals": [
+        {
+          "i": 64,
+          "tok": "noted"
+        },
+        {
+          "i": 100,
+          "tok": "aware"
+        }
+      ]
+    },
+    {
+      "t": 37,
+      "reveals": [
+        {
+          "i": 80,
+          "tok": "as"
+        },
+        {
+          "i": 120,
+          "tok": "briefed"
+        }
+      ]
+    },
+    {
+      "t": 38,
+      "reveals": [
+        {
+          "i": 357,
+          "tok": "appeal,"
+        },
+        {
+          "i": 271,
+          "tok": "the"
+        }
+      ]
+    },
+    {
+      "t": 39,
+      "reveals": [
+        {
+          "i": 266,
+          "tok": "determines"
+        },
+        {
+          "i": 127,
+          "tok": "District"
+        }
+      ]
+    },
+    {
+      "t": 40,
+      "reveals": [
+        {
+          "i": 74,
+          "tok": "Russia"
+        },
+        {
+          "i": 97,
+          "tok": "the"
+        }
+      ]
+    },
+    {
+      "t": 41,
+      "reveals": [
+        {
+          "i": 99,
+          "tok": "is"
+        },
+        {
+          "i": 37,
+          "tok": "test"
+        }
+      ]
+    },
+    {
+      "t": 42,
+      "reveals": [
+        {
+          "i": 315,
+          "tok": "June"
+        },
+        {
+          "i": 19,
+          "tok": "radioed"
+        }
+      ]
+    },
+    {
+      "t": 43,
+      "reveals": [
+        {
+          "i": 361,
+          "tok": "the"
+        },
+        {
+          "i": 159,
+          "tok": "a"
+        }
+      ]
+    },
+    {
+      "t": 44,
+      "reveals": [
+        {
+          "i": 360,
+          "tok": "believes"
+        },
+        {
+          "i": 220,
+          "tok": "a"
+        }
+      ]
+    },
+    {
+      "t": 45,
+      "reveals": [
+        {
+          "i": 307,
+          "tok": "any"
+        },
+        {
+          "i": 162,
+          "tok": "kill"
+        }
+      ]
+    },
+    {
+      "t": 46,
+      "reveals": [
+        {
+          "i": 151,
+          "tok": "reported"
+        },
+        {
+          "i": 240,
+          "tok": "he"
+        }
+      ]
+    },
+    {
+      "t": 47,
+      "reveals": [
+        {
+          "i": 223,
+          "tok": "for"
+        },
+        {
+          "i": 249,
+          "tok": "break"
+        }
+      ]
+    },
+    {
+      "t": 48,
+      "reveals": [
+        {
+          "i": 251,
+          "tok": "the"
+        },
+        {
+          "i": 7,
+          "tok": "forming"
+        }
+      ]
+    },
+    {
+      "t": 49,
+      "reveals": [
+        {
+          "i": 207,
+          "tok": "caller"
+        },
+        {
+          "i": 157,
+          "tok": "was"
+        }
+      ]
+    },
+    {
+      "t": 50,
+      "reveals": [
+        {
+          "i": 211,
+          "tok": "window,"
+        },
+        {
+          "i": 149,
+          "tok": "Greene"
+        }
+      ]
+    },
+    {
+      "t": 51,
+      "reveals": [
+        {
+          "i": 344,
+          "tok": "that"
+        },
+        {
+          "i": 208,
+          "tok": "smashed"
+        }
+      ]
+    },
+    {
+      "t": 52,
+      "reveals": [
+        {
+          "i": 177,
+          "tok": "the"
+        },
+        {
+          "i": 96,
+          "tok": "that"
+        }
+      ]
+    },
+    {
+      "t": 53,
+      "reveals": [
+        {
+          "i": 11,
+          "tok": "him."
+        },
+        {
+          "i": 311,
+          "tok": "may"
+        }
+      ]
+    },
+    {
+      "t": 54,
+      "reveals": [
+        {
+          "i": 338,
+          "tok": "prohibits"
+        },
+        {
+          "i": 69,
+          "tok": "aware"
+        }
+      ]
+    },
+    {
+      "t": 55,
+      "reveals": [
+        {
+          "i": 303,
+          "tok": "gets"
+        },
+        {
+          "i": 6,
+          "tok": "started"
+        }
+      ]
+    },
+    {
+      "t": 56,
+      "reveals": [
+        {
+          "i": 383,
+          "tok": "on"
+        },
+        {
+          "i": 305,
+          "tok": "decide"
+        }
+      ]
+    },
+    {
+      "t": 57,
+      "reveals": [
+        {
+          "i": 109,
+          "tok": "Kogan,"
+        },
+        {
+          "i": 170,
+          "tok": "the"
+        }
+      ]
+    },
+    {
+      "t": 58,
+      "reveals": [
+        {
+          "i": 133,
+          "tok": "Authorities"
+        },
+        {
+          "i": 167,
+          "tok": "Angelo,"
+        }
+      ]
+    },
+    {
+      "t": 59,
+      "reveals": [
+        {
+          "i": 9,
+          "tok": "motorcade"
+        },
+        {
+          "i": 118,
+          "tok": "was"
+        }
+      ]
+    },
+    {
+      "t": 60,
+      "reveals": [
+        {
+          "i": 253,
+          "tok": "had"
+        },
+        {
+          "i": 31,
+          "tok": "him."
+        }
+      ]
+    },
+    {
+      "t": 61,
+      "reveals": [
+        {
+          "i": 59,
+          "tok": "Prince"
+        },
+        {
+          "i": 323,
+          "tok": "likely."
+        }
+      ]
+    },
+    {
+      "t": 62,
+      "reveals": [
+        {
+          "i": 322,
+          "tok": "not"
+        },
+        {
+          "i": 238,
+          "tok": "name"
+        }
+      ]
+    },
+    {
+      "t": 63,
+      "reveals": [
+        {
+          "i": 164,
+          "tok": "Abedoy"
+        },
+        {
+          "i": 382,
+          "tok": "ruling"
+        }
+      ]
+    },
+    {
+      "t": 64,
+      "reveals": [
+        {
+          "i": 144,
+          "tok": "live"
+        },
+        {
+          "i": 341,
+          "tok": "accepting"
+        }
+      ]
+    },
+    {
+      "t": 65,
+      "reveals": [
+        {
+          "i": 188,
+          "tok": "door"
+        },
+        {
+          "i": 261,
+          "tok": "said"
+        }
+      ]
+    },
+    {
+      "t": 66,
+      "reveals": [
+        {
+          "i": 173,
+          "tok": "were"
+        },
+        {
+          "i": 103,
+          "tok": "inquiry."
+        }
+      ]
+    },
+    {
+      "t": 67,
+      "reveals": [
+        {
+          "i": 284,
+          "tok": "avoid"
+        },
+        {
+          "i": 25,
+          "tok": "that"
+        }
+      ]
+    },
+    {
+      "t": 68,
+      "reveals": [
+        {
+          "i": 363,
+          "tok": "will"
+        },
+        {
+          "i": 318,
+          "tok": "the"
+        }
+      ]
+    },
+    {
+      "t": 69,
+      "reveals": [
+        {
+          "i": 105,
+          "tok": "FBI"
+        },
+        {
+          "i": 192,
+          "tok": "in"
+        }
+      ]
+    },
+    {
+      "t": 70,
+      "reveals": [
+        {
+          "i": 90,
+          "tok": "the"
+        },
+        {
+          "i": 375,
+          "tok": "league"
+        }
+      ]
+    },
+    {
+      "t": 71,
+      "reveals": [
+        {
+          "i": 143,
+          "tok": "p.m."
+        },
+        {
+          "i": 269,
+          "tok": "status"
+        }
+      ]
+    },
+    {
+      "t": 72,
+      "reveals": [
+        {
+          "i": 48,
+          "tok": "that"
+        },
+        {
+          "i": 104,
+          "tok": "Former"
+        }
+      ]
+    },
+    {
+      "t": 73,
+      "reveals": [
+        {
+          "i": 320,
+          "tok": "says"
+        },
+        {
+          "i": 62,
+          "tok": "anonymity"
+        }
+      ]
+    },
+    {
+      "t": 74,
+      "reveals": [
+        {
+          "i": 198,
+          "tok": "is"
+        },
+        {
+          "i": 147,
+          "tok": "street"
+        }
+      ]
+    },
+    {
+      "t": 75,
+      "reveals": [
+        {
+          "i": 146,
+          "tok": "the"
+        },
+        {
+          "i": 290,
+          "tok": "as"
+        }
+      ]
+    },
+    {
+      "t": 76,
+      "reveals": [
+        {
+          "i": 190,
+          "tok": "a"
+        },
+        {
+          "i": 191,
+          "tok": "phone"
+        }
+      ]
+    },
+    {
+      "t": 77,
+      "reveals": [
+        {
+          "i": 335,
+          "tok": "the"
+        },
+        {
+          "i": 281,
+          "tok": "by"
+        }
+      ]
+    },
+    {
+      "t": 78,
+      "reveals": [
+        {
+          "i": 60,
+          "tok": "was"
+        },
+        {
+          "i": 131,
+          "tok": "MEDALE,"
+        }
+      ]
+    },
+    {
+      "t": 79,
+      "reveals": [
+        {
+          "i": 165,
+          "tok": "and"
+        },
+        {
+          "i": 84,
+          "tok": "accounts,"
+        }
+      ]
+    },
+    {
+      "t": 80,
+      "reveals": [
+        {
+          "i": 8,
+          "tok": "a"
+        },
+        {
+          "i": 292,
+          "tok": "court"
+        }
+      ]
+    },
+    {
+      "t": 81,
+      "reveals": [
+        {
+          "i": 169,
+          "tok": "found"
+        },
+        {
+          "i": 369,
+          "tok": "If"
+        }
+      ]
+    },
+    {
+      "t": 82,
+      "reveals": [
+        {
+          "i": 288,
+          "tok": "league"
+        },
+        {
+          "i": 18,
+          "tok": "I"
+        }
+      ]
+    },
+    {
+      "t": 83,
+      "reveals": [
+        {
+          "i": 1,
+          "tok": "was"
+        },
+        {
+          "i": 268,
+          "tok": "future"
+        }
+      ]
+    },
+    {
+      "t": 84,
+      "reveals": [
+        {
+          "i": 340,
+          "tok": "from"
+        },
+        {
+          "i": 365,
+          "tok": "whether"
+        }
+      ]
+    },
+    {
+      "t": 85,
+      "reveals": [
+        {
+          "i": 141,
+          "tok": "at"
+        },
+        {
+          "i": 329,
+          "tok": "NBA"
+        }
+      ]
+    },
+    {
+      "t": 86,
+      "reveals": [
+        {
+          "i": 259,
+          "tok": "said."
+        },
+        {
+          "i": 86,
+          "tok": "Wilson,"
+        }
+      ]
+    },
+    {
+      "t": 87,
+      "reveals": [
+        {
+          "i": 294,
+          "tok": "the"
+        },
+        {
+          "i": 286,
+          "tok": "headaches."
+        }
+      ]
+    },
+    {
+      "t": 88,
+      "reveals": [
+        {
+          "i": 333,
+          "tok": "agent"
+        },
+        {
+          "i": 30,
+          "tok": "protect"
+        }
+      ]
+    },
+    {
+      "t": 89,
+      "reveals": [
+        {
+          "i": 115,
+          "tok": "with"
+        },
+        {
+          "i": 132,
+          "tok": "RAC.Y."
+        }
+      ]
+    },
+    {
+      "t": 90,
+      "reveals": [
+        {
+          "i": 334,
+          "tok": "to"
+        },
+        {
+          "i": 355,
+          "tok": "Through"
+        }
+      ]
+    },
+    {
+      "t": 91,
+      "reveals": [
+        {
+          "i": 297,
+          "tok": "presumably"
+        },
+        {
+          "i": 171,
+          "tok": "house."
+        }
+      ]
+    },
+    {
+      "t": 92,
+      "reveals": [
+        {
+          "i": 102,
+          "tok": "the"
+        },
+        {
+          "i": 347,
+          "tok": "affected"
+        }
+      ]
+    },
+    {
+      "t": 93,
+      "reveals": [
+        {
+          "i": 182,
+          "tok": "Detective"
+        },
+        {
+          "i": 317,
+          "tok": "although"
+        }
+      ]
+    },
+    {
+      "t": 94,
+      "reveals": [
+        {
+          "i": 339,
+          "tok": "it"
+        },
+        {
+          "i": 313,
+          "tok": "—"
+        }
+      ]
+    },
+    {
+      "t": 95,
+      "reveals": [
+        {
+          "i": 226,
+          "tok": "They"
+        },
+        {
+          "i": 54,
+          "tok": "speaking"
+        }
+      ]
+    },
+    {
+      "t": 96,
+      "reveals": [
+        {
+          "i": 362,
+          "tok": "Westwood"
+        },
+        {
+          "i": 314,
+          "tok": "before"
+        }
+      ]
+    },
+    {
+      "t": 97,
+      "reveals": [
+        {
+          "i": 247,
+          "tok": "most"
+        },
+        {
+          "i": 245,
+          "tok": "that"
+        }
+      ]
+    },
+    {
+      "t": 98,
+      "reveals": [
+        {
+          "i": 42,
+          "tok": "it"
+        },
+        {
+          "i": 381,
+          "tok": "its"
+        }
+      ]
+    },
+    {
+      "t": 99,
+      "reveals": [
+        {
+          "i": 121,
+          "tok": "about"
+        },
+        {
+          "i": 168,
+          "tok": "24,"
+        }
+      ]
+    },
+    {
+      "t": 100,
+      "reveals": [
+        {
+          "i": 201,
+          "tok": "at"
+        },
+        {
+          "i": 264,
+          "tok": "league,"
+        }
+      ]
+    },
+    {
+      "t": 101,
+      "reveals": [
+        {
+          "i": 196,
+          "tok": "and"
+        },
+        {
+          "i": 257,
+          "tok": "place,”"
+        }
+      ]
+    },
+    {
+      "t": 102,
+      "reveals": [
+        {
+          "i": 354,
+          "tok": "director."
+        },
+        {
+          "i": 17,
+          "tok": "and"
+        }
+      ]
+    },
+    {
+      "t": 103,
+      "reveals": [
+        {
+          "i": 124,
+          "tok": "from"
+        },
+        {
+          "i": 187,
+          "tok": "a"
+        }
+      ]
+    },
+    {
+      "t": 104,
+      "reveals": [
+        {
+          "i": 21,
+          "tok": "to"
+        },
+        {
+          "i": 20,
+          "tok": "back"
+        }
+      ]
+    },
+    {
+      "t": 105,
+      "reveals": [
+        {
+          "i": 145,
+          "tok": "across"
+        },
+        {
+          "i": 213,
+          "tok": "it"
+        }
+      ]
+    },
+    {
+      "t": 106,
+      "reveals": [
+        {
+          "i": 14,
+          "tok": "every"
+        },
+        {
+          "i": 61,
+          "tok": "granted"
+        }
+      ]
+    },
+    {
+      "t": 107,
+      "reveals": [
+        {
+          "i": 267,
+          "tok": "the"
+        },
+        {
+          "i": 206,
+          "tok": "“The"
+        }
+      ]
+    },
+    {
+      "t": 108,
+      "reveals": [
+        {
+          "i": 212,
+          "tok": "indicating"
+        },
+        {
+          "i": 92,
+          "tok": "Bisson,"
+        }
+      ]
+    },
+    {
+      "t": 109,
+      "reveals": [
+        {
+          "i": 296,
+          "tok": "—"
+        },
+        {
+          "i": 4,
+          "tok": "and"
+        }
+      ]
+    },
+    {
+      "t": 110,
+      "reveals": [
+        {
+          "i": 304,
+          "tok": "to"
+        },
+        {
+          "i": 82,
+          "tok": "In"
+        }
+      ]
+    },
+    {
+      "t": 111,
+      "reveals": [
+        {
+          "i": 153,
+          "tok": "the"
+        },
+        {
+          "i": 250,
+          "tok": "in"
+        }
+      ]
+    },
+    {
+      "t": 112,
+      "reveals": [
+        {
+          "i": 330,
+          "tok": "from"
+        },
+        {
+          "i": 199,
+          "tok": "a"
+        }
+      ]
+    },
+    {
+      "t": 113,
+      "reveals": [
+        {
+          "i": 300,
+          "tok": "court,"
+        },
+        {
+          "i": 41,
+          "tok": "and"
+        }
+      ]
+    },
+    {
+      "t": 114,
+      "reveals": [
+        {
+          "i": 243,
+          "tok": "“Police"
+        },
+        {
+          "i": 95,
+          "tok": "Post"
+        }
+      ]
+    },
+    {
+      "t": 115,
+      "reveals": [
+        {
+          "i": 39,
+          "tok": "He"
+        },
+        {
+          "i": 50,
+          "tok": "and"
+        }
+      ]
+    },
+    {
+      "t": 116,
+      "reveals": [
+        {
+          "i": 155,
+          "tok": "he"
+        },
+        {
+          "i": 241,
+          "tok": "was"
+        }
+      ]
+    },
+    {
+      "t": 117,
+      "reveals": [
+        {
+          "i": 163,
+          "tok": "him."
+        },
+        {
+          "i": 215,
+          "tok": "the"
+        }
+      ]
+    },
+    {
+      "t": 118,
+      "reveals": [
+        {
+          "i": 76,
+          "tok": "was"
+        },
+        {
+          "i": 160,
+          "tok": "neighbor"
+        }
+      ]
+    },
+    {
+      "t": 119,
+      "reveals": [
+        {
+          "i": 222,
+          "tok": "house"
+        },
+        {
+          "i": 27,
+          "tok": "in"
+        }
+      ]
+    },
+    {
+      "t": 120,
+      "reveals": [
+        {
+          "i": 233,
+          "tok": "said"
+        },
+        {
+          "i": 129,
+          "tok": "General."
+        }
+      ]
+    },
+    {
+      "t": 121,
+      "reveals": [
+        {
+          "i": 45,
+          "tok": "that"
+        },
+        {
+          "i": 262,
+          "tok": "assistance."
+        }
+      ]
+    },
+    {
+      "t": 122,
+      "reveals": [
+        {
+          "i": 272,
+          "tok": "highest"
+        },
+        {
+          "i": 67,
+          "tok": "FBI"
+        }
+      ]
+    },
+    {
+      "t": 123,
+      "reveals": [
+        {
+          "i": 248,
+          "tok": "recent"
+        },
+        {
+          "i": 224,
+          "tok": "a"
+        }
+      ]
+    },
+    {
+      "t": 124,
+      "reveals": [
+        {
+          "i": 184,
+          "tok": "Clay."
+        },
+        {
+          "i": 244,
+          "tok": "determined"
+        }
+      ]
+    },
+    {
+      "t": 125,
+      "reveals": [
+        {
+          "i": 0,
+          "tok": "He"
+        },
+        {
+          "i": 328,
+          "tok": "the"
+        }
+      ]
+    },
+    {
+      "t": 126,
+      "reveals": [
+        {
+          "i": 319,
+          "tok": "league"
+        },
+        {
+          "i": 367,
+          "tok": "receive"
+        }
+      ]
+    },
+    {
+      "t": 127,
+      "reveals": [
+        {
+          "i": 75,
+          "tok": "and"
+        },
+        {
+          "i": 384,
+          "tok": "March"
+        }
+      ]
+    },
+    {
+      "t": 128,
+      "reveals": [
+        {
+          "i": 349,
+          "tok": "without"
+        },
+        {
+          "i": 364,
+          "tok": "decide"
+        }
+      ]
+    },
+    {
+      "t": 129,
+      "reveals": [
+        {
+          "i": 58,
+          "tok": "The"
+        },
+        {
+          "i": 5,
+          "tok": "I"
+        }
+      ]
+    },
+    {
+      "t": 130,
+      "reveals": [
+        {
+          "i": 128,
+          "tok": "Attorney"
+        },
+        {
+          "i": 239,
+          "tok": "while"
+        }
+      ]
+    },
+    {
+      "t": 131,
+      "reveals": [
+        {
+          "i": 195,
+          "tok": "covering,"
+        },
+        {
+          "i": 197,
+          "tok": "there"
+        }
+      ]
+    },
+    {
+      "t": 132,
+      "reveals": [
+        {
+          "i": 32,
+          "tok": "I"
+        },
+        {
+          "i": 350,
+          "tok": "the"
+        }
+      ]
+    },
+    {
+      "t": 133,
+      "reveals": [
+        {
+          "i": 351,
+          "tok": "approval"
+        },
+        {
+          "i": 78,
+          "tok": "the"
+        }
+      ]
+    },
+    {
+      "t": 134,
+      "reveals": [
+        {
+          "i": 56,
+          "tok": "a"
+        },
+        {
+          "i": 24,
+          "tok": "officer"
+        }
+      ]
+    },
+    {
+      "t": 135,
+      "reveals": [
+        {
+          "i": 46,
+          "tok": "I"
+        },
+        {
+          "i": 252,
+          "tok": "home"
+        }
+      ]
+    },
+    {
+      "t": 136,
+      "reveals": [
+        {
+          "i": 260,
+          "tok": "He"
+        },
+        {
+          "i": 70,
+          "tok": "of"
+        }
+      ]
+    },
+    {
+      "t": 137,
+      "reveals": [
+        {
+          "i": 298,
+          "tok": "with"
+        },
+        {
+          "i": 326,
+          "tok": "clause"
+        }
+      ]
+    },
+    {
+      "t": 138,
+      "reveals": [
+        {
+          "i": 204,
+          "tok": "Clay"
+        },
+        {
+          "i": 219,
+          "tok": "had"
+        }
+      ]
+    },
+    {
+      "t": 139,
+      "reveals": [
+        {
+          "i": 134,
+          "tok": "a"
+        },
+        {
+          "i": 275,
+          "tok": "will"
+        }
+      ]
+    },
+    {
+      "t": 140,
+      "reveals": [
+        {
+          "i": 126,
+          "tok": "Russian"
+        },
+        {
+          "i": 378,
+          "tok": "court"
+        }
+      ]
+    },
+    {
+      "t": 141,
+      "reveals": [
+        {
+          "i": 337,
+          "tok": "And"
+        },
+        {
+          "i": 73,
+          "tok": "with"
+        }
+      ]
+    },
+    {
+      "t": 142,
+      "reveals": [
+        {
+          "i": 234,
+          "tok": "he"
+        },
+        {
+          "i": 202,
+          "tok": "the"
+        }
+      ]
+    },
+    {
+      "t": 143,
+      "reveals": [
+        {
+          "i": 255,
+          "tok": "set"
+        },
+        {
+          "i": 289,
+          "tok": "serves"
+        }
+      ]
+    },
+    {
+      "t": 144,
+      "reveals": [
+        {
+          "i": 293,
+          "tok": "in"
+        },
+        {
+          "i": 108,
+          "tok": "James"
+        }
+      ]
+    },
+    {
+      "t": 145,
+      "reveals": [
+        {
+          "i": 33,
+          "tok": "never"
+        },
+        {
+          "i": 137,
+          "tok": "County"
+        }
+      ]
+    },
+    {
+      "t": 146,
+      "reveals": [
+        {
+          "i": 205,
+          "tok": "said."
+        },
+        {
+          "i": 161,
+          "tok": "to"
+        }
+      ]
+    },
+    {
+      "t": 147,
+      "reveals": [
+        {
+          "i": 370,
+          "tok": "results"
+        },
+        {
+          "i": 117,
+          "tok": "Trump,"
+        }
+      ]
+    },
+    {
+      "t": 148,
+      "reveals": [
+        {
+          "i": 28,
+          "tok": "there,"
+        },
+        {
+          "i": 166,
+          "tok": "Terry"
+        }
+      ]
+    },
+    {
+      "t": 149,
+      "reveals": [
+        {
+          "i": 356,
+          "tok": "its"
+        },
+        {
+          "i": 285,
+          "tok": "the"
+        }
+      ]
+    },
+    {
+      "t": 150,
+      "reveals": [
+        {
+          "i": 138,
+          "tok": "receiving"
+        },
+        {
+          "i": 385,
+          "tok": "29."
+        }
+      ]
+    },
+    {
+      "t": 151,
+      "reveals": [
+        {
+          "i": 236,
+          "tok": "up"
+        },
+        {
+          "i": 312,
+          "tok": "arise"
+        }
+      ]
+    },
+    {
+      "t": 152,
+      "reveals": [
+        {
+          "i": 380,
+          "tok": "it"
+        },
+        {
+          "i": 273,
+          "tok": "free"
+        }
+      ]
+    },
+    {
+      "t": 153,
+      "reveals": [
+        {
+          "i": 87,
+          "tok": "senior"
+        },
+        {
+          "i": 36,
+          "tok": "to"
+        }
+      ]
+    },
+    {
+      "t": 154,
+      "reveals": [
+        {
+          "i": 136,
+          "tok": "Burnet"
+        },
+        {
+          "i": 107,
+          "tok": "director"
+        }
+      ]
+    },
+    {
+      "t": 155,
+      "reveals": [
+        {
+          "i": 181,
+          "tok": "Police"
+        },
+        {
+          "i": 189,
+          "tok": "with"
+        }
+      ]
+    },
+    {
+      "t": 156,
+      "reveals": [
+        {
+          "i": 83,
+          "tok": "some"
+        },
+        {
+          "i": 186,
+          "tok": "is"
+        }
+      ]
+    },
+    {
+      "t": 157,
+      "reveals": [
+        {
+          "i": 232,
+          "tok": "Angelo"
+        },
+        {
+          "i": 348,
+          "tok": "players"
+        }
+      ]
+    },
+    {
+      "t": 158,
+      "reveals": [
+        {
+          "i": 342,
+          "tok": "unany"
+        },
+        {
+          "i": 51,
+          "tok": "ended"
+        }
+      ]
+    },
+    {
+      "t": 159,
+      "reveals": [
+        {
+          "i": 366,
+          "tok": "to"
+        },
+        {
+          "i": 331,
+          "tok": "linking"
+        }
+      ]
+    },
+    {
+      "t": 160,
+      "reveals": [
+        {
+          "i": 148,
+          "tok": "in"
+        },
+        {
+          "i": 116,
+          "tok": "President"
+        }
+      ]
+    },
+    {
+      "t": 161,
+      "reveals": [
+        {
+          "i": 23,
+          "tok": "bicycle"
+        },
+        {
+          "i": 35,
+          "tok": "anybody"
+        }
+      ]
+    },
+    {
+      "t": 162,
+      "reveals": [
+        {
+          "i": 98,
+          "tok": "President"
+        },
+        {
+          "i": 295,
+          "tok": "case"
+        }
+      ]
+    },
+    {
+      "t": 163,
+      "reveals": [
+        {
+          "i": 185,
+          "tok": "“There"
+        },
+        {
+          "i": 316,
+          "tok": "18,"
+        }
+      ]
+    },
+    {
+      "t": 164,
+      "reveals": [
+        {
+          "i": 321,
+          "tok": "it’s"
+        },
+        {
+          "i": 150,
+          "tok": "County"
+        }
+      ]
+    },
+    {
+      "t": 165,
+      "reveals": [
+        {
+          "i": 282,
+          "tok": "Wednesday"
+        },
+        {
+          "i": 40,
+          "tok": "parked"
+        }
+      ]
+    },
+    {
+      "t": 166,
+      "reveals": [
+        {
+          "i": 193,
+          "tok": "a"
+        },
+        {
+          "i": 63,
+          "tok": "and"
+        }
+      ]
+    },
+    {
+      "t": 167,
+      "reveals": [
+        {
+          "i": 274,
+          "tok": "agent,"
+        },
+        {
+          "i": 235,
+          "tok": "thought"
+        }
+      ]
+    },
+    {
+      "t": 168,
+      "reveals": [
+        {
+          "i": 22,
+          "tok": "every"
+        },
+        {
+          "i": 135,
+          "tok": "28-year-old"
+        }
+      ]
+    },
+    {
+      "t": 169,
+      "reveals": [
+        {
+          "i": 309,
+          "tok": "cases"
+        },
+        {
+          "i": 176,
+          "tok": "disturbing"
+        }
+      ]
+    },
+    {
+      "t": 170,
+      "reveals": [
+        {
+          "i": 183,
+          "tok": "Nathaniel"
+        },
+        {
+          "i": 49,
+          "tok": "president"
+        }
+      ]
+    },
+    {
+      "t": 171,
+      "reveals": [
+        {
+          "i": 194,
+          "tok": "glass"
+        },
+        {
+          "i": 368,
+          "tok": "any."
+        }
+      ]
+    },
+    {
+      "t": 172,
+      "reveals": [
+        {
+          "i": 376,
+          "tok": "ordered"
+        },
+        {
+          "i": 172,
+          "tok": "They"
+        }
+      ]
+    },
+    {
+      "t": 173,
+      "reveals": [
+        {
+          "i": 110,
+          "tok": "a"
+        },
+        {
+          "i": 79,
+          "tok": "investigation"
+        }
+      ]
+    },
+    {
+      "t": 174,
+      "reveals": [
+        {
+          "i": 353,
+          "tok": "a"
+        },
+        {
+          "i": 174,
+          "tok": "charged"
+        }
+      ]
+    },
+    {
+      "t": 175,
+      "reveals": [
+        {
+          "i": 371,
+          "tok": "are"
+        },
+        {
+          "i": 81,
+          "tok": "appropriate."
+        }
+      ]
+    },
+    {
+      "t": 176,
+      "reveals": [
+        {
+          "i": 3,
+          "tok": "early,"
+        },
+        {
+          "i": 142,
+          "tok": "10:30"
+        }
+      ]
+    },
+    {
+      "t": 177,
+      "reveals": [
+        {
+          "i": 301,
+          "tok": "which"
+        },
+        {
+          "i": 229,
+          "tok": "found."
+        }
+      ]
+    },
+    {
+      "t": 178,
+      "reveals": [
+        {
+          "i": 112,
+          "tok": "officer"
+        },
+        {
+          "i": 214,
+          "tok": "was"
+        }
+      ]
+    },
+    {
+      "t": 179,
+      "reveals": [
+        {
+          "i": 374,
+          "tok": "the"
+        },
+        {
+          "i": 359,
+          "tok": "NBA"
+        }
+      ]
+    },
+    {
+      "t": 180,
+      "reveals": [
+        {
+          "i": 332,
+          "tok": "any"
+        },
+        {
+          "i": 101,
+          "tok": "of"
+        }
+      ]
+    },
+    {
+      "t": 181,
+      "reveals": [
+        {
+          "i": 287,
+          "tok": "The"
+        },
+        {
+          "i": 13,
+          "tok": "stopped"
+        }
+      ]
+    },
+    {
+      "t": 182,
+      "reveals": [
+        {
+          "i": 308,
+          "tok": "procedural"
+        },
+        {
+          "i": 258,
+          "tok": "Clay"
+        }
+      ]
+    },
+    {
+      "t": 183,
+      "reveals": [
+        {
+          "i": 119,
+          "tok": "once"
+        },
+        {
+          "i": 111,
+          "tok": "former"
+        }
+      ]
+    },
+    {
+      "t": 184,
+      "reveals": [
+        {
+          "i": 47,
+          "tok": "saw"
+        },
+        {
+          "i": 15,
+          "tok": "NYPD"
+        }
+      ]
+    },
+    {
+      "t": 185,
+      "reveals": [
+        {
+          "i": 16,
+          "tok": "car,"
+        },
+        {
+          "i": 216,
+          "tok": "man’s"
+        }
+      ]
+    },
+    {
+      "t": 186,
+      "reveals": [
+        {
+          "i": 302,
+          "tok": "then"
+        },
+        {
+          "i": 44,
+          "tok": "then"
+        }
+      ]
+    },
+    {
+      "t": 187,
+      "reveals": [
+        {
+          "i": 279,
+          "tok": "in"
+        },
+        {
+          "i": 346,
+          "tok": "have"
+        }
+      ]
+    },
+    {
+      "t": 188,
+      "reveals": [
+        {
+          "i": 52,
+          "tok": "up"
+        },
+        {
+          "i": 377,
+          "tok": "the"
+        }
+      ]
+    },
+    {
+      "t": 189,
+      "reveals": [
+        {
+          "i": 71,
+          "tok": "the"
+        },
+        {
+          "i": 114,
+          "tok": "met"
+        }
+      ]
+    },
+    {
+      "t": 190,
+      "reveals": [
+        {
+          "i": 125,
+          "tok": "the"
+        },
+        {
+          "i": 140,
+          "tok": "call"
+        }
+      ]
+    },
+    {
+      "t": 191,
+      "reveals": [
+        {
+          "i": 379,
+          "tok": "in"
+        },
+        {
+          "i": 12,
+          "tok": "He"
+        }
+      ]
+    },
+    {
+      "t": 192,
+      "reveals": [
+        {
+          "i": 57,
+          "tok": "journalist."
+        },
+        {
+          "i": 327,
+          "tok": "disallows"
+        }
+      ]
+    }
+  ]
+}

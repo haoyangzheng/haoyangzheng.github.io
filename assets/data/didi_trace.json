@@ -1,0 +1,1574 @@
+{
+  "meta": {
+    "name": "DIDI",
+    "seq_len": 384
+  },
+  "steps": [
+    {
+      "t": 0,
+      "reveals": [
+        {
+          "i": 93,
+          "tok": "considering"
+        },
+        {
+          "i": 180,
+          "tok": "taskedience"
+        },
+        {
+          "i": 352,
+          "tok": "your"
+        },
+        {
+          "i": 221,
+          "tok": "named"
+        },
+        {
+          "i": 336,
+          "tok": "reported"
+        },
+        {
+          "i": 218,
+          "tok": "accept"
+        },
+        {
+          "i": 227,
+          "tok": "been"
+        },
+        {
+          "i": 152,
+          "tok": "Saudi"
+        },
+        {
+          "i": 66,
+          "tok": "it"
+        },
+        {
+          "i": 139,
+          "tok": "part-owned"
+        },
+        {
+          "i": 158,
+          "tok": "has"
+        },
+        {
+          "i": 53,
+          "tok": "and"
+        },
+        {
+          "i": 324,
+          "tok": "its"
+        },
+        {
+          "i": 372,
+          "tok": "average"
+        },
+        {
+          "i": 88,
+          "tok": "Monday"
+        },
+        {
+          "i": 343,
+          "tok": "drawn"
+        },
+        {
+          "i": 123,
+          "tok": "allow"
+        },
+        {
+          "i": 200,
+          "tok": "a"
+        },
+        {
+          "i": 265,
+          "tok": "leave,"
+        },
+        {
+          "i": 246,
+          "tok": "Navajo"
+        },
+        {
+          "i": 291,
+          "tok": "the"
+        },
+        {
+          "i": 306,
+          "tok": "has"
+        },
+        {
+          "i": 283,
+          "tok": "Elementary,"
+        },
+        {
+          "i": 130,
+          "tok": "that"
+        },
+        {
+          "i": 106,
+          "tok": "ElKhasi"
+        },
+        {
+          "i": 34,
+          "tok": "will"
+        },
+        {
+          "i": 55,
+          "tok": "half"
+        },
+        {
+          "i": 77,
+          "tok": "Mohsen"
+        },
+        {
+          "i": 225,
+          "tok": "decision"
+        },
+        {
+          "i": 280,
+          "tok": "by"
+        },
+        {
+          "i": 89,
+          "tok": "that"
+        },
+        {
+          "i": 254,
+          "tok": "a"
+        },
+        {
+          "i": 310,
+          "tok": "businessman"
+        },
+        {
+          "i": 94,
+          "tok": "a"
+        },
+        {
+          "i": 277,
+          "tok": "Navajo"
+        },
+        {
+          "i": 43,
+          "tok": "animal"
+        },
+        {
+          "i": 29,
+          "tok": "sperm."
+        },
+        {
+          "i": 85,
+          "tok": "Security"
+        },
+        {
+          "i": 72,
+          "tok": "remains"
+        },
+        {
+          "i": 179,
+          "tok": "animal"
+        },
+        {
+          "i": 242,
+          "tok": "governance."
+        },
+        {
+          "i": 175,
+          "tok": "kingdom"
+        },
+        {
+          "i": 270,
+          "tok": "The"
+        },
+        {
+          "i": 231,
+          "tok": "country"
+        },
+        {
+          "i": 203,
+          "tok": "to"
+        },
+        {
+          "i": 256,
+          "tok": "to"
+        },
+        {
+          "i": 113,
+          "tok": "1927."
+        },
+        {
+          "i": 217,
+          "tok": "to"
+        },
+        {
+          "i": 91,
+          "tok": "ministry"
+        },
+        {
+          "i": 122,
+          "tok": "to"
+        },
+        {
+          "i": 299,
+          "tok": "to"
+        },
+        {
+          "i": 26,
+          "tok": "stores"
+        },
+        {
+          "i": 345,
+          "tok": "because"
+        },
+        {
+          "i": 230,
+          "tok": "a"
+        },
+        {
+          "i": 2,
+          "tok": "a"
+        },
+        {
+          "i": 38,
+          "tok": "“It’s"
+        },
+        {
+          "i": 178,
+          "tok": "The"
+        },
+        {
+          "i": 278,
+          "tok": "marker"
+        },
+        {
+          "i": 263,
+          "tok": "choose"
+        },
+        {
+          "i": 325,
+          "tok": "maximum"
+        },
+        {
+          "i": 156,
+          "tok": "While"
+        },
+        {
+          "i": 358,
+          "tok": "minimum"
+        },
+        {
+          "i": 276,
+          "tok": "a"
+        },
+        {
+          "i": 210,
+          "tok": "constitution"
+        }
+      ]
+    },
+    {
+      "t": 1,
+      "reveals": [
+        {
+          "i": 68,
+          "tok": "a"
+        },
+        {
+          "i": 237,
+          "tok": "as"
+        },
+        {
+          "i": 154,
+          "tok": "and"
+        },
+        {
+          "i": 10,
+          "tok": "a"
+        },
+        {
+          "i": 65,
+          "tok": "coated"
+        },
+        {
+          "i": 371,
+          "tok": "an"
+        },
+        {
+          "i": 209,
+          "tok": "first"
+        },
+        {
+          "i": 228,
+          "tok": "framed"
+        },
+        {
+          "i": 64,
+          "tok": "and"
+        },
+        {
+          "i": 100,
+          "tok": "and"
+        },
+        {
+          "i": 80,
+          "tok": "spokesman"
+        },
+        {
+          "i": 120,
+          "tok": "a"
+        },
+        {
+          "i": 357,
+          "tok": "a"
+        },
+        {
+          "i": 271,
+          "tok": "marker"
+        },
+        {
+          "i": 266,
+          "tok": "an"
+        },
+        {
+          "i": 127,
+          "tok": "a"
+        },
+        {
+          "i": 74,
+          "tok": "about"
+        },
+        {
+          "i": 97,
+          "tok": "use"
+        },
+        {
+          "i": 99,
+          "tok": "Frieses"
+        },
+        {
+          "i": 37,
+          "tok": "year."
+        },
+        {
+          "i": 315,
+          "tok": "from"
+        },
+        {
+          "i": 19,
+          "tok": "is"
+        },
+        {
+          "i": 360,
+          "tok": "50"
+        },
+        {
+          "i": 159,
+          "tok": "not"
+        },
+        {
+          "i": 359,
+          "tok": "of"
+        },
+        {
+          "i": 220,
+          "tok": "constitution"
+        },
+        {
+          "i": 307,
+          "tok": "been"
+        },
+        {
+          "i": 162,
+          "tok": "out"
+        },
+        {
+          "i": 151,
+          "tok": "both"
+        },
+        {
+          "i": 240,
+          "tok": "in"
+        },
+        {
+          "i": 223,
+          "tok": "them."
+        },
+        {
+          "i": 249,
+          "tok": "installed"
+        },
+        {
+          "i": 251,
+          "tok": "Navajo"
+        },
+        {
+          "i": 7,
+          "tok": "University"
+        },
+        {
+          "i": 207,
+          "tok": "The"
+        },
+        {
+          "i": 157,
+          "tok": "Chid"
+        },
+        {
+          "i": 211,
+          "tok": "for"
+        },
+        {
+          "i": 149,
+          "tok": "system"
+        },
+        {
+          "i": 344,
+          "tok": "attention"
+        },
+        {
+          "i": 208,
+          "tok": "world’s"
+        },
+        {
+          "i": 177,
+          "tok": "decades."
+        },
+        {
+          "i": 96,
+          "tok": "to"
+        },
+        {
+          "i": 11,
+          "tok": "non-profit,"
+        },
+        {
+          "i": 311,
+          "tok": "Filip"
+        },
+        {
+          "i": 338,
+          "tok": "issue"
+        },
+        {
+          "i": 69,
+          "tok": "chicken,"
+        },
+        {
+          "i": 303,
+          "tok": "website,"
+        },
+        {
+          "i": 6,
+          "tok": "Western"
+        },
+        {
+          "i": 381,
+          "tok": "come"
+        },
+        {
+          "i": 305,
+          "tok": "cable"
+        },
+        {
+          "i": 109,
+          "tok": "which"
+        },
+        {
+          "i": 170,
+          "tok": "system"
+        },
+        {
+          "i": 133,
+          "tok": "Gulf"
+        },
+        {
+          "i": 167,
+          "tok": "Oera"
+        },
+        {
+          "i": 9,
+          "tok": "developed"
+        },
+        {
+          "i": 118,
+          "tok": "has"
+        },
+        {
+          "i": 253,
+          "tok": "as"
+        },
+        {
+          "i": 31,
+          "tok": "is"
+        },
+        {
+          "i": 59,
+          "tok": "it"
+        },
+        {
+          "i": 323,
+          "tok": "to"
+        },
+        {
+          "i": 322,
+          "tok": "long"
+        },
+        {
+          "i": 238,
+          "tok": "an"
+        },
+        {
+          "i": 164,
+          "tok": "combination"
+        },
+        {
+          "i": 377,
+          "tok": "and"
+        }
+      ]
+    },
+    {
+      "t": 2,
+      "reveals": [
+        {
+          "i": 144,
+          "tok": "which"
+        },
+        {
+          "i": 341,
+          "tok": "case"
+        },
+        {
+          "i": 188,
+          "tok": "Club"
+        },
+        {
+          "i": 261,
+          "tok": "will"
+        },
+        {
+          "i": 173,
+          "tok": "linking"
+        },
+        {
+          "i": 103,
+          "tok": "system"
+        },
+        {
+          "i": 284,
+          "tok": "and"
+        },
+        {
+          "i": 25,
+          "tok": "better"
+        },
+        {
+          "i": 362,
+          "tok": "meters"
+        },
+        {
+          "i": 318,
+          "tok": "or"
+        },
+        {
+          "i": 105,
+          "tok": "as"
+        },
+        {
+          "i": 192,
+          "tok": "(PLACE)"
+        },
+        {
+          "i": 90,
+          "tok": "the"
+        },
+        {
+          "i": 374,
+          "tok": "minus"
+        },
+        {
+          "i": 143,
+          "tok": "Qatar,"
+        },
+        {
+          "i": 269,
+          "tok": "says."
+        },
+        {
+          "i": 48,
+          "tok": "future,”"
+        },
+        {
+          "i": 104,
+          "tok": "known"
+        },
+        {
+          "i": 320,
+          "tok": "5,000"
+        },
+        {
+          "i": 62,
+          "tok": "this"
+        },
+        {
+          "i": 198,
+          "tok": "to"
+        },
+        {
+          "i": 147,
+          "tok": "sell"
+        },
+        {
+          "i": 146,
+          "tok": "to"
+        },
+        {
+          "i": 290,
+          "tok": "after"
+        },
+        {
+          "i": 190,
+          "tok": "the"
+        },
+        {
+          "i": 191,
+          "tok": "Animals"
+        },
+        {
+          "i": 335,
+          "tok": "outlets"
+        },
+        {
+          "i": 281,
+          "tok": "South"
+        },
+        {
+          "i": 60,
+          "tok": "out"
+        },
+        {
+          "i": 131,
+          "tok": "links"
+        },
+        {
+          "i": 165,
+          "tok": "with"
+        },
+        {
+          "i": 84,
+          "tok": "Public"
+        },
+        {
+          "i": 8,
+          "tok": "who"
+        },
+        {
+          "i": 292,
+          "tok": "South"
+        },
+        {
+          "i": 169,
+          "tok": "the"
+        },
+        {
+          "i": 368,
+          "tok": "cable"
+        },
+        {
+          "i": 288,
+          "tok": "kick"
+        },
+        {
+          "i": 18,
+          "tok": "produces"
+        },
+        {
+          "i": 1,
+          "tok": "Zetter,"
+        },
+        {
+          "i": 268,
+          "tok": "promise"
+        },
+        {
+          "i": 340,
+          "tok": "This"
+        },
+        {
+          "i": 364,
+          "tok": "spacewalk."
+        },
+        {
+          "i": 141,
+          "tok": "Sad"
+        },
+        {
+          "i": 329,
+          "tok": "Prinorgag"
+        },
+        {
+          "i": 259,
+          "tok": "born"
+        },
+        {
+          "i": 86,
+          "tok": "Ministry,"
+        },
+        {
+          "i": 294,
+          "tok": "School"
+        },
+        {
+          "i": 286,
+          "tok": "project"
+        },
+        {
+          "i": 333,
+          "tok": "chain"
+        },
+        {
+          "i": 30,
+          "tok": "He"
+        },
+        {
+          "i": 115,
+          "tok": "Saudi"
+        },
+        {
+          "i": 132,
+          "tok": "the"
+        },
+        {
+          "i": 334,
+          "tok": "of"
+        },
+        {
+          "i": 355,
+          "tok": "cable"
+        },
+        {
+          "i": 297,
+          "tok": "in."
+        },
+        {
+          "i": 171,
+          "tok": "has"
+        },
+        {
+          "i": 102,
+          "tok": "management"
+        },
+        {
+          "i": 347,
+          "tok": "do"
+        },
+        {
+          "i": 182,
+          "tok": "PLACElab,"
+        },
+        {
+          "i": 317,
+          "tok": "meter"
+        },
+        {
+          "i": 339,
+          "tok": "widely."
+        },
+        {
+          "i": 313,
+          "tok": "and"
+        },
+        {
+          "i": 226,
+          "tok": "has"
+        },
+        {
+          "i": 54,
+          "tok": "a"
+        }
+      ]
+    },
+    {
+      "t": 3,
+      "reveals": [
+        {
+          "i": 361,
+          "tok": "astronomical"
+        },
+        {
+          "i": 314,
+          "tok": "cut"
+        },
+        {
+          "i": 247,
+          "tok": "school"
+        },
+        {
+          "i": 245,
+          "tok": "a"
+        },
+        {
+          "i": 42,
+          "tok": "see"
+        },
+        {
+          "i": 380,
+          "tok": "has"
+        },
+        {
+          "i": 121,
+          "tok": "plan"
+        },
+        {
+          "i": 168,
+          "tok": "Tries,"
+        },
+        {
+          "i": 201,
+          "tok": "task"
+        },
+        {
+          "i": 264,
+          "tok": "to"
+        },
+        {
+          "i": 196,
+          "tok": "has"
+        },
+        {
+          "i": 257,
+          "tok": "support"
+        },
+        {
+          "i": 354,
+          "tok": "emergency"
+        },
+        {
+          "i": 17,
+          "tok": "lab"
+        },
+        {
+          "i": 124,
+          "tok": "imports"
+        },
+        {
+          "i": 187,
+          "tok": "Polish"
+        },
+        {
+          "i": 21,
+          "tok": "going"
+        },
+        {
+          "i": 20,
+          "tok": "quickly"
+        },
+        {
+          "i": 145,
+          "tok": "hopes"
+        },
+        {
+          "i": 213,
+          "tok": "begged"
+        },
+        {
+          "i": 14,
+          "tok": "sperm"
+        },
+        {
+          "i": 61,
+          "tok": "of"
+        },
+        {
+          "i": 267,
+          "tok": "on"
+        },
+        {
+          "i": 206,
+          "tok": "constitution."
+        },
+        {
+          "i": 212,
+          "tok": "animals"
+        },
+        {
+          "i": 92,
+          "tok": "is"
+        },
+        {
+          "i": 296,
+          "tok": "voted"
+        },
+        {
+          "i": 4,
+          "tok": "at"
+        },
+        {
+          "i": 304,
+          "tok": "the"
+        },
+        {
+          "i": 82,
+          "tok": "Saudi"
+        },
+        {
+          "i": 153,
+          "tok": "Arabia"
+        },
+        {
+          "i": 250,
+          "tok": "a"
+        },
+        {
+          "i": 330,
+          "tok": "video"
+        },
+        {
+          "i": 199,
+          "tok": "name"
+        },
+        {
+          "i": 300,
+          "tok": "the"
+        },
+        {
+          "i": 41,
+          "tok": "to"
+        },
+        {
+          "i": 243,
+          "tok": "Students"
+        },
+        {
+          "i": 95,
+          "tok": "plan"
+        },
+        {
+          "i": 39,
+          "tok": "very"
+        },
+        {
+          "i": 50,
+          "tok": "says."
+        },
+        {
+          "i": 155,
+          "tok": "Qatar."
+        },
+        {
+          "i": 241,
+          "tok": "global"
+        },
+        {
+          "i": 163,
+          "tok": "a"
+        },
+        {
+          "i": 215,
+          "tok": "Polish"
+        },
+        {
+          "i": 76,
+          "tok": "progress."
+        },
+        {
+          "i": 160,
+          "tok": "completely"
+        },
+        {
+          "i": 222,
+          "tok": "for"
+        },
+        {
+          "i": 27,
+          "tok": "than"
+        },
+        {
+          "i": 233,
+          "tok": "democracy"
+        },
+        {
+          "i": 129,
+          "tok": "system"
+        },
+        {
+          "i": 45,
+          "tok": "ship"
+        },
+        {
+          "i": 262,
+          "tok": "not"
+        },
+        {
+          "i": 272,
+          "tok": "is"
+        },
+        {
+          "i": 67,
+          "tok": "with"
+        },
+        {
+          "i": 248,
+          "tok": "that"
+        },
+        {
+          "i": 224,
+          "tok": "This"
+        },
+        {
+          "i": 184,
+          "tok": "group"
+        },
+        {
+          "i": 244,
+          "tok": "at"
+        },
+        {
+          "i": 0,
+          "tok": "Justin"
+        },
+        {
+          "i": 328,
+          "tok": "to"
+        },
+        {
+          "i": 319,
+          "tok": "about"
+        },
+        {
+          "i": 366,
+          "tok": "the"
+        },
+        {
+          "i": 75,
+          "tok": "its"
+        },
+        {
+          "i": 382,
+          "tok": "to"
+        }
+      ]
+    },
+    {
+      "t": 4,
+      "reveals": [
+        {
+          "i": 349,
+          "tok": "have"
+        },
+        {
+          "i": 363,
+          "tok": "per"
+        },
+        {
+          "i": 58,
+          "tok": "took"
+        },
+        {
+          "i": 5,
+          "tok": "Case"
+        },
+        {
+          "i": 128,
+          "tok": "Frieses"
+        },
+        {
+          "i": 239,
+          "tok": "experiment"
+        },
+        {
+          "i": 195,
+          "tok": "Poland,"
+        },
+        {
+          "i": 197,
+          "tok": "voted"
+        },
+        {
+          "i": 32,
+          "tok": "optimistic"
+        },
+        {
+          "i": 350,
+          "tok": "to"
+        },
+        {
+          "i": 351,
+          "tok": "have"
+        },
+        {
+          "i": 78,
+          "tok": "Chid,"
+        },
+        {
+          "i": 56,
+          "tok": "ago"
+        },
+        {
+          "i": 24,
+          "tok": "place"
+        },
+        {
+          "i": 46,
+          "tok": "in"
+        },
+        {
+          "i": 252,
+          "tok": "marker"
+        },
+        {
+          "i": 260,
+          "tok": "seniors"
+        },
+        {
+          "i": 70,
+          "tok": "and"
+        },
+        {
+          "i": 298,
+          "tok": "According"
+        },
+        {
+          "i": 326,
+          "tok": "limit."
+        },
+        {
+          "i": 204,
+          "tok": "create"
+        },
+        {
+          "i": 219,
+          "tok": "a"
+        },
+        {
+          "i": 134,
+          "tok": "nation’s"
+        },
+        {
+          "i": 275,
+          "tok": "be"
+        },
+        {
+          "i": 126,
+          "tok": "use"
+        },
+        {
+          "i": 376,
+          "tok": "meters,"
+        },
+        {
+          "i": 337,
+          "tok": "the"
+        },
+        {
+          "i": 73,
+          "tok": "optimistic"
+        },
+        {
+          "i": 234,
+          "tok": "and"
+        },
+        {
+          "i": 202,
+          "tok": "initiative"
+        },
+        {
+          "i": 255,
+          "tok": "symbol"
+        },
+        {
+          "i": 289,
+          "tok": "off"
+        },
+        {
+          "i": 293,
+          "tok": "Navajo"
+        },
+        {
+          "i": 108,
+          "tok": "Tries,"
+        },
+        {
+          "i": 33,
+          "tok": "it"
+        },
+        {
+          "i": 137,
+          "tok": "is"
+        },
+        {
+          "i": 205,
+          "tok": "a"
+        },
+        {
+          "i": 161,
+          "tok": "ruled"
+        },
+        {
+          "i": 369,
+          "tok": "sits"
+        },
+        {
+          "i": 117,
+          "tok": "minister"
+        },
+        {
+          "i": 28,
+          "tok": "human"
+        },
+        {
+          "i": 166,
+          "tok": "Sad"
+        },
+        {
+          "i": 356,
+          "tok": "without"
+        },
+        {
+          "i": 285,
+          "tok": "the"
+        },
+        {
+          "i": 138,
+          "tok": "currently"
+        },
+        {
+          "i": 383,
+          "tok": "light."
+        },
+        {
+          "i": 236,
+          "tok": "seen"
+        },
+        {
+          "i": 312,
+          "tok": "Prinorgag"
+        },
+        {
+          "i": 378,
+          "tok": "now"
+        },
+        {
+          "i": 273,
+          "tok": "designed"
+        },
+        {
+          "i": 87,
+          "tok": "said"
+        },
+        {
+          "i": 36,
+          "tok": "next"
+        },
+        {
+          "i": 136,
+          "tok": "It"
+        },
+        {
+          "i": 107,
+          "tok": "Oera"
+        },
+        {
+          "i": 181,
+          "tok": "group"
+        },
+        {
+          "i": 189,
+          "tok": "for"
+        },
+        {
+          "i": 83,
+          "tok": "Arabia’s"
+        },
+        {
+          "i": 186,
+          "tok": "the"
+        },
+        {
+          "i": 232,
+          "tok": "of"
+        },
+        {
+          "i": 348,
+          "tok": "not"
+        },
+        {
+          "i": 342,
+          "tok": "has"
+        },
+        {
+          "i": 51,
+          "tok": "A"
+        },
+        {
+          "i": 365,
+          "tok": "Sure,"
+        },
+        {
+          "i": 331,
+          "tok": "grapher,"
+        }
+      ]
+    },
+    {
+      "t": 5,
+      "reveals": [
+        {
+          "i": 148,
+          "tok": "the"
+        },
+        {
+          "i": 116,
+          "tok": "interior"
+        },
+        {
+          "i": 23,
+          "tok": "a"
+        },
+        {
+          "i": 35,
+          "tok": "come"
+        },
+        {
+          "i": 98,
+          "tok": "a"
+        },
+        {
+          "i": 295,
+          "tok": "District"
+        },
+        {
+          "i": 185,
+          "tok": "of"
+        },
+        {
+          "i": 316,
+          "tok": "one"
+        },
+        {
+          "i": 321,
+          "tok": "meter"
+        },
+        {
+          "i": 150,
+          "tok": "to"
+        },
+        {
+          "i": 282,
+          "tok": "Navajo"
+        },
+        {
+          "i": 40,
+          "tok": "exciting"
+        },
+        {
+          "i": 193,
+          "tok": "in"
+        },
+        {
+          "i": 63,
+          "tok": "lab"
+        },
+        {
+          "i": 274,
+          "tok": "to"
+        },
+        {
+          "i": 235,
+          "tok": "is"
+        },
+        {
+          "i": 22,
+          "tok": "to"
+        },
+        {
+          "i": 135,
+          "tok": "ferries."
+        },
+        {
+          "i": 309,
+          "tok": "by"
+        },
+        {
+          "i": 176,
+          "tok": "for"
+        },
+        {
+          "i": 183,
+          "tok": "the"
+        },
+        {
+          "i": 49,
+          "tok": "he"
+        },
+        {
+          "i": 194,
+          "tok": "Gdansk,"
+        },
+        {
+          "i": 367,
+          "tok": "Prinorgag"
+        },
+        {
+          "i": 375,
+          "tok": "5,000"
+        },
+        {
+          "i": 172,
+          "tok": "been"
+        },
+        {
+          "i": 110,
+          "tok": "was"
+        },
+        {
+          "i": 79,
+          "tok": "a"
+        },
+        {
+          "i": 353,
+          "tok": "own"
+        },
+        {
+          "i": 174,
+          "tok": "the"
+        },
+        {
+          "i": 370,
+          "tok": "at"
+        },
+        {
+          "i": 81,
+          "tok": "for"
+        },
+        {
+          "i": 3,
+          "tok": "researcher"
+        },
+        {
+          "i": 142,
+          "tok": "Oera"
+        },
+        {
+          "i": 301,
+          "tok": "space"
+        },
+        {
+          "i": 229,
+          "tok": "as"
+        },
+        {
+          "i": 112,
+          "tok": "in"
+        },
+        {
+          "i": 214,
+          "tok": "the"
+        },
+        {
+          "i": 373,
+          "tok": "of"
+        },
+        {
+          "i": 332,
+          "tok": "the"
+        },
+        {
+          "i": 101,
+          "tok": "trip"
+        },
+        {
+          "i": 287,
+          "tok": "will"
+        },
+        {
+          "i": 13,
+          "tok": "the"
+        },
+        {
+          "i": 308,
+          "tok": "cut"
+        },
+        {
+          "i": 258,
+          "tok": "Navajo"
+        },
+        {
+          "i": 119,
+          "tok": "announced"
+        },
+        {
+          "i": 111,
+          "tok": "founded"
+        },
+        {
+          "i": 47,
+          "tok": "the"
+        },
+        {
+          "i": 15,
+          "tok": "the"
+        },
+        {
+          "i": 16,
+          "tok": "new"
+        },
+        {
+          "i": 216,
+          "tok": "government"
+        },
+        {
+          "i": 302,
+          "tok": "news"
+        },
+        {
+          "i": 44,
+          "tok": "entrepreneur"
+        },
+        {
+          "i": 279,
+          "tok": "installed"
+        },
+        {
+          "i": 346,
+          "tok": "you"
+        },
+        {
+          "i": 52,
+          "tok": "year"
+        },
+        {
+          "i": 71,
+          "tok": "he"
+        },
+        {
+          "i": 114,
+          "tok": "The"
+        },
+        {
+          "i": 125,
+          "tok": "to"
+        },
+        {
+          "i": 140,
+          "tok": "by"
+        },
+        {
+          "i": 379,
+          "tok": "it"
+        },
+        {
+          "i": 12,
+          "tok": "says"
+        },
+        {
+          "i": 57,
+          "tok": "Zetter"
+        },
+        {
+          "i": 327,
+          "tok": "According"
+        }
+      ]
+    }
+  ]
+}
