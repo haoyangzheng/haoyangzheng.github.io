@@ -105,7 +105,7 @@ tags: [discrete diffusion, large language models, distillation]
     <div class="highlight-item"><span>•</span> <strong>State-of-the-Art Fast Sequence Generation:</strong> <strong>DiDi-Instruct</strong> achieves new state-of-the-art performance on the OpenWebText benchmark: consistently lower PPL across 8 to 128 NFEs, negligible entropy loss, and over 20&times; faster distillation; detailed ablations, model scaling, and protein sequence generation further confirm its robustness.</div>
   </div>
   <figure class="image-container">
-    <img src="/assets/img/PPL_compare.png" alt="Chart comparing Perplexity vs. NFEs for DiDi-Instruct against baselines" />
+    <img src="{{ base_path }}/assets/img/PPL_compare.png" alt="Chart comparing Perplexity vs. NFEs for DiDi-Instruct against baselines" />
     <figcaption>
       Perplexity vs. NFEs. Baselines for comparison include GPT-2 Small, masked diffusion language models (MDLM; <a href="https://arxiv.org/abs/2406.07524" target="_blank" rel="noopener">Sahoo et al., 2024</a>), diffusion duality (DUO; <a href="https://arxiv.org/abs/2506.10892v1" target="_blank" rel="noopener">Sahoo et al., 2025</a>), and self-distillation through time (SDTT; <a href="https://arxiv.org/abs/2410.21035" target="_blank" rel="noopener">Deschenaux et al., 2025</a>).
     </figcaption>
@@ -154,10 +154,11 @@ tags: [discrete diffusion, large language models, distillation]
 <script>
 (() => {
 // ---------- config ----------
+const BASE = '{{ base_path }}'; // provided by {% include base_path %}
 const DATA = {
-  arm:  '/assets/data/arm_trace.json',
-  mdlm: '/assets/data/mdlm_trace.json',
-  didi: '/assets/data/didi_trace.json'
+  arm:  `${BASE}/assets/data/arm_trace.json`,   // was '/assets/data/arm_trace.json'
+  mdlm: `${BASE}/assets/data/mdlm_trace.json`,  // was '/assets/data/mdlm_trace.json'
+  didi: `${BASE}/assets/data/didi_trace.json`   // was '/assets/data/didi_trace.json'
 };
 const NFEs_MAP = {
   arm:  s => s,
