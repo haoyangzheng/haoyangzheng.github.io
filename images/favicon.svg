@@ -1,1 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 45" x="0px" y="0px"><path d="M18,0A18,18,0,0,0,0,18C.1,29.77,9.05,36,18,36s17.91-6.24,18-18A18,18,0,0,0,18,0ZM8.9,31.14a9.43,9.43,0,0,1,18.2,0,15.91,15.91,0,0,1-18.2,0Zm3.5-14.55a5.6,5.6,0,1,1,5.6,5.6A5.6,5.6,0,0,1,12.4,16.59ZM28.77,29.8A11.5,11.5,0,0,0,22.12,23a7.6,7.6,0,1,0-8.24,0A11.5,11.5,0,0,0,7.23,29.8a16,16,0,1,1,21.54,0Z"/><text x="0" y="51" fill="#000000" font-size="5px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif">Created by Eva Ratkus</text><text x="0" y="56" fill="#000000" font-size="5px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif">from the Noun Project</text></svg>
+<svg width="36" height="36" xmlns="http://www.w3.org/2000/svg">
+
+ <g>
+  <title>Layer 1</title>
+  <path id="svg_1" d="m18,0a18,18 0 0 0 -18,18c0.1,11.77 9.05,18 18,18s17.91,-6.24 18,-18a18,18 0 0 0 -18,-18zm-9.1,31.14a9.43,9.43 0 0 1 18.2,0a15.91,15.91 0 0 1 -18.2,0zm3.5,-14.55a5.6,5.6 0 1 1 5.6,5.6a5.6,5.6 0 0 1 -5.6,-5.6zm16.37,13.21a11.5,11.5 0 0 0 -6.65,-6.8a7.6,7.6 0 1 0 -8.24,0a11.5,11.5 0 0 0 -6.65,6.8a16,16 0 1 1 21.54,0z"/>
+  <text id="svg_2" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif" font-weight="bold" font-size="5px" fill="#000000" y="51" x="0">Created by Eva Ratkus</text>
+  <text id="svg_3" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif" font-weight="bold" font-size="5px" fill="#000000" y="56" x="0">from the Noun Project</text>
+ </g>
+</svg>
