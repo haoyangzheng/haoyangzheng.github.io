@@ -42,6 +42,38 @@ header p.affiliations {
 .bibtex-header h2 {
     margin-bottom: 0; /* Remove default margin from h2 inside this container */
 }
+/* --- New styles for circular Prev/Next icon buttons --- */
+#btn-prev,
+#btn-next {
+  /* Shape and Size */
+  width: 38px;  /* Set a fixed width */
+  height: 38px; /* Set a fixed height */
+  border-radius: 50%; /* This makes the button a perfect circle */
+
+  /* Remove default padding and center the icon */
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  /* Icon styling */
+  font-size: 0.9rem;
+  color: #555; /* A slightly softer icon color */
+  
+  /* Effects */
+  transition: background-color 0.2s, color 0.2s;
+}
+
+#btn-prev:hover,
+#btn-next:hover {
+  background-color: #f0f0f0; /* Add a background color on hover */
+  color: #111; /* Darken the icon on hover */
+}
+#btn-play,
+#btn-replay {
+  width: 5.5rem; /* Set a fixed width to prevent resizing. You can adjust this value. */
+  text-align: center; /* Ensure the text is centered within the button */
+}
 .copy-btn {
     /* Reset button styles for a clean icon look */
     background: transparent;
@@ -273,11 +305,60 @@ footer a {
 .token { display:inline-block; padding:.15rem .25rem; border-radius:6px; margin:.05rem; transition: background-color .15s ease, color .15s ease; }
 .token.mask { color:#b0bec5; background:#f5f5f5; } /* Lighter mask token */
 .token.known { color:#b71c1c; background:#eceff1; } /* Unmasked token with red font */
+/* New style for the placeholder tokens in the ARM animation */
+.token.empty {
+  padding: 0;
+  margin: 0;
+}
 .token.new { color:#fff; background:#d32f2f; } /* Red highlight for new tokens */
 .status { display:flex; gap:1rem; margin-top:.0rem; color:#555; }
 #sampler-demo h2 {
   font-size: 2.1rem; /* Make the font size larger. You can adjust this value. */
   line-height: 1.4;  /* Increase the space between the two lines. You can adjust this value. */
+}
+/* --- Custom Styles for the Range Slider --- */
+/* General reset for the slider */
+#speed {
+  -webkit-appearance: none; /* Remove default styles for WebKit browsers */
+  appearance: none;
+  background: transparent; /* Make the background behind the track transparent */
+  cursor: pointer;
+}
+
+/* --- Track Styles (the bar) --- */
+/* For Chrome, Safari, Edge */
+#speed::-webkit-slider-runnable-track {
+  height: 6px;
+  background: #ffcdd2; /* A light red for the track, matching the theme */
+  border-radius: 3px;
+}
+
+/* For Firefox */
+#speed::-moz-range-track {
+  height: 6px;
+  background: #ffcdd2; /* A light red for the track, matching the theme */
+  border-radius: 3px;
+}
+
+/* --- Thumb Styles (the handle you drag) --- */
+/* For Chrome, Safari, Edge */
+#speed::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Remove default thumb styles */
+  appearance: none;
+  margin-top: -5px; /* Vertically center the thumb on the track */
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background: #910b0b; /* The theme's dark red color */
+}
+
+/* For Firefox */
+#speed::-moz-range-thumb {
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background: #910b0b; /* The theme's dark red color */
+  border: none; /* Remove default border in Firefox */
 }
 #main {
   max-width: none !important;   /* Remove theme's outer max-width cap */

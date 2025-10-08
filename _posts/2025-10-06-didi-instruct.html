@@ -67,15 +67,17 @@ tags: [discrete diffusion, large language models, distillation]
       <button class="tab" data-method="arm" role="tab" aria-selected="false">ARMs</button>
     </div>
     <div class="playback">
-      <button id="btn-prev" aria-label="Previous step">⟨ Prev</button>
+      <!-- <button id="btn-prev" aria-label="Previous step">⟨ Prev</button> -->
+      <button id="btn-prev" aria-label="Previous step"><i class="fas fa-chevron-left"></i></button>
       <button id="btn-play" aria-label="Play">▶ Play</button>
       <button id="btn-replay" aria-label="Replay">↺ Replay</button>
-      <button id="btn-next" aria-label="Next step">Next ⟩</button>
+      <!-- <button id="btn-next" aria-label="Next step">Next ⟩</button> -->
+      <button id="btn-next" aria-label="Next step"><i class="fas fa-chevron-right"></i></button>
       <div class="speed">
         <div class="speed-labels">
           <label for="speed">Speed</label> <span id="speed-val">1×</span>
         </div>
-        <input id="speed" type="range" min="0.25" max="4" step="0.25" value="1" />
+        <input id="speed" type="range" min="0.25" max="10" step="0.25" value="1" />
       </div>
     </div>
   </div>

@@ -79,8 +79,21 @@ function render(highlightNew=false) {
   const frag = document.createDocumentFragment();
   for (let i=0;i<L;i++) {
     const span = document.createElement('span');
-    span.className = 'token ' + (seq[i]===TOK_MASK ? 'mask' : (newSet.has(i)?'new':'known'));
-    span.textContent = (seq[i]===TOK_MASK? TOK_MASK : seq[i]) + ' ';
+    let className = 'token ';
+
+    // Add a new case to handle the empty strings for ARM animation
+    if (seq[i] === TOK_MASK) {
+        className += 'mask';
+    } else if (seq[i] === '') {
+        className += 'empty'; // Assign a new 'empty' class
+    } else if (newSet.has(i)) {
+        className += 'new';
+    } else {
+        className += 'known';
+    }
+
+    span.className = className;
+    span.textContent = seq[i] + ' ';
     frag.appendChild(span);
   }
   $line.replaceChildren(frag);
@@ -95,18 +108,18 @@ function updateReadout() {
   const total = trace ? trace.steps.length : 0;
   $step.textContent = `NFEs: ${Math.min(step, total)}/${total}`;
 }
-// Resets the animation to its initial state.
 function resetAnimation() {
-    // Fix: The 'seq' array must be re-initialized with the correct length 
-    // from the currently loaded trace data. Otherwise, seq.fill() would not work correctly
-    // on an empty or incorrectly sized array.
     const len = trace ? trace.meta.seq_len : 0;
-    seq = Array(len).fill(TOK_MASK);
+    
+    // If the method is 'arm', initialize with empty strings. Otherwise, use '[MASK]'.
+    if (method === 'arm') {
+      seq = Array(len).fill('');
+    } else {
+      seq = Array(len).fill(TOK_MASK);
+    }
 
     step = 0;
     render();
-    // The updateReadout() call is not strictly needed for the height calculation,
-    // but it is necessary for correctly resetting the UI text, so we keep it.
     updateReadout();
 }
 function togglePlay() {
@@ -168,7 +181,14 @@ $btnPrev.addEventListener('click', () => {
   if (!trace || step === 0) return;
   if (playing) togglePlay();
   step--;
-  seq.fill(TOK_MASK);
+
+  // If the method is 'arm', fill with empty strings. Otherwise, use '[MASK]'.
+  if (method === 'arm') {
+    seq.fill('');
+  } else {
+    seq.fill(TOK_MASK);
+  }
+
   for (let k=0;k<step;k++) applyStep(k);
   render();
   updateReadout();
