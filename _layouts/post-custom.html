@@ -97,51 +97,47 @@ header p.affiliations {
     flex-wrap: wrap; /* Allow wrapping on very small screens if necessary */
     gap: 0.5rem; /* Add a small gap between buttons */
 }
+
+/* --- Revised Styles for Header Links --- */
 .links {
     margin-top: 15px;
-    display: flex; /* Added for horizontal alignment */
-    justify-content: center; /* Center the links */
-    flex-wrap: wrap; /* Allow links to wrap on smaller screens */
-    gap: 10px; /* Space between links */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px; /* Increased gap for better spacing */
 }
 .links .link-block {
     display: inline-block;
 }
 .links a {
-    display: flex; /* Use flex for icon and text alignment */
-    align-items: center; /* Vertically align icon and text */
-    gap: 5px; /* Space between icon and text */
-    padding: 8px 14px;
-    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    gap: 6px; /* Space between icon and text */
     text-decoration: none;
     color: #910b0b;
-    background: #fce6e6;
-    transition: background 0.2s;
-    border: 1px solid #910b0b; /* Added border for button look */
+    transition: opacity 0.2s ease-in-out;
+    /* Background, border, and padding have been removed to make the "button" part invisible */
 }
 .links a:hover {
-    background: #f7cdcd;
+    opacity: 0.7; /* Fade the icon and text slightly on hover */
 }
 .links a .icon {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 18px; /* Standardize icon size */
-    height: 18px;
+    width: 22px;  /* You can adjust this value to make the icon bigger or smaller */
+    height: 22px; /* You can adjust this value to make the icon bigger or smaller */
 }
-.links a .icon i {
-    font-size: 18px; /* Icon font size */
-}
+.links a .icon img,
+.links a .icon i,
 .links a .icon p {
-    margin: 0; /* Remove default paragraph margin */
-    line-height: 1; /* Ensure emoji aligns well */
+    max-width: 100%; /* Ensure the image/icon scales down to fit the container */
+    height: auto;
+    font-size: 22px; /* Match the icon font size to the container size */
+    margin: 0;
+    line-height: 1;
 }
 
-/* main {
-    max-width: 1000px;
-    margin: 40px auto;
-    padding: 0 20px;
-} */
 .tagline {
     font-size: 1.4rem !important;
     margin-bottom: 20px;
