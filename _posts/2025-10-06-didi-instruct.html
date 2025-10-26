@@ -127,6 +127,364 @@ custom_favicon: "/images/favicon/didi-favicon.png"
     <p>Fast and high-quality language generation is the holy grail pursued in the age of AI. In this work we introduce <strong>Di</strong>screte <strong>Di</strong>ffusion Divergence <strong>Instruct</strong> (<strong>DiDi-Instruct</strong>), a training-based method that initializes from a pre-trained masked discrete diffusion language model and distills a few-step student for fast generation. The resulting DiDi-Instruct model achieves comparable or superior performance to its dLLM teacher and a GPT-2 baseline while enabling up to 64× acceleration. The theoretical foundation of DiDi-Instruct is a novel framework based on integral KL-divergence minimization, which yields a practical training algorithm. We further introduce grouped reward normalization, intermediate-state matching, and the reward-guided ancestral sampler that significantly improve training stability, model coverage and inference quality. On OpenWebText, DiDi-Instruct achieves perplexities ranging from 62.2 (8 NFEs) to 18.4 (128 NFEs) and reduces additional training wall-clock time by more than 20× compared to competing dLLM distillation methods. We validate the robustness and effectiveness of DiDi-Instruct through extensive ablation studies, model scaling and generation of discrete protein sequences. In conclusion, DiDi-Instruct is an efficient yet effective distillation method, enabling language generation in the blink of an eye.</p>
 </section>
 
+<section id="background" class="highlighted-section">
+  <h2>Background</h2>
+  <p>
+    Fast language sequence generation has been a long-standing goal for large-scale AI systems. Being one of the most typical large language models (LLMs), Auto-regressive models (ARMs) have achieved remarkable success across a wide spectrum of natural language tasks. However, the interior mechanism that underpins their success imposes an inherent bottleneck: tokens are generated sequentially one at a time, limiting parallelism and throughput at scales. <strong>Even with advanced computational techniques, such as KV caches, AR models still have a significant throughput ceiling.</strong>
+  </p>
+  <p>
+    Emerging as a competitive language generation paradigm, discrete diffusion large language models (dLLMs) reinterpret text generation as an iterative text tokens denoising process. Starting from a fully corrupted token sequence, dLLMs first train and then apply a learned sequence denoiser several times to recover the clean text token sequences. As a result, this inference paradigm enables dLLMs to use the bidirectional attention inherited from the transformer network, and therefore, can generate sequences with fewer numbers of function evaluations (NFEs) than ARMs.
+  </p>
+  <p>
+    Despite their good performances and improved efficiency, dLLMs still face the inference efficiency bottleneck in generation steps. For instance, on the OpenWebText benchmark, <strong>dLLMs still need up to 256 NFEs to match the performance of a GPT2 model.</strong> Though these early studies have pioneered the frontier of fast language generation, their generation throughput still has much room to improve: on OpenWebText, <strong>even the most recent SDTT can not match the performance of GPT2 baseline within 32 NFEs.</strong>
+  </p>
+</section>
+
+
+<section id="methodology" class="highlighted-section">
+  <h2>Methodology: DiDi-Instruct</h2>
+  <p>
+    The extension of Integral KL-divergence (IKL) to distill Masked Diffusion Models (MDMs) presents several inherent challenges. This section details the comprehensive solution via advances in objective design, training stability, and inference efficiency.
+  </p>
+    <figure class="image-container" id="pipeline-figure">
+      <img src="/assets/img/didi-instruct/pipline-Photoroom.png" alt="Pipeline of the DiDi-Instruct algorithm" />
+      <figcaption>
+        The pipeline of DiDi-Instruct (Algorithm 1). Given a fully masked input <strong>z</strong><sub>t</sub> (t=1), both the <span style="color: red;">student <strong>p</strong><sub>ν</sub></span> and the <span style="color: blue;">teacher <strong>p</strong><sub>θ</sub></span> produce clean samples <strong>x</strong> and <strong>x</strong>', which are corrupted at t<sub>i</sub> ~ π(t) to form <strong>z</strong><sub>i</sub> and <strong>z</strong><sub>i</sub>'. The <span style="color: green;">discriminator D<sub>λ</sub></span> is trained to classify these outputs, while its reward signal (Eq. 6) enables the gradient update (Eq. 5) for the student. The red line denotes the gradient flow for the <span style="color: red;">student's update step</span>, and the blue line represents the one for the <span style="color: blue;">auxiliary model's update step</span>.
+        </figcaption>
+    </figure>
+  <h3>Integral KL Divergence Framework</h3>
+  <p>
+    The principle of <strong>DiDi-Instruct</strong> is to minimize an Integral Kullback-Leibler (IKL) divergence between the distributions of a few-step student generation model and a pre-trained dLLM. By minimizing IKL between these distributions across different noise levels \(t \in [0,1]\), the student can match the ability of dLLM in a distribution-matching manner with significantly improved efficiency. The IKL divergence aggregates the discrepancy between student marginal \(\mathbf{q}_{\nu}\) and teacher marginal \(\mathbf{q}_{\theta}\):
+  </p>
+  <p style="text-align: center;">
+    \(\mathcal{D}_{\text{IKL}}(\mathbf{q}_{\nu}\|\mathbf{q}_{\theta}) := \int_{0}^{1} \omega(t)\text{KL}(\mathbf{q}_{\nu}\|\mathbf{q}_{\theta})\mathrm{d}t\)
+  </p>
+  <p>
+    where \(\omega(t)\) is a positive weighting function. IKL integrates this continuum of reliable comparisons, ensuring the student learns the teacher's complete denoising behavior, which leads to more stable and effective training than only matching the final output.
+  </p>
+
+  <h3>Discrete Diffusion Divergence Instruction</h3>
+  <p>
+    A primary challenge in distilling MDMs is the discrete nature of the state space. The gradient formulation in continuous diffusion models relies on differentiating through \(\mathbf{z}_{t}\), but in MDMs, this forward process involves non-differentiable operations (e.g., arg max). We instead take inspiration from the policy gradient to adapt a mathematically rigorous solution.
+  </p>
+  <p>
+    We reformulate the distillation objective from a general policy gradient perspective, deriving a simple yet tractable update rule for the few-step student according to some reward function. The gradient of the objective admits a score-function form that does not differentiate through the discrete sampling path:
+  </p>
+  <p style="text-align: center;">
+    \(\nabla_{\nu}\mathcal{L}(\nu) = \mathsf{E}_{t\sim\pi(t),\mathbf{x}\sim\mathbf{p}_{\nu},\mathbf{z}_{t}\sim Q}\left[\frac{\omega(t)}{\pi(t)} \cdot R(\mathbf{z}_{t},t) \cdot \nabla_{\nu}\log \mathbf{p}_{\nu}(\mathbf{z}_{t}=\mathbf{m},t=1)\right]\)
+  </p>
+  <p>
+    where \(R(\mathbf{z}_{t},t) := \log \mathbf{q}_{\nu}(\mathbf{z}_{t},t) - \log \mathbf{q}_{\theta}(\mathbf{z}_{t},t)\) denotes the reward (log-density ratio between student and teacher) at \(\mathbf{z}_{t}\).
+  </p>
+
+  <h3>Density-Ratio Estimation via Adversarial Discriminator</h3>
+  <p>
+    Since both \(\log\mathbf{q}_{\nu}\) and \(\log\mathbf{q}_{\theta}\) are intractable to compute directly, we avoid modeling the individual densities and instead approximate their ratio. We train an auxiliary discriminator \(D_{\lambda}:\mathcal{V}^{L}\times[0,1]\to(0,1)^{L}\) to distinguish samples generated by \(\mathbf{q}_{\nu}\) and \(\mathbf{q}_{\theta}\). For the optimal discriminator \(D_{\lambda^{*}}(\mathbf{z}_{t},t)\), the density ratio can be expressed as:
+  </p>
+  <p style="text-align: center;">
+    \(\frac{\mathbf{q}_{\nu}(\mathbf{z}_{t},t)}{\mathbf{q}_{\theta}(\mathbf{z}_{t},t)} = \frac{D_{\lambda^{*}}(\mathbf{z}_{t},t)}{1-D_{\lambda^{*}}(\mathbf{z}_{t},t)}\)
+  </p>
+  <p>
+    The reward can then be estimated from the discriminator network \(D_{\lambda}\) by aggregating the log-density ratios over all masked positions in the sequence.
+  </p>
+
+  <h3>Training Stability Techniques</h3>
+  <p>
+    <strong>Grouped Reward Normalization:</strong> While the reward estimator is tractable, its direct use in score-function gradients can exhibit high variance. We therefore adopt Group Relative Policy Optimization (GRPO from DeepSeek) to standardize rewards within each mini-batch, significantly reducing gradient variance and improving training stability.
+  </p>
+  <p>
+    <strong>Intermediate-State Matching:</strong> While sampling directly from \(\mathbf{z}_{t} = \mathbf{m}\) (\(t = 1\)) to \(\mathbf{x}\) is suitable for one-step generators, it induces collapse in multi-step regimes. To expose the student to intermediate corruption levels, we approximate the score by decomposing it at a randomly sampled time \(t_i \sim \pi(t)\) and its corresponding state \(\mathbf{z}_{i}\). Training with this split score exposes the student to a distribution of intermediate states and mitigates entropy collapse.
+  </p>
+
+  <div class="algorithm-container">
+    <figure class="algorithm-figure">
+      <img src="/assets/img/didi-instruct/algo1.png" alt="DiDi-Instruct Algorithm Diagram">
+      <figcaption>DiDi-Instruct Algorithm</figcaption>
+    </figure>
+    <figure class="algorithm-figure">
+      <img src="/assets/img/didi-instruct/algo2.png" alt="RGAS Algorithm Diagram">
+      <figcaption>Reward-Guided Ancestral Sampling</figcaption>
+    </figure>
+  </div>
+
+  <h3>Reward-Guided Ancestral Sampler (RGAS)</h3>
+  <p>
+    We further propose a decoding strategy that leverages the trained discriminator to guide ancestral sampling. Starting from a fully masked sequence \(\mathbf{z}_{N}=(\mathbf{m},\ldots,\mathbf{m})\) at \(t_{N}=1\), the procedure generates samples by iteratively denoising from \(t_{n}\) to \(t_{n-1}\) for \(n=N,\ldots,1\), following the student's backward distribution \(\mathbf{p}_{\nu}(\mathbf{z}_{n-1}|\mathbf{z}_{n})\). RGAS employs a hybrid strategy across the denoising process:
+  </p>
+  <ul style="margin-left: 2em;">
+    <li>For early steps (\(t_{n} \approx 1\)): Use <strong>gradient tilting</strong> (\(h > 0, M = 1\)) to steer global structure toward high-reward regions</li>
+    <li>For late steps (\(t_{n} \approx 0\)): Switch to <strong>multi-candidate re-ranking</strong> (\(h = 0, M > 1\)) where we draw multiple candidates and select based on reward</li>
+  </ul>
+  <p>
+    This approach significantly improves inference quality, reducing generation perplexity by approximately 30%.
+  </p>
+</section>
+
+
+
+<section id="experiments" class="highlighted-section">
+  <h2>Experiments</h2>
+  <p>
+    Our experiments are designed to distill a pre-trained teacher model into an efficient few-step student generator with DiDi-Instruct. All models are trained on OpenWebText. Following standard practices, we tokenize the corpus using the GPT-2 tokenizer, pack sequences to a context length of 1024, and hold out the last 100,000 documents for validation.
+  </p>
+
+  <h3>Experimental Setup</h3>
+  <p>
+    Our teacher is a 169M parameter MDLM with a Diffusion Transformer (12 layers, 12 attention heads, 768 hidden dimension). We pre-trained this model for 1024 NFEs, achieving a perplexity of 38.53 and an entropy of 5.22. The student model shares an identical architecture to ensure a fair comparison. The discriminator is a 131M parameter network based on the same backbone, but with a new randomly initialized classification head.
+  </p>
+  <p>
+    The distillation process runs 10,000 iterations using the AdamW optimizer with a learning rate of \(10^{-6}\) and no warm-up. The teacher model was pre-trained on 8 NVIDIA H100 GPUs. In contrast, our DiDi-Instruct distillation is highly efficient, requiring only a single H100 GPU.
+  </p>
+
+  <h3>State-of-the-Art Performance</h3>
+  <p>
+    DiDi-Instruct achieves new state-of-the-art performance on the OpenWebText benchmark: consistently lower Perplexity (PPL) across 8 to 128 NFEs, negligible entropy loss, and over 20x faster distillation. With only <strong>16 NFEs</strong>, our model's PPL already surpasses that of the 1024-step teacher model. At 1024 NFEs, DiDi-Instruct achieves a final PPL of 15.62, a reduction of over 24% compared to the strongest baseline.
+  </p>
+  <p>
+    These performance gains are achieved with a negligible loss in diversity; the generative entropy from 8 to 128 NFEs is 5.17, 5.22, 5.20, 5.18, and 5.17, respectively (e.g., 1024-step teacher model is 5.22), indicating sample diversity is well-preserved.
+  </p>
+    <figure class="image-container" id="pipeline-figure">
+    <img src="/assets/img/didi-instruct/exp_compare-Photoroom.png" alt="Experimental Resutls" />
+  </figure>
+  <h3>Efficiency and Scalability</h3>
+  <p>
+    DiDi-Instruct offers substantial computational advantages in both training and inference. Our single-round distillation framework completes training in around <strong>one H100 GPU hour</strong>, in contrast to the 20+ GPU hours required by multi-round methods. During inference, RGAS provides a superior perplexity-latency trade-off, achieving a PPL of 23.54 at a latency of 1.31 s/sequence (32 NFEs), whereas standard ancestral sampling only reaches a PPL of 44.54 (0.71 s/sequence, 32 NFEs).
+  </p>
+<!-- 
+  <h3>Model Scaling</h3>
+  <p>
+    We perform an incremental scaling experiment to 424M parameters while holding the training and inference pipeline fixed to the 169M configuration. From 8 to 1024 NFEs, DiDi-Instruct yields large and consistent PPL reductions of 88.5% (8 NFEs), 87.7% (16 NFEs), 85.3% (32 NFEs), 82.7% (64 NFEs), and 79.0% (128 NFEs). Entropy remains comparable throughout, indicating that diversity is preserved while accuracy improves. These results confirm that the quality-efficiency advantages of DiDi-Instruct persist at increasing scale with minimal procedural changes.
+  </p> -->
+
+  <h3>Protein Sequence Generation</h3>
+  <p>
+    To demonstrate the applicability of our distillation framework beyond natural language generation, we apply DiDi-Instruct to unconditional protein sequence generation. We adopt the Diffusion Protein Language Model (DPLM), pretrained on UniRef50 with 150M parameters, as the teacher model and distill it into a few-step student generator.
+  </p>
+    <figure class="image-container" id="pipeline-figure">
+    <img src="/assets/img/didi-instruct/protein-Photoroom.png" alt="Protein Sequence Generation" />
+    <figcaption>
+      Visualization of high-confidence protein sequences (pLDDT>70) generated by DiDi-Instruct, with lengths ranging from 100 to 500 NFEs.  
+    </figcaption>
+  </figure>
+  <p>
+    We evaluate sequence quality using the predicted local distance difference test (pLDDT) score, which reflects structural plausibility and foldability. Our results demonstrate that the distilled student consistently achieves superior pLDDT scores across generation settings ranging from 8 to 512 NFEs. Compared to the teacher model, the student not only preserves the ability to generate variable-length protein sequences but also enhances structural quality in most cases. Moreover, our model surpasses the high-confidence threshold (pLDDT > 70) with as few as 8-32 NFEs, while the teacher requires substantially more NFEs to reach a comparable level.
+  </p>
+</section>
+
+<section id="ablation" class="highlighted-section">
+  <h2>Ablation Studies</h2>
+  <p>
+    We conduct comprehensive ablation studies to validate the contribution of each component in DiDi-Instruct. We perform two types of analyses: a cumulative study that progressively adds techniques to a baseline, showing their synergistic benefits, and a leave-one-out study that removes individual components to confirm their necessity.
+  </p>
+
+<div class="ablation-tables">
+  <table class="ablation-table" aria-labelledby="caption-cumulative">
+    <caption id="caption-cumulative">
+      Cumulative Ablation Study. We start from a baseline model and <em>progressively add</em> the listed tricks on top of the previous row (top→bottom). Metrics are reported as PPL↓ and Entropy↑ for different NFEs. The teacher with 1024 NFEs yields entropy 5.22.
+    </caption>
+    <thead>
+      <tr>
+        <th rowspan="3" scope="col">Configurations</th>
+        <th colspan="2" scope="colgroup">8 NFEs</th>
+        <th colspan="2" scope="colgroup">16 NFEs</th>
+        <th colspan="2" scope="colgroup">32 NFEs</th>
+        <th colspan="2" scope="colgroup">64 NFEs</th>
+        <th colspan="2" scope="colgroup">128 NFEs</th>
+      </tr>
+      <tr class="mid-rule">
+        <th colspan="2" scope="colgroup"></th>
+        <th colspan="2" scope="colgroup"></th>
+        <th colspan="2" scope="colgroup"></th>
+        <th colspan="2" scope="colgroup"></th>
+        <th colspan="2" scope="colgroup"></th>
+      </tr>
+      <tr>
+        <th scope="col">PPL↓</th><th scope="col">Entropy↑</th>
+        <th scope="col">PPL↓</th><th scope="col">Entropy↑</th>
+        <th scope="col">PPL↓</th><th scope="col">Entropy↑</th>
+        <th scope="col">PPL↓</th><th scope="col">Entropy↑</th>
+        <th scope="col">PPL↓</th><th scope="col">Entropy↑</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row"><strong>Baseline (no tricks)</strong></th>
+        <td>803.922</td><td>5.85</td>
+        <td>311.450</td><td>5.76</td>
+        <td>174.789</td><td>5.70</td>
+        <td>113.112</td><td>5.61</td>
+        <td>96.649</td><td>5.59</td>
+      </tr>
+      <tr>
+        <th scope="row">+ Score Decompose</th>
+        <td>667.830</td><td>5.83</td>
+        <td>289.720</td><td>5.76</td>
+        <td>165.809</td><td>5.70</td>
+        <td>105.880</td><td>5.61</td>
+        <td>89.350</td><td>5.59</td>
+      </tr>
+      <tr>
+        <th scope="row">+ Coupled Time <em>t</em></th>
+        <td>101.019</td><td>5.16</td>
+        <td>75.188</td><td>5.46</td>
+        <td>48.441</td><td>5.35</td>
+        <td>35.833</td><td>5.37</td>
+        <td>30.574</td><td>5.33</td>
+      </tr>
+      <tr>
+        <th scope="row">+ ω(<em>t</em>) Correction</th>
+        <td>94.955</td><td>5.21</td>
+        <td>75.607</td><td>5.22</td>
+        <td>31.651</td><td>5.20</td>
+        <td>25.271</td><td>5.16</td>
+        <td>20.980</td><td>5.12</td>
+      </tr>
+      <tr>
+        <th scope="row">+ π(<em>t</em>) Weighting</th>
+        <td>92.100</td><td>5.15</td>
+        <td>43.997</td><td>5.17</td>
+        <td>32.276</td><td>5.21</td>
+        <td>26.079</td><td>5.21</td>
+        <td>21.377</td><td>5.13</td>
+      </tr>
+      <tr>
+        <th scope="row">+ Regularization</th>
+        <td>88.274</td><td>5.11</td>
+        <td>43.980</td><td>5.16</td>
+        <td>28.444</td><td>5.12</td>
+        <td>21.946</td><td>5.06</td>
+        <td>18.325</td><td>5.00</td>
+      </tr>
+      <tr>
+        <th scope="row">+ Guided Inference</th>
+        <td>62.236</td><td>5.17</td>
+        <td>38.188</td><td>5.21</td>
+        <td>24.971</td><td>5.18</td>
+        <td>21.905</td><td>5.15</td>
+        <td>18.446</td><td>5.15</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <table class="ablation-table" aria-labelledby="caption-loo">
+    <caption id="caption-loo">
+      Leave-One-Out Ablation Study. Each row shows performance <em>without (w/o)</em> one trick while keeping the others unchanged. Metrics are PPL↓ and Entropy↑ over different NFEs. The lowest PPL in each NFE column is <span class="underline">underlined</span>.
+    </caption>
+    <thead>
+      <tr>
+        <th rowspan="3" scope="col">Configurations</th>
+        <th colspan="2" scope="colgroup">8 NFEs</th>
+        <th colspan="2" scope="colgroup">16 NFEs</th>
+        <th colspan="2" scope="colgroup">32 NFEs</th>
+        <th colspan="2" scope="colgroup">64 NFEs</th>
+        <th colspan="2" scope="colgroup">128 NFEs</th>
+      </tr>
+      <tr class="mid-rule">
+        <th colspan="2" scope="colgroup"></th>
+        <th colspan="2" scope="colgroup"></th>
+        <th colspan="2" scope="colgroup"></th>
+        <th colspan="2" scope="colgroup"></th>
+        <th colspan="2" scope="colgroup"></th>
+      </tr>
+      <tr>
+        <th scope="col">PPL↓</th><th scope="col">Entropy↑</th>
+        <th scope="col">PPL↓</th><th scope="col">Entropy↑</th>
+        <th scope="col">PPL↓</th><th scope="col">Entropy↑</th>
+        <th scope="col">PPL↓</th><th scope="col">Entropy↑</th>
+        <th scope="col">PPL↓</th><th scope="col">Entropy↑</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">w/o Score Decompose</th>
+        <td>33584</td><td>6.77</td>
+        <td>28962</td><td>6.77</td>
+        <td>23134</td><td>6.75</td>
+        <td>14634</td><td>6.64</td>
+        <td>7983</td><td>6.51</td>
+      </tr>
+      <tr>
+        <th scope="row">w/o Coupled Time <em>t</em></th>
+        <td>360.75</td><td>5.42</td>
+        <td>159.43</td><td>5.43</td>
+        <td>94.859</td><td>5.45</td>
+        <td>64.639</td><td>5.35</td>
+        <td>51.121</td><td>5.39</td>
+      </tr>
+      <tr>
+        <th scope="row">w/o ω(<em>t</em>) Correction</th>
+        <td>82.489</td><td>5.12</td>
+        <td>41.034</td><td>5.13</td>
+        <td>30.313</td><td>5.09</td>
+        <td>25.125</td><td>5.04</td>
+        <td>18.806</td><td>5.02</td>
+      </tr>
+      <tr>
+        <th scope="row">w/o π(<em>t</em>) Weighting</th>
+        <td>69.656</td><td>5.22</td>
+        <td>40.499</td><td>5.17</td>
+        <td>25.799</td><td>5.15</td>
+        <td>21.503</td><td>5.16</td>
+        <td>19.616</td><td>5.14</td>
+      </tr>
+      <tr>
+        <th scope="row">w/o Regularization</th>
+        <td>84.594</td><td>5.20</td>
+        <td><span class="underline">30.994</span></td><td>5.22</td>
+        <td><span class="underline">23.603</span></td><td>5.20</td>
+        <td><span class="underline">19.609</span></td><td>5.18</td>
+        <td><span class="underline">17.499</span></td><td>5.17</td>
+      </tr>
+      <tr>
+        <th scope="row">w/o Guided Inference</th>
+        <td>88.274</td><td>5.11</td>
+        <td>43.980</td><td>5.16</td>
+        <td>28.444</td><td>5.12</td>
+        <td>21.946</td><td>5.06</td>
+        <td>18.325</td><td>5.00</td>
+      </tr>
+      <tr class="mid-rule-body">
+        <th scope="row"><strong>Baseline (with all tricks)</strong></th>
+        <td><span class="underline">62.236</span></td><td>5.17</td>
+        <td>38.188</td><td>5.21</td>
+        <td>24.971</td><td>5.18</td>
+        <td>21.905</td><td>5.15</td>
+        <td>18.446</td><td>5.15</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+  <h3>Key Findings</h3>
+  <p>
+    Our ablation studies reveal distinct roles for each component in our framework:
+  </p>
+  <ul style="margin-left: 2em;">
+    <li><strong>Score Decomposition:</strong> A non-negotiable cornerstone, providing essential stability without which the model fails to train (PPL > 30,000 when removed)</li>
+    <li><strong>Coupled Time t:</strong> The most significant performance gains are driven by coupling \(t\) in the objective and score decomposition, reducing 8-step PPL from 600+ to around 100</li>
+    <li><strong>Loss Shaping:</strong> Weighting functions \(\omega(t)\) and \(\pi(t)\) further smooth optimization, especially around 16 NFEs</li>
+    <li><strong>Regularization:</strong> Crucial for stability at very few NFEs (≤ 8 NFEs) but detrimental at higher budgets</li>
+    <li><strong>Guided Inference:</strong> Boosts quality at low NFEs (PPL relative improvement ~30% at 8 NFEs) and enhances diversity at high NFEs (entropy from 5.00 to 5.15)</li>
+  </ul>
+
+  <p>
+    These findings highlight a hierarchy of importance and nuanced interactions between the techniques, with intermediate-state matching proving to be the foundational element for framework stability.
+  </p>
+</section>
+
+
+<section id="conclusion" class="highlighted-section">
+  <h2>Conclusion and Future Work</h2>
+  <p>
+    In this work, we introduced DiDi-Instruct, a training-based acceleration framework for fast language generation that distills a high-quality teacher into a few-step student. Our design targets three axes simultaneously: (i) objective design via a tractable policy-gradient update driven by a discriminator-estimated reward; (ii) training stability through score decomposition and grouped reward normalization; and (iii) inference efficiency through reward-guided ancestral sampling with gradient tilting and re-ranking.
+  </p>
+  <p>
+    Experiments demonstrate strong gains in generation quality, large reductions in training/inference time, and competitive zero-shot generalization, corroborated by comprehensive cumulative, leave-one-out ablations, model scaling up, and protein sequence generation.
+  </p>
+  <p>
+    We plan to scale DiDi-Instruct to billion-parameter models, which presents a practical challenge due to the GPU memory requirements of concurrently maintaining the teacher, student, and discriminator. Nevertheless, our findings already establish a new state-of-the-art trade-off among comparable methods, with the student model excelling in quality at low NFEs and maintaining diversity at higher computational budgets. We posit that DiDi-Instruct offers a foundational recipe (principled objectives, training stability, and efficient guidance) for developing high-performance generative models in a wide range of fields, including multimodal generation, code generation, and biological sequence design.
+  </p>
+</section>
+
 <section id="bibtex" class="highlighted-section">
   <div class="bibtex-header">
     <h2>BibTeX</h2>
@@ -158,7 +516,7 @@ custom_favicon: "/images/favicon/didi-favicon.png"
 
 <footer>
   <p>This page was built using a customized version of the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank" rel="noopener">Academic Project Page Template</a>, with inspiration from other project pages.</p>
-  <p>Cite the paper using the BibTeX entry above. The template is licensed under a <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p>
+  <!-- <p>Cite the paper using the BibTeX entry above. The template is licensed under a <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p> -->
 </footer>
 
 <script src="/assets/js/didi-instruct.js"></script>
