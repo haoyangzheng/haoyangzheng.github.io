@@ -14,17 +14,22 @@ I study **Generative Modeling** and **Reinforcement Learning** (RL) from a proba
 
 Research Interests
 ======
-* Generative Models
-* Discrete Diffusion Large Language Models
-* Reinforcement Learning (Thompson Sampling)
-* Markov Chain Monte Carlo
+* Large Language Models (Agent Memory, Pre-training & Post-training)
+* Multimodal Generative Models (VLM, Image Editing, Post-training)
+* Generative Models (Diffusion Models, Difussion Language Models, Autoregressive Models)
 
 News
 ======
-* [Sep/2025] 🔥Feel the Ultra-Fast Language Generation in our latest work (**60×** faster than ARMs): [Discrete Diffusion Divergence Instruct](https://haoyangzheng.github.io/research/didi-instruct/)
+
+* [Jan/2026] 2 papers were accepted by ICLR 2026
+* [Jan/2026] Invited talk at [the Crunch Seminar](https://youtu.be/JDfKRiqXcYE), Brown University
+* [Jan/2026] Invited talk at the Computational Scientific Imaging Lab, Peking University
+* [Nov/2025] 1 paper was selected for oral presentation at AAAI 2026
+* [Oct/2025] 1 paper was accepted by Journal of Computational Physics
+* [Sep/2025] 🔥 Feel the Ultra-Fast Language Generation in our latest work (**60×** faster than ARMs): [Discrete Diffusion Divergence Instruct](https://haoyangzheng.github.io/research/didi-instruct/)
 * [Oct/2024] Student Travel Award at [2024 Mathematical and Scientific Foundations of Deep Learning Annual Meeting](https://www.simonsfoundation.org/event/mathematical-and-scientific-foundations-of-deep-learning-annual-meeting-2024/)
 * [Aug/2024] Student Travel Award at [2024 SIAM Conference on Mathematics of Data Science (MDS24)](https://www.siam.org/conferences-events/siam-conferences/mds24/)
-* [Jul/2024] Gave a talk at [the Crunch Seminar](https://www.youtube.com/watch?v=taEnrJIpl1g&t=4676s), Brown University
+* [Jul/2024] Invited talk at [the Crunch Seminar](https://www.youtube.com/watch?v=taEnrJIpl1g&t=4676s), Brown University
 * [May/2024] 1 paper was accepted by ICML 2024
 * [Apr/2024] Passed the preliminary exam and became a Ph.D. candidate
 * [Apr/2024] Student Travel Award at the ICERM workshop about [Nonlocality](https://icerm.brown.edu/programs/sp-s24/w3/) and [Interacting Particle Systems](https://icerm.brown.edu/topical_workshops/tw-24-ips/)
