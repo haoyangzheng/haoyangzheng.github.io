@@ -13,7 +13,7 @@ Check [this document]({{ site.url }}/files/Resume.pdf) for details
 
 Education
 ======
-* Ph.D. in Mechanical Engineering, Purdue University, 2025 (expected)
+* Ph.D. in Mechanical Engineering, Purdue University, 2026 (expected)
 * M.S. in Mechanical Engineering, Purdue University, 2021
 * B.S. in Automation, Southwest University, 2018
 
