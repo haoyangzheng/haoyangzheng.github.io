@@ -30,7 +30,7 @@ News
 * [Jan/2026] 2 papers were accepted by ICLR 2026
 * [Jan/2026] Invited talk at the Crunch Seminar, Brown University
 * [Jan/2026] Invited talk at the Computational Scientific Imaging Lab, Peking University
-* [Dec/2025] ACE Intern Program at Xiaohongshu, Inc Humane Intelligence Lab (hi lab), working on multimodal LLMs
+* [Dec/2025] ACE Intern Program at Xiaohongshu Inc, Humane Intelligence Lab (hi lab), working on multimodal LLMs
 * [Nov/2025] 1 paper was selected for oral presentation at AAAI 2026
 * [Oct/2025] 1 paper was accepted by Journal of Computational Physics
 * [Sep/2025] 🔥 Feel the Ultra-Fast Language Generation in our latest work (**60×** faster than ARMs): [Discrete Diffusion Divergence Instruct](https://haoyangzheng.github.io/research/didi-instruct/)
