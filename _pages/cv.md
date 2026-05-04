@@ -19,6 +19,10 @@ Education
 
 Experience
 ======
+* <strong>Google Research Intern</strong> (2026 Summer)
+  * Google Research
+* <strong>RedStar Intern (ACE Intern Program)</strong> (Dec 2025 - Apr 2026)
+  * Xiaohongshu (RedNote) Inc, Humane Intelligence Lab (hi lab)
 * <strong>Research Assistant</strong> (2021 Fall - Now)
   * Purdue University, School of Mechanical Engineering
 * <strong>Givens Associate</strong> (2023 Summer)
