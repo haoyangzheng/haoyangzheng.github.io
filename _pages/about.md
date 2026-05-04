@@ -8,9 +8,9 @@ redirect_from:
   - /about.html
 ---
 
-My name is Haoyang (pronounced as "Hau Yeung"); I was born in Zhejiang and grew up in Shenzhen. I am currently a PhD candidate at the [School of Mechanical Engineering](https://engineering.purdue.edu/ME), [Purdue University](https://www.purdue.edu/), advised by Prof. [Guang Lin](https://scholar.google.com/citations?user=7lWVV2IAAAAJ&hl=en). 
+My name is Haoyang (pronounced as "Hau Yeung"); I was born in Zhejiang, China and grew up in Shenzhen. I am currently a PhD candidate at the [School of Mechanical Engineering](https://engineering.purdue.edu/ME), [Purdue University](https://www.purdue.edu/), advised by Prof. [Guang Lin](https://scholar.google.com/citations?user=7lWVV2IAAAAJ&hl=en). 
 
-I am currently a **Research Intern at Google** (Mountain View, CA), focusing on **LLM pre-training and post-training**. Previously, I was part of the **ACE Intern Program / RedStar** at **Xiaohongshu Inc.'s Humane Intelligence Lab (hi lab)** (Beijing, China), where I worked on **multimodal LLMs**.
+I am currently a **Research Intern at Google** (Mountain View, CA), focusing on **LLM / Diffusion Models**. Previously, I was **RedStar Intern (ACE Intern Program)** at **Xiaohongshu Inc.'s Humane Intelligence Lab (hi lab)** (Beijing, China), where I worked on **Multimodal LLMs**.
 
 I study **Generative Modeling** and **Reinforcement Learning** (RL) from a probabilistic modeling perspective. My interests include **Large Language Models** (LLMs), continuous and discrete diffusion, RL, and sampling/optimization methods that improve latency and robustness. My goal is to build fast and reliable LLMs.
 
@@ -25,8 +25,7 @@ Research Interests
 
 News
 ======
-
-* [May/2026] Research Intern at Google, working on Diffusion Language Models
+* [May/2026] Research Intern at Google, working on LLM / Diffusion Models
 * [Jan/2026] 2 papers were accepted by ICLR 2026
 * [Jan/2026] Invited talk at the Crunch Seminar, Brown University
 * [Jan/2026] Invited talk at the Computational Scientific Imaging Lab, Peking University
